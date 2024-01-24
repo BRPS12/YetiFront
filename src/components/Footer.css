@@ -1,0 +1,53 @@
+/* Footer.css */
+
+footer {
+    background : linear-gradient(to right, #000, #333);
+    color: #fff;
+    padding: 20px 0;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .school-info {
+    flex: 1;
+    max-width: 300px;
+    margin-left: 7%;
+  }
+  
+  .school-info h3 {
+    font-size: 1.5em;
+  }
+  
+  .social-media {
+    flex: 1;
+    max-width: 200px;
+  }
+  
+  .social-media p {
+    margin-bottom: 10px;
+  }
+  
+  .copyright, .additional-links, .designer-info {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .additional-links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+  }
+  
+  .additional-links a:hover {
+    text-decoration: underline;
+  }
+  
+  .designer-info p {
+    font-size: 0.8em;
+  }
+  
+  
