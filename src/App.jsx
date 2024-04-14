@@ -9,7 +9,6 @@ import { useState, useEffect } from "react";
 
 export const App = () => {
   const [isLoading, setIsLoading] = useState(true);
-
   useEffect(() => {
     const loadingTimeout = setTimeout(() => {
       setIsLoading(false);
