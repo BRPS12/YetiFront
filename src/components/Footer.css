@@ -20,7 +20,7 @@
 
 
 h3 {
-  color: #ffd700; /* Set a gold color for the heading */
+  color: #FE01FE; /* Set a gold color for the heading */
 }
 
 
@@ -51,7 +51,7 @@ h3 {
 }
 
 .additional-links a {
-  color: #ffd700;
+  color: #FE01FE;
   text-decoration: none;
   font-weight: bold;
 }

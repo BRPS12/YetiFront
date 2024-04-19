@@ -19,7 +19,7 @@ export const About = () => {
       <div
         style={{
           width: "100%",
-          height: "50vh",
+          height: "60vh",
           display: "flex",
           flexDirection: "row",
           alignItems: "center",
@@ -30,13 +30,17 @@ export const About = () => {
             fontSize: "30px",
             fontFamily: "Georgia, serif",
             width: "60%",
-            marginTop: "50px",
+            marginTop: "25vh",
             marginLeft: "10%",
           }}
         >
-          1 сарын 15 наас 2021 оны 5 сарын 15 хүртэл Монгол улсын хилийн заставт
-          алба хааж байгаа албан хаагчдад анхан шатнаас ахисан шат хүртэл англи
-          хэлний цахим хичээлийг ямар ч үнэ төлбөргүйгээр зохион байгуулсан.
+          -Боловсролын Тэргүүний Ажилтан Санжаагончигийн Гомбодорж, Боловсролын
+          Тэргүүний Ажилтан, Чингис Хааны Дэлхийн Академийн жинхэнэ гишүүн,
+          Залуу Үеийг Халамжлан Хүмүүжүүлэгч цол тэмдэгтэн Янживын Одонгэрэлийн
+          санаачилгаар, <p>-Имэкс Корпорейшн ХХК-ийн захирал Гомбодоржийн
+          Буяндэлгэрийн 100%-ийн хөрөнгө оруулалттайгаар байгуулагдаж, одоог
+          хүртэл Гомбодоржийн Шүр-Эрдэнийн удирдлага дор үйл ажиллагаагаа явуулж
+          байгаа билээ.</p>
         </p>
         <img
           alt=""
@@ -141,7 +145,15 @@ export const About = () => {
           </div>
         </div>
       </div>
-      <div style={{display : "flex" , flexDirection : "row" , width : "100%" , alignItems : "center" , justifyContent : "center"}}>
+      <div
+        style={{
+          display: "flex",
+          flexDirection: "row",
+          width: "100%",
+          alignItems: "center",
+          justifyContent: "center",
+        }}
+      >
         <div
           style={{
             width: "40%",
@@ -155,7 +167,7 @@ export const About = () => {
             style={{ width: "100%", height: "100%", borderRadius: "20px" }}
           />
         </div>
-        <div style={{ marginLeft : "100px"}}>
+        <div style={{ marginLeft: "100px" }}>
           <h1
             style={{
               fontFamily: "Georgia, serif",
