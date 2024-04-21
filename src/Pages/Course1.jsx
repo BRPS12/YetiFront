@@ -68,10 +68,10 @@ export const Course1 = () => {
               илгээх үед шаардлагатай бүх төрлийн зөвлөгөө чиглүүлгийг олгоно.</p>
             </p>
           </div>
-          <div>
+          {/* <div>
             <p style={{ fontSize: "48px", marginTop: "70px" }}>🤗</p>
             <p style={{ fontSize: "48px", marginTop: "150px" }}>🤔</p>
-          </div>
+          </div> */}
           <div
             style={{
               marginBottom: "20px",

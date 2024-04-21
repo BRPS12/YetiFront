@@ -2,7 +2,6 @@ import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Home } from "./Pages/Home";
 import { News } from "./Pages/News";
-import { Courses } from "./Pages/Courses";
 import { About } from "./Pages/About";
 import { Footer } from "./components/Footer";
 import { useState, useEffect } from "react";
@@ -10,6 +9,7 @@ import { Course1 } from "./Pages/Course1";
 import { Course2 } from "./Pages/Course2";
 import { Course3 } from "./Pages/Course3";
 import { Course4 } from "./Pages/Course4";
+import { ContactUs } from "./Pages/ContactUs";
 export const App = () => {
   const [isLoading, setIsLoading] = useState(true);
   useEffect(() => {
@@ -36,7 +36,7 @@ export const App = () => {
             <Route path="/course/2" element={<Course2 />} />
             <Route path="/course/3" element={<Course3 />} />
             <Route path="/course/4" element={<Course4 />} />
-            <Route path="/courses" element={<Courses />} />
+            <Route path="/contactus" element={<ContactUs />} />
           </Routes>
           <Footer />
         </BrowserRouter>

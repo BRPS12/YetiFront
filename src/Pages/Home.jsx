@@ -411,6 +411,17 @@ export const Home = () => {
             </div>
           </div>
         </div>
+        <div style={{width : "100%" , height : "90vh" , display : "flex" , flexDirection : "row" , alignItems : "center" , justifyContent : "center"}}>
+        <div style={{width : "23vw" , height : "80vh" , backgroundColor : "#000" , borderRadius : "40px"}}>
+          <p style={{color : "#fff"}}>Zuger engiiin bagsh shaviin hariiltsaatai bsihbid nar </p>
+        </div>
+        <div style={{width : "23vw" , height : "80vh" , backgroundColor : "#000" , borderRadius : "40px" , marginLeft : "6vw"}}>
+        <p style={{color : "#fff"}}>Neg ger bul ghd bolndoo</p>
+        </div>
+           <div style={{width : "23vw" , height : "80vh" , backgroundColor : "#000" , borderRadius : "40px" , marginLeft : "6vw"}}>
+           <p style={{color : "#fff"}}>Saihan orcind sain surna</p>
+           </div>
+        </div>
         <div
           style={{
             display: "flex",

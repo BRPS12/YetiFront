@@ -1,8 +1,10 @@
 .footer-container {
-  background : linear-gradient(#333 , #000);
+  background-color: #000;
   color: #fff;
   padding: 40px 20px;
   text-align: center;
+  justify-content: center;
+  align-items: center;
 }
 
 
@@ -13,10 +15,6 @@
 }
 
 .school-info,
-.social-media {
-  flex: 1;
-  max-width: 400px;
-}
 
 
 h3 {
@@ -69,4 +67,15 @@ h3 {
   .social-media {
     max-width: none;
   }
+}
+
+.pagesText {
+  font-size: 20px;
+  text-decoration: none;
+  color: #fff;
+  font-family:'Courier New', Courier, monospace;
+}
+.active {
+  font-weight: bold;
+  color: blueviolet;
 }

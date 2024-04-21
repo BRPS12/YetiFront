@@ -77,10 +77,10 @@ export const Course3 = () => {
               
             </p>
           </div>
-          <div>
+          {/* <div>
             <p style={{ fontSize: "48px", marginTop: "70px" }}>😎</p>
             <p style={{ fontSize: "48px", marginTop: "150px" }}>😉</p>
-          </div>
+          </div> */}
           <div
           style={{
             marginBottom: "20px",
@@ -97,9 +97,8 @@ export const Course3 = () => {
           }}>
             {/* <img src={require("../Images/Shureebagsh5.png")} style={{marginTop : "30px" , marginLeft : "20px"}}/> */}
            <div style={{display : "flex" , flexDirection : "row" , alignItems : "center" , justifyContent : "center"}}>
-            <p style={{ fontSize: "45px" , marginRight : "10px" }}>⚔️</p>
-            <p style={{fontSize : "20px" , fontFamily : "monospace"}}>Youth Educational Training Academy</p>
-            <p style={{ fontSize: "45px" , marginLeft : "10px" }}>🤠</p>
+  
+            <p style={{fontSize : "27px" , fontFamily : "monospace" , marginTop  : "40px" , color : "Red" , fontWeight : "bold"}}>Youth Educational Training Academy</p>
             </div>
             <p style={{ fontSize: "24px",
                 lineHeight: "1.6",

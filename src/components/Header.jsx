@@ -1,11 +1,18 @@
 import React, { useState, useEffect } from "react";
-import { Link, useLocation } from "react-router-dom";
+import { Link } from "react-router-dom";
 import "./Header.css";
 import YetiLogo from "../Images/YetiLogo.jpg";
 
 export const Header = ({ backgroundImage, title, isMounted }) => {
   const [menuVisible, setMenuVisible] = useState(false);
-  const location = useLocation();
+
+
+  useEffect(() => {
+    const unlisten = () => {
+      window.scrollTo(0, 0);
+    };
+    return unlisten;
+  }, []);
 
   useEffect(() => {
     setMenuVisible(false);
@@ -88,27 +95,24 @@ export const Header = ({ backgroundImage, title, isMounted }) => {
           <Link className="custom-menu-button" to="/">
             Home
           </Link>
-          <Link className="custom-menu-button" to="/about">
-            About
-          </Link>
-          <Link className="custom-menu-button" to="/news">
-            News
-          </Link>
-          {/* <Link className="custom-menu-button" to="/courses">
-            Courses
-          </Link> */}
           <div
             className={`custom-menu-button ${menuVisible ? "open" : ""}`}
             onClick={toggleMenu}
           >
             Courses
           </div>
-          <Link className="custom-menu-button" to="/courses">
+          <Link className="custom-menu-button" to="/news">
+            News
+          </Link>
+          <Link className="custom-menu-button" to="/about">
+            About
+          </Link>
+          <Link className="custom-menu-button" to="/contactus">
             Contact Us
           </Link>
         </div>
         <div style={{position : "absolute" , right : "0"}}>
-        <button style={{width : "150px" , height : "90px" , backgroundColor : "#000" , borderRadius : "10px" , fontFamily : "Georgia" , color : "#fff" , fontSize : "25px"}}>Login</button>
+          <button style={{width : "150px" , height : "90px" , backgroundColor : "#000" , borderRadius : "10px" , fontFamily : "Georgia" , color : "#fff" , fontSize : "25px"}}>Login</button>
         </div>
       </header>
       <div className={`overlay ${menuVisible ? "show" : ""}`}>
