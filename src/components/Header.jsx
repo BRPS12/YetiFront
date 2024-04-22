@@ -2,10 +2,9 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "./Header.css";
 import YetiLogo from "../Images/YetiLogo.jpg";
-
+import { Button } from "@mui/material";
 export const Header = ({ backgroundImage, title, isMounted }) => {
   const [menuVisible, setMenuVisible] = useState(false);
-
 
   useEffect(() => {
     const unlisten = () => {
@@ -111,21 +110,37 @@ export const Header = ({ backgroundImage, title, isMounted }) => {
             Contact Us
           </Link>
         </div>
-        <div style={{position : "absolute" , right : "0"}}>
-          <button style={{width : "150px" , height : "90px" , backgroundColor : "#000" , borderRadius : "10px" , fontFamily : "Georgia" , color : "#fff" , fontSize : "25px"}}>Login</button>
+        <div style={{ position: "absolute", right: "0" }}>
+          <Button
+            
+            component={Link}
+            to="/login"
+            style={{
+              width: "150px",
+              height: "90px",
+              backgroundColor: "#000",
+              borderRadius: "10px",
+              fontFamily: "Georgia",
+              color: "#fff",
+              fontSize: "25px",
+              textDecoration: "none",
+            }}
+          >
+            Login
+          </Button>
         </div>
       </header>
       <div className={`overlay ${menuVisible ? "show" : ""}`}>
         <div className="menu">
           <div className="custom-menu">
             <Link className="custom-second-menu-button" to="/course/1">
-            Mentorship program
+              Mentorship program
             </Link>
             <Link className="custom-second-menu-button" to="/course/2">
-            Study Abroad Program
+              Study Abroad Program
             </Link>
             <Link className="custom-second-menu-button" to="/course/3">
-            Ерөнхий англи хэл
+              Ерөнхий англи хэл
             </Link>
           </div>
         </div>

@@ -1,3 +1,4 @@
+import { Footer } from "../components/Footer";
 import { Header } from "../components/Header";
 import PersonImage from "../Images/Studying.jpg";
 import { useState, useEffect } from "react";
@@ -67,6 +68,7 @@ export const ContactUs = () => {
           />
         </div>
       </div>
+      <Footer />
     </div>
   );
 };

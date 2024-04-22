@@ -3,6 +3,7 @@ import { Header } from "../components/Header";
 import courseImage from "../Images/Students.png";
 import ArrowSVG from "../Images/arrow";
 import { Link } from "react-router-dom";
+import { Footer } from "../components/Footer";
 
 export const Course1 = () => {
   const [isMounted, setIsMounted] = useState(false);
@@ -154,6 +155,7 @@ export const Course1 = () => {
           />
         </div>
       </div>
+      <Footer />
     </div>
   );
 };

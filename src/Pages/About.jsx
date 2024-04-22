@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Header } from "../components/Header";
-import PersonImage from "../Images/Studying.jpg";
-
+import PersonImage from "../Images/5.jpg";
+import { Footer } from "../components/Footer";
 export const About = () => {
   const [isMounted, setIsMounted] = useState(false);
 
@@ -384,6 +384,7 @@ export const About = () => {
           </p>
         </div>
       </div>
+      <Footer />
     </div>
   );
 };

@@ -2,6 +2,7 @@ import React from "react";
 import PeopleImage from "../Images/Computer.jpg";
 import { Header } from "../components/Header";
 import { useState, useEffect } from "react";
+import { Footer } from "../components/Footer";
 export const Home = () => {
   const [isMounted, setIsMounted] = useState(false);
 
@@ -73,21 +74,22 @@ export const Home = () => {
                 position: "absolute",
                 left: "6%",
                 borderRadius: "20px",
-                marginRight : "50px"
+                marginRight: "50px",
               }}
               src={require("../Images/Shureebagsh2.jpg")}
             />
-  
+
             <p
               style={{
                 position: "relative",
                 top: "67%",
                 left: "20%",
                 fontSize: "24px",
-                width : "37vw",
-                textAlign : "center",
-                height : "30vh",
-                marginTop : "40px", fontFamily : "Times new roman"
+                width: "37vw",
+                textAlign: "center",
+                height: "30vh",
+                marginTop: "40px",
+                fontFamily: "Times new roman",
               }}
             >
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi in
@@ -119,11 +121,11 @@ export const Home = () => {
                 top: "67%",
                 left: "50%",
                 fontSize: "24px",
-                width : "37vw",
-                textAlign : "center",
-                height : "30vh",
-                marginTop : "40px",
-                fontFamily : "Times new roman"
+                width: "37vw",
+                textAlign: "center",
+                height: "30vh",
+                marginTop: "40px",
+                fontFamily: "Times new roman",
               }}
             >
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi in
@@ -411,16 +413,50 @@ export const Home = () => {
             </div>
           </div>
         </div>
-        <div style={{width : "100%" , height : "90vh" , display : "flex" , flexDirection : "row" , alignItems : "center" , justifyContent : "center"}}>
-        <div style={{width : "23vw" , height : "80vh" , backgroundColor : "#000" , borderRadius : "40px"}}>
-          <p style={{color : "#fff"}}>Zuger engiiin bagsh shaviin hariiltsaatai bsihbid nar </p>
-        </div>
-        <div style={{width : "23vw" , height : "80vh" , backgroundColor : "#000" , borderRadius : "40px" , marginLeft : "6vw"}}>
-        <p style={{color : "#fff"}}>Neg ger bul ghd bolndoo</p>
-        </div>
-           <div style={{width : "23vw" , height : "80vh" , backgroundColor : "#000" , borderRadius : "40px" , marginLeft : "6vw"}}>
-           <p style={{color : "#fff"}}>Saihan orcind sain surna</p>
-           </div>
+        <div
+          style={{
+            width: "100%",
+            height: "90vh",
+            display: "flex",
+            flexDirection: "row",
+            alignItems: "center",
+            justifyContent: "center",
+          }}
+        >
+          <div
+            style={{
+              width: "23vw",
+              height: "80vh",
+              backgroundColor: "#000",
+              borderRadius: "40px",
+            }}
+          >
+            <p style={{ color: "#fff" }}>
+              Zuger engiiin bagsh shaviin hariiltsaatai bsihbid nar{" "}
+            </p>
+          </div>
+          <div
+            style={{
+              width: "23vw",
+              height: "80vh",
+              backgroundColor: "#000",
+              borderRadius: "40px",
+              marginLeft: "6vw",
+            }}
+          >
+            <p style={{ color: "#fff" }}>Neg ger bul ghd bolndoo</p>
+          </div>
+          <div
+            style={{
+              width: "23vw",
+              height: "80vh",
+              backgroundColor: "#000",
+              borderRadius: "40px",
+              marginLeft: "6vw",
+            }}
+          >
+            <p style={{ color: "#fff" }}>Saihan orcind sain surna</p>
+          </div>
         </div>
         <div
           style={{
@@ -462,6 +498,7 @@ export const Home = () => {
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 };
