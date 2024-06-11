@@ -3,9 +3,19 @@ import { Link } from "react-router-dom";
 import "./Header.css";
 import YetiLogo from "../Images/YetiLogo.jpg";
 import { Button } from "@mui/material";
+import { instance } from "../App";
 export const Header = ({ backgroundImage, title, isMounted }) => {
+  const userId = window.localStorage.getItem("user_id");
   const [menuVisible, setMenuVisible] = useState(false);
-
+  const [user, setUser] = useState([]);
+  const getUser = async () => {
+    try {
+      const response = await instance.get(`/users/${userId}`);
+      setUser(response.data.data);
+    } catch (error) {
+      console.log(error);
+    }
+  };
   useEffect(() => {
     const unlisten = () => {
       window.scrollTo(0, 0);
@@ -13,8 +23,13 @@ export const Header = ({ backgroundImage, title, isMounted }) => {
     return unlisten;
   }, []);
 
+  const logOut = async () => {
+    window.localStorage.removeItem("user_id");
+    window.location.reload("/");
+  };
   useEffect(() => {
     setMenuVisible(false);
+    getUser();
   }, [location]);
 
   const toggleMenu = () => {
@@ -60,7 +75,7 @@ export const Header = ({ backgroundImage, title, isMounted }) => {
             className="logo"
             style={{
               display: "flex",
-              alignItems: "center", // Center the logo vertically
+              alignItems: "center",
               position: "absolute",
               top: "2%",
               left: "1%",
@@ -110,24 +125,55 @@ export const Header = ({ backgroundImage, title, isMounted }) => {
             Contact Us
           </Link>
         </div>
-        <div style={{ position: "absolute", right: "0" }}>
-          <Button
-            
-            component={Link}
-            to="/login"
-            style={{
-              width: "150px",
-              height: "90px",
-              backgroundColor: "#000",
-              borderRadius: "10px",
-              fontFamily: "Georgia",
-              color: "#fff",
-              fontSize: "25px",
-              textDecoration: "none",
-            }}
-          >
-            Login
-          </Button>
+        <div
+          style={{
+            position: "absolute",
+            right: "0",
+          }}
+        >
+          {userId && userId ? (
+            <div
+              style={{
+                display: "flex",
+                flexDirection: "column",
+                justifyContent: "center",
+                alignItems: "center",
+                paddingRight : "20px",
+                paddingTop : "10px"
+              }}
+            >
+              <img
+                src={user.profile}
+                alt=""
+                style={{
+                  width: "70px",
+                  height: "70px",
+                  borderRadius: "50%",
+                }}
+              />
+              <p style={{ fontSize: "16px" , fontFamily : "Georgia", marginTop: "5px" , color : "#000"}}>ss
+                {user.name}
+              </p>
+              <Button onClick={logOut}>Log Out</Button>
+            </div>
+          ) : (
+            <Button
+              component={Link}
+              to="/login"
+              style={{
+                width: "150px",
+                height: "90px",
+                backgroundColor: "#000",
+                borderRadius: "10px",
+                fontFamily: "Georgia",
+                color: "#fff",
+                fontSize: "25px",
+                textDecoration: "none",
+              }}
+            >
+              Login
+            </Button>
+          )}
         </div>
       </header>
       <div className={`overlay ${menuVisible ? "show" : ""}`}>

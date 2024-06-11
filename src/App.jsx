@@ -10,7 +10,16 @@ import { Course2 } from "./Pages/Course2";
 import { Course3 } from "./Pages/Course3";
 import { Course4 } from "./Pages/Course4";
 import { ContactUs } from "./Pages/ContactUs";
-import Login from "./Pages/Login/Login";
+import { SignUp } from "./Pages/SignUp/SignUp";
+import { Login } from "./Pages/Login/Login";
+import axios from "axios"
+export const instance = axios.create({
+  // baseURL: "https://lyro.onrender.com/",
+  baseURL: "http://localhost:9911/",
+  headers: {
+    "Content-type": "application/json; charset=UTF-8",
+  },
+});
 export const App = () => {
   const [isLoading, setIsLoading] = useState(true);
   useEffect(() => {
@@ -39,6 +48,7 @@ export const App = () => {
             <Route path="/course/4" element={<Course4 />} />
             <Route path="/contactus" element={<ContactUs />} />
             <Route path="/login" element={<Login />} />
+            <Route path="/signup" element={<SignUp />}/>
           </Routes>
         </BrowserRouter>
       )}
