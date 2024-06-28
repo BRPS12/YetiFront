@@ -13,6 +13,7 @@ import { ContactUs } from "./Pages/ContactUs";
 import { SignUp } from "./Pages/SignUp/SignUp";
 import { Login } from "./Pages/Login/Login";
 import axios from "axios"
+import { Profile } from "./Pages/Profile";
 export const instance = axios.create({
   // baseURL: "https://lyro.onrender.com/",
   baseURL: "http://localhost:9911/",
@@ -49,6 +50,7 @@ export const App = () => {
             <Route path="/contactus" element={<ContactUs />} />
             <Route path="/login" element={<Login />} />
             <Route path="/signup" element={<SignUp />}/>
+            <Route path="/profile" element={<Profile/>}/>
           </Routes>
         </BrowserRouter>
       )}

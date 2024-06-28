@@ -1,28 +1,26 @@
 import "../LoginAndSignUp.css"
 import { Link } from "react-router-dom";
-import { useState } from "react";
+import { useState , useRef } from "react";
 import { ToastContainer, toast } from "react-toastify";
 import { Button } from "@mui/material";
 import "react-toastify/dist/ReactToastify.css";
 import { instance } from "../../App";
 export const Login = () => {
-  const [password, setPassword] = useState();
-  const [email, setEmail] = useState();
-  const [role, setRole] = useState();
-  const logIn = async () => {
+  const passwordRef = useRef();
+  const emailRef = useRef();
+  const Login = async () => {
     try {
-      const res = await instance.post("/users/login", {
-        email: email,
-        password: password,
-        role: role,
+      const res = await instance.post(`/users/login`, {
+        email: emailRef.current.value,
+        password: passwordRef.current.value,
       });
-      console.log(res);
-      setRole(res.data.data.role);
-      window.location.replace(`/users/${res.data.data._id}`);
-      window.localStorage.setItem("token", JSON.stringify(res.data.token));
+      console.log(res.data.data)
+      window.localStorage.setItem("user_id", res.data.data.id);
+      if (res) {
+        window.location.replace("/");
+      }
     } catch (error) {
-      toast.error(error.response.data.data);
-      console.log(error);
+      toast.error("Failed");
     }
   };
   return (
@@ -40,7 +38,7 @@ export const Login = () => {
                 name="email"
                 className="inps"
                 placeholder="name@mail.domain"
-                onChange={(e) => setEmail(e.target.value)}
+                ref={emailRef}
               />
             </div>
             <div className="boxThree">
@@ -52,7 +50,7 @@ export const Login = () => {
                 name="pass"
                 className="inps"
                 placeholder="••••••••••"
-                onChange={(e) => setPassword(e.target.value)}
+                ref={passwordRef}
               />
             </div>
             <div className="boxTwo">
@@ -66,7 +64,7 @@ export const Login = () => {
                 Нууц үгээ мартсан
               </Link>
             </div>
-            <button type="submit" className="clickGreen" onClick={logIn}>
+            <button type="submit" className="clickGreen" onClick={Login}>
               Нэвтрэх
             </button>
             <Link to={"/signUp"} className="newUser">

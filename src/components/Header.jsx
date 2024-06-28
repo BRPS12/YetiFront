@@ -6,6 +6,7 @@ import { Button } from "@mui/material";
 import { instance } from "../App";
 export const Header = ({ backgroundImage, title, isMounted }) => {
   const userId = window.localStorage.getItem("user_id");
+  console.log(userId)
   const [menuVisible, setMenuVisible] = useState(false);
   const [user, setUser] = useState([]);
   const getUser = async () => {
@@ -142,6 +143,10 @@ export const Header = ({ backgroundImage, title, isMounted }) => {
                 paddingTop : "10px"
               }}
             >
+              <Link to="/profile" style={{textDecoration : "none" , display: "flex",
+                flexDirection: "column",
+                justifyContent: "center",
+                alignItems: "center",}}>
               <img
                 src={user.profile}
                 alt=""
@@ -151,9 +156,10 @@ export const Header = ({ backgroundImage, title, isMounted }) => {
                   borderRadius: "50%",
                 }}
               />
-              <p style={{ fontSize: "16px" , fontFamily : "Georgia", marginTop: "5px" , color : "#000"}}>ss
+              <p style={{ fontSize: "16px" , fontFamily : "Georgia", marginTop: "5px" , color : "#000"}}>
                 {user.name}
               </p>
+              </Link>
               <Button onClick={logOut}>Log Out</Button>
             </div>
           ) : (
