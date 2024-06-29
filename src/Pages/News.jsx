@@ -42,6 +42,8 @@ export const News = () => {
           marginBottom: "0px",
           fontSize: "30px",
           fontFamily: "Georgia",
+          marginTop: "40px",
+          marginBottom : "30px"
         }}
       >
         Latest News

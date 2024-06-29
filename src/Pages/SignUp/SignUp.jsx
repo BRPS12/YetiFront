@@ -4,61 +4,41 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { instance } from "../../App";
 import { Link } from "react-router-dom";
-
+import { Input } from "@mui/material";
 export const SignUp = () => {
   const [name, setName] = useState("");
   const [password, setPassword] = useState("");
   const [email, setEmail] = useState("");
   const [age, setAge] = useState("");
   const [selectedFile, setSelectedFile] = useState(null);
-  const [imageUrl, setImageUrl] = useState(""); // State to hold uploaded image URL
-
   const signUp = async () => {
     try {
-      // Upload image first, if selected
-      let uploadedImageUrl = "";
-      if (selectedFile) {
-        uploadedImageUrl = await uploadImage(selectedFile);
-      }
-
-      // Then sign up user
-      const res = await instance.post("/users/signup", {
-        name: name,
-        password: password,
-        email: email,
-        age: age,
-        profile: uploadedImageUrl, // Send uploaded image URL to backend
-        role: "normal",
+      const formData = new FormData();
+      formData.append('name', name);
+      formData.append('password', password);
+      formData.append('email', email);
+      formData.append('age', age);
+      formData.append('profile', selectedFile);
+      formData.append('role', 'normal');
+  
+      const res = await instance.post('/users/signup', formData, {
+        headers: {
+          'Content-Type': 'ultipart/form-data',
+        },
       });
-
+  
       console.log(res);
-      toast.success("Амжилттай бүртгэгдлээ");
+      toast.success('Амжилттай бүртгэгдлээ');
     } catch (error) {
-      toast.error("Бүртгэлтэй имэйл байна");
+      console.error('Error signing up: ', error);
+      toast.error('Бүртгэлтэй имэйл байна');
     }
   };
 
   const handleFileChange = (e) => {
     const file = e.target.files[0];
     setSelectedFile(file);
-  };
-
-  const uploadImage = async (file) => {
-    try {
-      const formData = new FormData();
-      formData.append("image", file);
-
-      const response = await instance.post("/upload/image", formData, {
-        headers: {
-          "Content-Type": "multipart/form-data",
-        },
-      });
-
-      return response.data.imageUrl; // Assuming your backend responds with image URL
-    } catch (error) {
-      console.error("Error uploading image: ", error);
-      return ""; // Handle error gracefully
-    }
+    console.log("profile : ", file);
   };
 
   return (
@@ -69,8 +49,7 @@ export const SignUp = () => {
         width: "100%",
         height: "100vh",
         overflow: "auto",
-      }}
-    >
+      }}>
       <ToastContainer />
       <main>
         <div
@@ -80,8 +59,7 @@ export const SignUp = () => {
             justifyContent: "center",
             alignItems: "center",
             flexDirection: "row",
-          }}
-        >
+          }}>
           <div
             style={{
               display: "flex",
@@ -89,8 +67,7 @@ export const SignUp = () => {
               flexDirection: "column",
               marginLeft: "0%",
               marginBottom: "50px",
-            }}
-          >
+            }}>
             <img
               src={require("../../Images/YetiLogo.jpg")}
               alt=""
@@ -107,9 +84,10 @@ export const SignUp = () => {
               display: "flex",
               flexDirection: "column",
               alignItems: "flex-start",
-            }}
-          >
-            <div className="boxThree" style={{ marginTop: "20px", paddingTop: "30px" }}>
+            }}>
+            <div
+              className="boxThree"
+              style={{ marginTop: "20px", paddingTop: "30px" }}>
               <label htmlFor="username" className="labels">
                 <p style={{ color: "white" }}>Username</p>
               </label>
@@ -158,10 +136,33 @@ export const SignUp = () => {
               />
             </div>
             <div className="boxThree" style={{ marginTop: "20px" }}>
-              <input type="file" accept="image/*" onChange={handleFileChange} style={{ marginLeft: "35%" }} />
+              <Input
+                type="file"
+                accept="image/*"
+                onChange={handleFileChange}
+                sx={{
+                  width: "400px",
+                  height: "70px",
+                  padding: "10px",
+                  fontSize: "18px",
+                  borderRadius: "5px",
+                  border: "1px solid #ccc",
+                  "&:hover": {
+                    border: "1px solid #aaa",
+                  },
+                }}
+              />
               {selectedFile && (
                 <div style={{ marginLeft: "25px" }}>
-                  <p style={{ color: "white", textAlign: "center", marginRight: "21px" }}>Selected file: <br />{selectedFile.name}</p>
+                  <p
+                    style={{
+                      color: "white",
+                      textAlign: "center",
+                      marginRight: "21px",
+                    }}>
+                    Selected file: <br />
+                    {selectedFile.name}
+                  </p>
                   <img
                     src={URL.createObjectURL(selectedFile)}
                     alt="Selected"
@@ -174,15 +175,18 @@ export const SignUp = () => {
               type="submit"
               className="clickGreen"
               onClick={signUp}
-              style={{ marginTop: "20px" }}
-            >
+              style={{ marginTop: "20px", cursor: "pointer" }}>
               Бүртгүүлэх
             </button>
             <Link
               className="clickGreen"
               to="/login"
-              style={{ textAlign: "center", marginTop: "20px" }}
-            >
+              style={{
+                textAlign: "center",
+                marginTop: "20px",
+                cursor: "pointer",
+                textDecoration: "none",
+              }}>
               <p style={{ marginTop: "7px", paddingBottom: "30px" }}>Нэвтрэх</p>
             </Link>
           </div>

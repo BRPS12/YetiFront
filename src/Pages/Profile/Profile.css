@@ -1,0 +1,15 @@
+.link-button {
+  text-decoration: none;
+  width: "400px";
+  color: #000;
+  padding: 12px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 25px;
+  margin-bottom: 10px;
+  text-decoration: underline;
+}
+.link-button:hover {
+  background-color: #FF7A7A;
+}

@@ -46,7 +46,7 @@ export const Login = () => {
                 <p style={{ color: "white" }}> Нууц үг</p>
               </label>
               <input
-                type="text"
+                type="password"
                 name="pass"
                 className="inps"
                 placeholder="••••••••••"
@@ -64,7 +64,7 @@ export const Login = () => {
                 Нууц үгээ мартсан
               </Link>
             </div>
-            <button type="submit" className="clickGreen" onClick={Login}>
+            <button type="submit" className="clickGreen" onClick={Login} style={{cursor : "pointer"}}>
               Нэвтрэх
             </button>
             <Link to={"/signUp"} className="newUser">

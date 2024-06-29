@@ -7,13 +7,13 @@ export const Footer = () => {
     <footer className="footer-container">
       <div className="footer-content">
         <div style={{ fontFamily: "Georgia , sans-serif" }}>
-          <p style={{ fontSize: "25px" }}>Youth Educational Training Academy</p>
-          <p>Багшийн дээд UBH төв, 15 давхар 1513 тоот </p>
-          <p>Mongolia, Ulaanbaatar</p>
-          <p className="contact-info">
+          <p style={{ fontSize: "25px" , marginTop : "10px" }}>Youth Educational Training Academy</p>
+          <p style={{ marginTop : "10px"}}>Багшийн дээд UBH төв, 15 давхар 1513 тоот </p>
+          <p style={{ marginTop : "10px"}}>Mongolia, Ulaanbaatar</p>
+          <p style={{ marginTop : "10px"}} className="contact-info">
             Phone: <span>+976 9191 3719</span>
           </p>
-          <p className="contact-info">
+          <p style={{ marginTop : "10px"}} className="contact-info">
             Email: <span>yetischool.e@gmail.com</span>
           </p>
         </div>
@@ -28,13 +28,13 @@ export const Footer = () => {
             }}
           >
             <NavLink className="pagesText"  activeClassName="active" exact to="/">Our Home Page</NavLink>
-            <NavLink className="pagesText" to="/news">News</NavLink>
-            <NavLink className="pagesText" to="about">About Us</NavLink>
-            <NavLink className="pagesText" to="contactus">Contact Us</NavLink>
+            <NavLink className="pagesText" exact to="/news">News</NavLink>
+            <NavLink className="pagesText" exact to="/about">About Us</NavLink>
+            <NavLink className="pagesText" exact to="/contactus">Contact Us</NavLink>
           </div>
 
           <p className="pagesText">Follow Us:</p>
-          <div className="social-icons">
+          <div className="social-icons" style={{marginTop : "20px"}}>
             <SocialIcon url="https://www.facebook.com/Yetieducationalacademy" />
             <SocialIcon
               url="https://www.instagram.com/yetiacademyy/?theme=dark"

@@ -23,14 +23,14 @@ export const About = () => {
           display: "flex",
           flexDirection: "row",
           alignItems: "center",
+          marginTop : "20px"
         }}
       >
         <p
           style={{
-            fontSize: "30px",
+            fontSize: "25px",
             fontFamily: "Georgia, serif",
             width: "60%",
-            marginTop: "25vh",
             marginLeft: "10%",
           }}
         >
@@ -48,7 +48,6 @@ export const About = () => {
           style={{
             width: "20%",
             height: "90%",
-            marginTop: "50px",
             marginLeft: "2%",
           }}
         />
@@ -68,7 +67,7 @@ export const About = () => {
           <img
             alt=""
             src={require("../Images/Students2.png")}
-            style={{ borderRadius: "25px" }}
+            style={{ borderRadius: "25px" , marginBottom : "15px"}}
           />
           <hr></hr>
           <div
@@ -84,10 +83,11 @@ export const About = () => {
                 fontWeight: "500",
                 fontFamily: "Georgia, serif",
                 textAlign: "center",
+                marginTop : "10px",
               }}
             >
-              2009
-              <hr></hr>
+              <p>2009</p>
+              <hr style={{marginTop : "10px",}}></hr>
               <p>
                 Анхны TOEFL ITP оноо амласан сургалтыг амжилттай зохион
                 байгуулсан.{" "}
@@ -100,10 +100,11 @@ export const About = () => {
                 fontFamily: "Georgia, serif",
                 textAlign: "center",
                 marginLeft: "25px",
+                marginTop : "10px",
               }}
             >
               2010
-              <hr></hr>
+              <hr style={{marginTop : "10px",}}></hr>
               <p>
                 Нийт 100 хүний бүрэлдэхүүнтэй “Ардын хувьсгалын 89 жилийн ой”-г
                 угтсан сайн дурын ажил зохион байгуулсан.
@@ -116,10 +117,11 @@ export const About = () => {
                 fontFamily: "Georgia, serif",
                 textAlign: "center",
                 marginLeft: "25px",
+                marginTop : "10px",
               }}
             >
               2011
-              <hr></hr>
+              <hr style={{marginTop : "10px",}}></hr>
               <p>
                 Оны шилдэг сайн үйлсийн аянд ЗАЙСАН ТОЛГОЙ-г цэвэрлэж нэр
                 дэвшссэн .
@@ -132,10 +134,11 @@ export const About = () => {
                 fontFamily: "Georgia, serif",
                 textAlign: "center",
                 marginLeft: "25px",
+                marginTop : "10px",
               }}
             >
               2011-2015
-              <hr></hr>
+              <hr style={{marginTop : "10px",}}></hr>
               <p>
                 Сургалтанд хамрагдаж байсан бүх суралцагчиддаа тэтгэлэгт
                 зуучиллалын нэмэлт төлбөргүйгээр бэлдсэн. Анхны TOEFL ITP оноо
@@ -178,8 +181,8 @@ export const About = () => {
           >
             Үйл ажиллагааны тойм
           </h1>
-          <p style={{ fontFamily: "Georgia, serif" }}>2008</p>
-          <p style={{ width: "500px", fontFamily: "Georgia, serif" }}>
+          <p style={{ fontFamily: "Georgia, serif" , fontSize : "23px" }}>2008</p>
+          <p style={{ width: "500px", fontFamily: "Georgia, serif", fontSize : "23px"  }}>
             АНУ-н их дээд сургуулиудад 50-100%ийн тэтгэлэгтэй суралцах тухай
             Боловсролын өдөрлөгийг зохион байгуулсан.
           </p>
@@ -189,9 +192,10 @@ export const About = () => {
         style={{
           width: "100%",
           height: "90vh",
-          marginTop: "100px",
+          marginTop: "60px",
           display: "flex",
           flexDirection: "row",
+          alignItems : "center"
         }}
       >
         <div style={{ marginLeft: "13%" }}>
@@ -203,6 +207,7 @@ export const About = () => {
               width: "500px",
               fontSize: "22px",
               fontFamily: "Georgia, serif",
+              marginTop : "30px"
             }}
           >
             2016- 2021 он
@@ -210,13 +215,14 @@ export const About = () => {
               Туркийн элчин сайдын эхнэрийн зохиосон бүхий л сайн дурын үйл
               ажиллагаанд сайн дурын ажилтнуудыг бэлтгэн оролцсон.
             </p>
-            <hr></hr>
+            <hr style={{marginTop : "15px"}}></hr>
           </p>
           <p
             style={{
               width: "650px",
               fontSize: "22px",
               fontFamily: "Georgia, serif",
+              marginTop : "15px"
             }}
           >
             2017 оноос өдийг хүртэл
@@ -228,7 +234,7 @@ export const About = () => {
             </p>
           </p>
         </div>
-        <div style={{ width: "350px", height: "80%", marginTop: "-30px" }}>
+        <div style={{ width: "350px", height: "80%" , marginLeft : "50px" }}>
           <div
             style={{
               width: "150px",
@@ -267,12 +273,13 @@ export const About = () => {
           height: "100vh",
           display: "flex",
           flexDirection: "row",
+          alignItems : "center"
         }}
       >
         <div style={{ width: "auto", height: "auto", marginLeft: "200px" }}>
-          <img alt="" src={require("../Images/ShureeBagsh.png")} />
+          <img alt="" src={require("../Images/ShureeBagsh.png")}  style={{borderRadius : "20px"}}/>
         </div>
-        <div style={{ marginLeft: "80px", marginTop: "-30px" }}>
+        <div style={{ marginLeft: "80px" }}>
           <div
             style={{
               width: "80%",
@@ -281,13 +288,13 @@ export const About = () => {
             }}
           >
             <p style={{ fontSize: "40px" }}>2021 он</p>
-            <p style={{ marginTop: "-22px" }}>
+            <p style={{marginTop : "10px"}}>
               1 сарын 15 наас 2021 оны 5 сарын 15 хүртэл Монгол улсын хилийн
               заставт алба хааж байгаа албан хаагчдад анхан шатнаас ахисан шат
               хүртэл англи хэлний цахим хичээлийг ямар ч үнэ төлбөргүйгээр
               зохион байгуулсан.
             </p>
-            <hr></hr>
+            <hr style={{marginTop : "20px"}}></hr>
           </div>
 
           <div
@@ -295,10 +302,11 @@ export const About = () => {
               width: "80%",
               fontSize: "27px",
               fontFamily: "Georgia, serif",
+              marginTop : "15px"
             }}
           >
             <p style={{ fontSize: "40px" }}>2021 он</p>
-            <p style={{ marginTop: "-22px" }}>
+            <p style={{marginTop : "10px"}}>
               1 сарын 15 наас 2021 оны 5 сарын 15 хүртэл Монгол улсын хилийн
               заставт алба хааж байгаа албан хаагчдад анхан шатнаас ахисан шат
               хүртэл англи хэлний цахим хичээлийг ямар ч үнэ төлбөргүйгээр
@@ -311,9 +319,9 @@ export const About = () => {
         style={{ width: "100%", height: "100vh", fontFamily: "Georgia, serif" }}
       >
         <hr></hr>
-        <div style={{ display: "flex", flexDirection: "row" }}>
+        <div style={{ display: "flex", flexDirection: "row"  , alignItems : "center"}}>
           <div style={{ marginLeft: "70px" }}>
-            <h2 style={{ fontSize: "30px" }}>2021 он</h2>
+            <p style={{ fontSize: "40px" }}>2021 он</p>
             <p style={{ width: "90%", fontSize: "25px" }}>
               5 сарын 1 нээс 6 сарын 1 хүртэл 5-21 насны хүүхэд залуусын дунд
               “Миний дуртай дүр”, “Миний дуртай дүр” эсээний уралдаан зохион
@@ -321,14 +329,17 @@ export const About = () => {
               үргэлжлэх сургалтанд суух эрх болон гарын бэлгээр шагнагдсан.
             </p>
           </div>
-          <div style={{ marginRight: "100px", marginTop: "7px" }}>
-            <img alt="" src={require("../Images/information1.png")} />
+          <div style={{ marginLeft : "auto" , marginRight : "30px" , marginTop : "20px" , marginBottom : "20px"}}>
+            <img alt="" src={require("../Images/information1.png")} style={{borderRadius : "20px"}} />
           </div>
         </div>
         <hr></hr>
-        <div style={{ display: "flex", flexDirection: "row" }}>
-          <div style={{ marginLeft: "70px" }}>
-            <h2 style={{ fontSize: "30px" }}>2021 он</h2>
+        <div style={{ display: "flex", flexDirection: "row" , alignItems : "center"}}>
+        <div style={{ marginLeft: "50px", marginTop : "15px" , marginBottom : "15px" , marginRight : "auto"}}>
+            <img alt="" src={require("../Images/information2.png")}  style={{borderRadius : "20px"}}/>
+          </div>
+          <div style={{ marginLeft: "100px" }}>
+            <p style={{ fontSize: "40px" }}>2021 он</p>
             <p style={{ width: "90%", fontSize: "25px" }}>
               6 сарын 15 - 8 сарын 15-ы хооронд Монгол анх удаа “Мянган
               инээмсэглэл“ нэртэйгээр нийт 1000 хүүхдийг TOEFL ITP, Ерөнхий
@@ -338,44 +349,41 @@ export const About = () => {
               оруулалтыг хийсэн.
             </p>
           </div>
-          <div style={{ marginRight: "100px", marginTop: "7px" }}>
-            <img alt="" src={require("../Images/information2.png")} />
-          </div>
         </div>
         <hr></hr>
       </div>
       <div
-        style={{ width: "100%", height: "100vh", fontFamily: "Georgia, serif" }}
+        style={{ width: "100%", height: "auto", fontFamily: "Georgia, serif" }}
       >
-        <div style={{ marginLeft: "30px" }}>
-          <h2 style={{ fontSize: "30px", textAlign: "center" }}>2021 он</h2>
-          <p style={{ fontSize: "25px", textAlign: "center" }}>
+        <div style={{  marginTop : "30px"}}>
+          <p style={{ fontSize: "40px", textAlign: "center" }}>2021 он</p>
+          <p style={{ fontSize: "25px", textAlign: "center" , marginTop : "10px"}}>
             Монгол даяар нийт 12 аймгийн 45 багшийг “ Үндэсний сургагч багш “
             TOEFL ITP шалгалт авах, заах эрх өгөх, бэлтгэх сургалтыг зохион
             байгуулж үүнээс 12 багш олон улсын шалгалт авах төвийг нээн хамтарч
             ажиллах төслийг хэрэгжүүлэн үргэлжлүүлэн ажиллаж байна.
           </p>
         </div>
-        <div>
+        <div style={{marginTop : "20px" , display : "flex" , flexDirection : "row" , alignItems : "center" , justifyContent : "center"}}>
           <img
             alt=""
             src={require("../Images/duu1.jpg")}
-            style={{ width: "300px", marginLeft: "7%" }}
+            style={{borderRadius : "20px" , width : "300px"}}
           />
           <img
             alt=""
             src={require("../Images/duu2.jpg")}
-            style={{ width: "300px", marginLeft: "10%" }}
+            style={{borderRadius : "20px" , width : "300px" , marginLeft : "50px"}}
           />
           <img
             alt=""
             src={require("../Images/duu3.jpg")}
-            style={{ width: "300px", marginLeft: "10%" }}
+            style={{borderRadius : "20px" , width : "300px" , marginLeft : "50px"}}
           />
         </div>
-        <div>
-          <h2 style={{ fontSize: "30px", textAlign: "center" }}>2022 он</h2>
-          <p style={{ fontSize: "25px", textAlign: "center" }}>
+        <div style={{paddingBottom  :"70px"}}>
+          <p style={{ fontSize: "40px", textAlign: "center" , marginTop : "20px"}}>2022 он</p>
+          <p style={{ fontSize: "25px", textAlign: "center" , marginTop : "15px" }}>
             “Англи дууг хэн сайн дуулах вэ” Cover дууны уралдаан заралж эхний 3
             байрандаа сургалтанд суух 1 жилийн эрх, 1.000.000, 500.000 ба
             300.000 төгрөгний хадгаламж нээх эрх олгосон. Мөн шилдэг 15
