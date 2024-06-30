@@ -5,13 +5,14 @@ import { News } from "./Pages/News";
 import { About } from "./Pages/About";
 import { Footer } from "./components/Footer";
 import { useState, useEffect } from "react";
-import { Course1 } from "./Pages/Course1";
-import { Course2 } from "./Pages/Course2";
-import { Course3 } from "./Pages/Course3";
-import { Course4 } from "./Pages/Course4";
+import { Course1 } from "./Pages/Courses/Course1";
+import { Course2 } from "./Pages/Courses/Course2";
+import { Course3 } from "./Pages/Courses/Course3";
+import { Course4 } from "./Pages/Courses/Course4";
 import { ContactUs } from "./Pages/ContactUs";
 import { SignUp } from "./Pages/SignUp/SignUp";
 import { Login } from "./Pages/Login/Login";
+import { Register } from "./Pages/Register/Register";
 import axios from "axios"
 import  Profile  from "./Pages/Profile/Profile";
 export const instance = axios.create({
@@ -51,6 +52,7 @@ export const App = () => {
             <Route path="/login" element={<Login />} />
             <Route path="/signup" element={<SignUp />}/>
             <Route path="/profile" element={<Profile/>}/>
+            <Route path="/register" element={<Register/>}/>
           </Routes>
         </BrowserRouter>
       )}

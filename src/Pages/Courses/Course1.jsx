@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
-import { Header } from "../components/Header";
-import courseImage from "../Images/Students.png";
-import ArrowSVG from "../Images/arrow";
+import { Header } from "../../components/Header";
+import courseImage from "../../Images/Students.png";
+import ArrowSVG from "../../Images/arrow";
 import { Link } from "react-router-dom";
-import { Footer } from "../components/Footer";
+import { Footer } from "../../components/Footer";
 
 export const Course1 = () => {
   const [isMounted, setIsMounted] = useState(false);
@@ -23,6 +23,7 @@ export const Course1 = () => {
         style={{
           padding: "20px",
           background: "linear-gradient(300deg, #FC90CF, #FE0F3E)",
+          paddingBottom : "150spx"
         }}
       >
         <div style={{ marginBottom: "20px", width: "90vw" }}>
@@ -145,7 +146,7 @@ export const Course1 = () => {
             </p>
           </div>
           <img
-            src={require("../Images/Shureebagsh3.jpg")}
+            src={require("../../Images/Shureebagsh3.jpg")}
             style={{
               width: "300px",
               height: "300px",

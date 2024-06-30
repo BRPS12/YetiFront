@@ -1,5 +1,5 @@
 import React from "react";
-import PeopleImage from "../Images/Computer.jpg";
+import PeopleImage from "../Images/coffee.jpg";
 import { Header } from "../components/Header";
 import { useState, useEffect } from "react";
 import { Footer } from "../components/Footer";
@@ -16,94 +16,33 @@ export const Home = () => {
           backgroundImage={PeopleImage}
           title="Welcome to Yeti Educational Academy"
           isMounted={isMounted}
+          buttonText="Register Now"
         />
         <div
           style={{
             display: "flex",
             width: "100%",
-            height: "650px",
-            marginTop: "10vh",
-          }}>
-
-
-          <div style={{ display: "flex", flexDirection: "column" , justifyContent : "center" , alignItems : "center"}}>
-            <img
-              style={{
-                width: "70%",
-                borderRadius: "20px",
-              }}
-              src={require("../Images/Shureebagsh2.jpg")}
-            />
-
-            <p
-              style={{
-                fontSize: "24px",
-                width: "37vw",
-                textAlign: "center",
-                height: "30vh",
-                marginTop: "40px",
-                fontFamily: "Times new roman",
-              }}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi in
-              sem ut tortor consequat ultricies id vel felis. Duis posuere
-              tellus non finibus aliquam. Donec volutpat metus sed mi faucibus,
-              ut ornare ligula tempor. Donec dictum sem vel ex dignissim,
-              placerat euismod massa fringilla. Pellentesque condimentum
-              accumsan odio, vitae dictum quam ullamcorper nec. Maecenas eu
-              interdum dui. Praesent nec imperdiet enim. Nunc a tempor felis.
-              Phasellus ut accumsan augue, eu posuere leo.
-            </p>
-          </div>
-
-
-
-          <div style={{ display: "flex", flexDirection: "column" , justifyContent : "center" , alignItems : "center"}}>
-          <img
-              style={{
-                width: "70%",
-                borderRadius: "20px",
-              }}
-              src={require("../Images/Shureebagsh2.jpg")}
-            />
-            <p
-              style={{
-                fontSize: "24px",
-                width: "37vw",
-                textAlign: "center",
-                height: "30vh",
-                marginTop: "40px",
-                fontFamily: "Times new roman",
-              }}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi in
-              sem ut tortor consequat ultricies id vel felis. Duis posuere
-              tellus non finibus aliquam. Donec volutpat metus sed mi faucibus,
-              ut ornare ligula tempor. Donec dictum sem vel ex dignissim,
-              placerat euismod massa fringilla. Pellentesque condimentum
-              accumsan odio, vitae dictum quam ullamcorper nec. Maecenas eu
-              interdum dui. Praesent nec imperdiet enim. Nunc a tempor felis.
-              Phasellus ut accumsan augue, eu posuere leo.
-            </p>
-          </div>
-        </div>
-        <div
-          style={{
-            display: "flex",
-            width: "100%",
             height: "400px",
-            paddingBottom: "10vh",
-            marginTop: "24vh",
             justifyContent: "center",
+            padding: 0,
+            paddingBottom: "50px",
+            backgroundColor: "#000",
           }}>
           <img
             src={require("../Images/YetiLogo.jpg")}
-            style={{ marginRight: "100px" }}
+            style={{
+              marginRight: "100px",
+              marginTop: "50px",
+              borderRadius: "20px",
+            }}
           />
           <p
             style={{
               fontSize: "26px",
               fontFamily: "Georgia",
               width: "100vh",
-              marginTop: "40px",
+              marginTop: "70px",
+              color: "#fff",
             }}>
             Манай боловсролын академи нь сайн дурын ажил хийсэн суралцагч
             болгондоо 50-100%-ийн хөнгөлөлттэй /тэтгэлэгтэй/ суралцах боломжийг
@@ -384,12 +323,126 @@ export const Home = () => {
         </div>
         <div
           style={{
+            display: "flex",
             width: "100%",
-            height: "90vh",
+            height: "auto",
+            paddingBottom: "100px",
+            paddingTop: "20px",
+            flexDirection: "column",
+            alignItems: "center",
+          }}>
+          <p
+            style={{
+              fontSize: "40px",
+              fontFamily: "Georgia",
+              textAlign: "center",
+              marginBottom: "20px",
+              maxWidth: "600px",
+            }}>
+            Манай үүсгэн байгуулагч нар
+            <hr style={{ marginTop: "12px" }} />
+          </p>
+
+          <div
+            style={{
+              display: "flex",
+              flexDirection: "row",
+              paddingTop: "10px",
+            }}>
+            <div
+              style={{
+                display: "flex",
+                flexDirection: "column",
+                justifyContent: "center",
+                alignItems: "center",
+              }}>
+              <img
+                style={{
+                  width: "70%",
+                  borderRadius: "20px",
+                }}
+                src={require("../Images/Shureebagsh2.jpg")}
+              />
+              <p
+                style={{
+                  fontSize: "24px",
+                  width: "37vw",
+                  textAlign: "center",
+                  height: "30vh",
+                  marginTop: "40px",
+                  fontFamily: "Times new roman",
+                }}>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
+                in sem ut tortor consequat ultricies id vel felis. Duis posuere
+                tellus non finibus aliquam. Donec volutpat metus sed mi
+                faucibus, ut ornare ligula tempor. Donec dictum sem vel ex
+                dignissim, placerat euismod massa fringilla. Pellentesque
+                condimentum accumsan odio, vitae dictum quam ullamcorper nec.
+                Maecenas eu interdum dui. Praesent nec imperdiet enim. Nunc a
+                tempor felis. Phasellus ut accumsan augue, eu posuere leo.
+              </p>
+            </div>
+
+            <div
+              style={{
+                display: "flex",
+                flexDirection: "column",
+                justifyContent: "center",
+                alignItems: "center",
+              }}>
+              <img
+                style={{
+                  width: "70%",
+                  borderRadius: "20px",
+                }}
+                src={require("../Images/Shureebagsh2.jpg")}
+              />
+              <p
+                style={{
+                  fontSize: "24px",
+                  width: "37vw",
+                  textAlign: "center",
+                  height: "30vh",
+                  marginTop: "40px",
+                  fontFamily: "Times new roman",
+                }}>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
+                in sem ut tortor consequat ultricies id vel felis. Duis posuere
+                tellus non finibus aliquam. Donec volutpat metus sed mi
+                faucibus, ut ornare ligula tempor. Donec dictum sem vel ex
+                dignissim, placerat euismod massa fringilla. Pellentesque
+                condimentum accumsan odio, vitae dictum quam ullamcorper nec.
+                Maecenas eu interdum dui. Praesent nec imperdiet enim. Nunc a
+                tempor felis. Phasellus ut accumsan augue, eu posuere leo.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div
+          style={{
+            width: "100%",
+            height: "auto",
+            backgroundColor: "#000",
+            height: "100vh",
+            color: "#fff",
+            marginTop : "10px"
+          }}>
+            <p style={{fontSize : "40px" , fontFamily : "Georgia" , textAlign : "center", paddingTop : "30px"}}>LOOK AT US!</p>
+          <div>
+            <p>ajvsdajsdbaksbd</p>
+            
+          </div>
+        </div>
+
+        <div
+          style={{
+            width: "100%",
+            height: "auto",
             display: "flex",
             flexDirection: "row",
             alignItems: "center",
             justifyContent: "center",
+            paddingTop: "70px",
           }}>
           <div
             style={{
@@ -429,6 +482,7 @@ export const Home = () => {
             width: "100%",
             height: "400px",
             flexDirection: "row",
+            paddingBottom: "50px",
           }}>
           <div
             style={{
@@ -451,7 +505,7 @@ export const Home = () => {
               alt=""
               src={require("../Images/YetiLogo.jpg")}
               style={{
-                marginLeft : "50px"
+                marginLeft: "50px",
               }}
             />
           </div>

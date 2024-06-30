@@ -43,15 +43,21 @@ export const News = () => {
           fontSize: "30px",
           fontFamily: "Georgia",
           marginTop: "40px",
-          marginBottom : "30px"
-        }}
-      >
+          marginBottom: "30px",
+        }}>
         Latest News
       </h2>
       <div
-        style={{ display: "flex", flexDirection: "row", alignItems: "center" }}
-      >
-        <div style={{ padding: "20px", width: "50vw", paddingLeft: "40px" }}>
+        style={{ display: "flex", flexDirection: "row", alignItems: "center" }}>
+        <div
+          style={{
+            padding: "20px",
+            width: "45vw",
+            paddingLeft: "40px",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+          }}>
           <Carousel
             showArrows={true}
             infiniteLoop={true}
@@ -74,8 +80,7 @@ export const News = () => {
                     border: "none",
                     background: "none",
                     outline: "none",
-                  }}
-                >
+                  }}>
                   <FaArrowLeft fill="#fff" />
                 </button>
               )
@@ -96,13 +101,11 @@ export const News = () => {
                     border: "none",
                     background: "none",
                     outline: "none",
-                  }}
-                >
+                  }}>
                   <FaArrowRight fill="#fff" />
                 </button>
               )
-            }
-          >
+            }>
             {images.map((image, index) => (
               <div key={index}>
                 <img
@@ -118,8 +121,23 @@ export const News = () => {
             ))}
           </Carousel>
         </div>
-        <p style={{ fontFamily: "Georgia" , marginLeft : "10vw" }}>
-          Bid amjilttaigar duunii temtseen hiisen bile
+        <p
+          style={{
+            fontFamily: "Georgia",
+            width: "40%",
+            justifyContent: "center",
+            alignItems: "center",
+            display: "flex",
+            marginLeft: "50px",
+            fontSize: "23px",
+          }}>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi in sem
+          ut tortor consequat ultricies id vel felis. Duis posuere tellus non
+          finibus aliquam. Donec volutpat metus sed mi faucibus, ut ornare
+          ligula tempor. Donec dictum sem vel ex dignissim, placerat euismod
+          massa fringilla. Pellentesque condimentum accumsan odio, vitae dictum
+          quam ullamcorper nec. Maecenas eu interdum dui. Praesent nec imperdiet
+          enim. Nunc a tempor felis. Phasellus ut accumsan augue, eu posuere leo
         </p>
       </div>
       <div
@@ -127,8 +145,7 @@ export const News = () => {
           display: "flex",
           flexDirection: "row-reverse",
           alignItems: "center",
-        }}
-      >
+        }}>
         <div style={{ padding: "20px", width: "40vw", paddingRight: "5vw" }}>
           <Carousel
             showArrows={true}
@@ -152,8 +169,7 @@ export const News = () => {
                     border: "none",
                     background: "none",
                     outline: "none",
-                  }}
-                >
+                  }}>
                   <FaArrowLeft fill="#000" />
                 </button>
               )
@@ -174,13 +190,11 @@ export const News = () => {
                     border: "none",
                     background: "none",
                     outline: "none",
-                  }}
-                >
+                  }}>
                   <FaArrowRight fill="#000" />
                 </button>
               )
-            }
-          >
+            }>
             {images2.map((image, index) => (
               <div key={index}>
                 <img
@@ -196,8 +210,14 @@ export const News = () => {
             ))}
           </Carousel>
         </div>
-        <p style={{ marginRight: "10vw", fontFamily: "Georgia" }}>
-          Bid amjilttaigar duunii temtseen hiisen bile
+        <p style={{  fontFamily: "Georgia" , width : "40%" , fontSize : "23px" , marginRight : "70px"}}>
+        Lorem2 ipsum dolor sit amet, consectetur adipiscing elit. Morbi in sem
+          ut tortor consequat ultricies id vel felis. Duis posuere tellus non
+          finibus aliquam. Donec volutpat metus sed mi faucibus, ut ornare
+          ligula tempor. Donec dictum sem vel ex dignissim, placerat euismod
+          massa fringilla. Pellentesque condimentum accumsan odio, vitae dictum
+          quam ullamcorper nec. Maecenas eu interdum dui. Praesent nec imperdiet
+          enim. Nunc a tempor felis. Phasellus ut accumsan augue, eu posuere leo
         </p>
       </div>
       <div
@@ -206,8 +226,7 @@ export const News = () => {
           flexDirection: "row",
           paddingBottom: "10vh",
           alignItems: "center",
-        }}
-      >
+        }}>
         <img
           src={require("../Images/zaisan.jpg")}
           alt="zaisan"
@@ -218,8 +237,14 @@ export const News = () => {
             marginLeft: "10vw",
           }}
         />
-        <p style={{ paddingLeft: "10vw", fontFamily: "Georgia" }}>
-          Zaisan togloit bud 2000 teden ond tsvrlsn
+        <p style={{ paddingLeft: "70px", fontFamily: "Georgia" , fontSize : "23px" , width : "40%"}}>
+        Lorem3 ipsum dolor sit amet, consectetur adipiscing elit. Morbi in sem
+          ut tortor consequat ultricies id vel felis. Duis posuere tellus non
+          finibus aliquam. Donec volutpat metus sed mi faucibus, ut ornare
+          ligula tempor. Donec dictum sem vel ex dignissim, placerat euismod
+          massa fringilla. Pellentesque condimentum accumsan odio, vitae dictum
+          quam ullamcorper nec. Maecenas eu interdum dui. Praesent nec imperdiet
+          enim. Nunc a tempor felis. Phasellus ut accumsan augue, eu posuere leo
         </p>
       </div>
       <Footer />

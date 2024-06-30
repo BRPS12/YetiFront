@@ -3,8 +3,9 @@ import { Link } from "react-router-dom";
 import "./Header.css";
 import YetiLogo from "../Images/YetiLogo.jpg";
 import { Button } from "@mui/material";
+import KeyboardDoubleArrowRightIcon from '@mui/icons-material/KeyboardDoubleArrowRight';
 import { instance } from "../App";
-export const Header = ({ backgroundImage, title, isMounted }) => {
+export const Header = ({ backgroundImage, title, isMounted, buttonText }) => {
   const userId = window.localStorage.getItem("user_id");
   console.log(userId);
   const [menuVisible, setMenuVisible] = useState(false);
@@ -77,11 +78,7 @@ export const Header = ({ backgroundImage, title, isMounted }) => {
           </Link>
           <div
             className="custom-menu"
-            style={{
-              display: "flex",
-              flexDirection: "row",
-              marginLeft: "40px",
-            }}>
+>
             <Link className="custom-menu-button" to="/">
               Home
             </Link>
@@ -101,13 +98,15 @@ export const Header = ({ backgroundImage, title, isMounted }) => {
                   className={`dropdown-content ${menuVisible ? "show" : ""}`}>
                   <div className="menu">
                     <Link className="custom-second-menu-button" to="/course/1">
-                      <p style={{marginBottom : "15px"}}>Mentorship program</p>
+                      <p style={{ marginBottom: "15px" }}>Mentorship program</p>
                     </Link>
                     <Link className="custom-second-menu-button" to="/course/2">
-                    <p style={{marginBottom : "15px"}}>Study Abroad Program</p>
+                      <p style={{ marginBottom: "15px" }}>
+                        Study Abroad Program
+                      </p>
                     </Link>
                     <Link className="custom-second-menu-button" to="/course/3">
-                    <p style={{marginBottom : "15px"}}>Ерөнхий англи хэл</p>
+                      <p style={{ marginBottom: "15px" }}>Ерөнхий англи хэл</p>
                     </Link>
                   </div>
                 </div>
@@ -126,25 +125,25 @@ export const Header = ({ backgroundImage, title, isMounted }) => {
         </div>
 
         <div
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-            width: "100%",
-            fontSize: "50px",
-            color: "#fff",
-            fontFamily: "Georgia, serif",
-            textAlign: "center",
-            marginTop: 0,
-            height: "100%",
-            marginBottom: "10%",
-          }}>
+          className="inner-div">
           <div
             className={`header imported-blur-background ${
               isMounted ? "scroll-animation" : ""
-            }`}>
+            }`}
+            >
             <h1>{title}</h1>
+            <div style={{display : "flex" , alignItems : "center" , justifyContent : "center"}}>
+            {buttonText ? (
+            <Link className="buttonText" style={{textDecoration : "none"}} to="/register">
+              <p>{buttonText}</p>
+              <KeyboardDoubleArrowRightIcon/>
+              </Link>
+          ) : (
+            <></>
+          )}
           </div>
+          </div>
+          
         </div>
         <div
           style={{
@@ -172,9 +171,10 @@ export const Header = ({ backgroundImage, title, isMounted }) => {
                   marginTop: "5px",
                 }}>
                 <img
-                  src={user.profilePicture}
+                  src={user.profile}
                   alt="Profile Picture"
-                  style={{ width: "70px", height: "70px", borderRadius: "50%" }}
+                  className="profile-picture"
+                  style={{ width: "60px", height: "60px", borderRadius: "50%" }}
                 />
                 <p
                   style={{

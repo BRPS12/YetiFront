@@ -21,9 +21,9 @@ const Profile = () => {
   const [editing, setEditing] = useState(false);
   const [name, setName] = useState("");
   const [password, setPassword] = useState("");
-  const [email, setEmail] = useState("");
   const [age, setAge] = useState("");
   const [loading, setLoading] = useState(false);
+  const [profileImage, setProfileImage] = useState('');
   const getUser = async () => {
     const response = await instance.get(`/users/${user_id}`);
     setUser(response.data.data);
@@ -52,22 +52,58 @@ const Profile = () => {
   useEffect(() => {
     getUser();
   }, [user_id]);
-
+  useEffect(() => {
+    const getImage = async () => {
+      try {
+        // Simulating image data fetch or processing
+        const imageChunks = [
+          Buffer.from([0, 1, 2]), // Replace with your actual image data
+          Buffer.from([100, 101, 102]), // Replace with your actual image data
+        ];
+  
+        // Concatenate buffers into a single buffer
+        const concatenatedBuffer = Buffer.concat(imageChunks);
+  
+        // Convert buffer to base64
+        const base64Image = `data:image/png;base64,${concatenatedBuffer.toString('base64')}`;
+  
+        // Update state with base64 image
+        setProfileImage(base64Image);
+      } catch (error) {
+        console.error('Error processing image:', error);
+      }
+    };
+  
+    // Call the getImage function
+    getImage();
+  }, []);
+  
   return (
     <div>
       <header
         style={{ display: "flex", flexDirection: "row", alignItems: "center" }}>
-        <img
-          style={{
-            width: "75px",
-            borderRadius: "20px",
-            marginRight: "10px",
-            marginLeft: "20px",
-            marginTop: "5px",
-          }}
-          src={require("../../Images/YetiLogo.jpg")}
-          alt=""
-        />
+        <div
+              style={{
+                display: "flex",
+                alignItems: "center",
+                marginLeft : "20px",
+                marginTop : "5px",
+                marginBottom : "5px"
+              }}>
+              <img
+                style={{
+                  width: "70px",
+                  borderRadius: "20px",
+                  marginRight: "10px",
+                }}
+                src={require("../../Images/YetiLogo.jpg")}
+                alt="Yeti Logo"
+              />
+              <div style={{ color: "#000", fontFamily: "Georgia, serif" }}>
+                <div style={{ fontSize: "20px" }}>Yeti Educational</div>
+                <div style={{ fontSize: "20px" }}>Academy</div>
+              </div>
+            </div>
         <div style={{ marginLeft: "40px" }}>
           <Link to="/" className="link-button">
             Home
@@ -149,9 +185,9 @@ const Profile = () => {
             }}>
             <img
               src={user.profile}
-              style={{ width: "120px", height: "120px", borderRadius: "50%" }}
+              style={{ width: "135px", height: "135px", borderRadius: "50%" }}
             />
-            <p style={{ fontFamily: "Georgia", marginTop: "10px" }}>
+            <p style={{ fontFamily: "Georgia", marginTop: "10px" , fontSize  : "20px"}}>
               {user.name}
             </p>
             <button
@@ -210,7 +246,7 @@ const Profile = () => {
             boxShadow: 24,
             p: 4,
             borderRadius: "20px",
-            height: 420,
+            height: 410,
           }}>
           <div style={{ display: "flex", flexDirection: "row", marginTop: "15px" }}>
             <Typography
@@ -270,7 +306,7 @@ const Profile = () => {
             onClick={updateUser}
             color="primary"
             style={{ marginTop: "25px", marginLeft: "auto" }}
-            disabled={loading} // Disable the button while the API call is in progress
+            disabled={loading} 
           >
             {loading? "Saving..." : "Save Changes"}
           </Button>
