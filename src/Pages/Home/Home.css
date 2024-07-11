@@ -43,7 +43,7 @@
 }
 .sectionTwo {
   width: 100%;
-  height: 650px;
+  height: 100vh;
   background: linear-gradient(45deg, #fff, #ffcece);
   border-radius: 10px;
   display: flex;
@@ -54,13 +54,13 @@
 .sectionTwoTitle {
   font-family: Georgia, serif;
   font-size: 50px;
-  margin-top: 50px;
+  margin-top: 10vh;
 }
 .sectionTwoFirstContainer {
   flex-direction: row;
   width: 100%;
   display: flex;
-  font-size: 30px;
+  font-size: 2vw;
   margin-bottom: auto;
   align-items: center;
   justify-content: center;
@@ -75,28 +75,18 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin-left: 50px;
+  margin-left: 5vw;
 }
 .seciontTwoLittleTitle {
   font-weight: 500;
   font-family: Georgia, serif;
 }
-.sectionTwoFirstSection {
-  width: 60px;
-  height: 30px;
-  border-width: 1px;
-  border-radius: 20px;
-  border-color: black;
-  border-style: solid;
-  text-align: center;
-  font-size: 30px;
-  margin-left: 20px;
-}
 .outer-container {
-  width: 300px;
+  width: 21vw;
   font-family: Georgia, serif;
   text-align: center;
   margin-top: 10px;
+  margin-left: 4vw;
 }
 
 .bold-text {
@@ -122,19 +112,18 @@
 }
 
 .sectonTwobadge {
-  width: 60px;
+  width: 3.5vw;
   height: auto;
   border-width: 1px;
   border-radius: 20px;
   border-color: black;
   border-style: solid;
   text-align: center;
-  font-size: 30px;
+  font-size: 2vw;
   margin-left: 20px;
-  
 }
 .sarBolgon {
-  width: 400px;
+  width: 29vw;
   font-family: Georgia, serif;
   text-align: center;
   margin-top: 10px;
@@ -146,7 +135,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-left: 50px;
 }
 .tsogtsBaidalInnerCont {
   display: flex;
@@ -159,23 +147,23 @@
 }
 
 .mentorShip {
-  width: 400px;
+  width: 30vw;
   font-family: Georgia, serif;
   text-align: center;
   margin-top: 10px;
 }
 .mentorShipText {
-  font-size: 30px;
+  font-size: 2.1vw;
 }
 .shalgaltinTovHuvaahCont {
   display: flex;
   flex-direction: row;
-  margin-top: 70px;
+  margin-top: 7vh;
 }
 .shalgaltinTovInnerCont {
   display: flex;
   flex-direction: column;
-  margin-left: 50px;
+  margin-left: 4vw;
 }
 .shalgaltinTovInnerInnerCont {
   display: flex;
@@ -199,7 +187,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-left: 100px;
+  margin-left: 6vw;
 }
 .pocketContRow {
   display: flex;
@@ -221,7 +209,7 @@
   display: flex;
   width: 100%;
   height: auto;
-  padding-bottom: 100px;
+  padding-bottom: 10vh;
   padding-top: 20px;
   flex-direction: column;
   align-items: center;
@@ -269,24 +257,24 @@
   padding-top: 70px;
 }
 .sectionThreeInnerCont {
-  width: 23vw;
+  width: 21vw;
   height: 80vh;
   background-color: #000;
-  border-radius: 40px;
-  margin-left: 40px;
+  border-radius: 2vw;
+  margin-left: 3vw;
 }
 .sectionThreeInnerContText {
   color: #fff;
-  padding: 20px;
+  padding: 2vw;
   text-align: center;
-  font-size: 20px;
+  font-size: 1.5vw;
 }
 .sectionFourCont {
   display: flex;
   width: 100%;
   height: 400px;
   flex-direction: row;
-  padding-bottom: 50px;
+  padding-bottom: 2vw;
   margin-top: 2vw;
 }
 .sectionFourContText {
@@ -303,4 +291,6 @@
 }
 .sectionFourContImage {
   margin-left: 50px;
+  width: 23vw;
+  height: auto;
 }
