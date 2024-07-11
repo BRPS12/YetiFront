@@ -20,56 +20,48 @@ export const Header = ({
   const [user, setUser] = useState({});
   const [isLoading, setIsLoading] = useState(true);
 
-  // Fetch user data
   const getUser = async () => {
     try {
       const response = await instance.get(`/users/${userId}`);
       setUser(response.data.data);
-      setIsLoading(false); // Set loading to false when data is fetched
+      setIsLoading(false);
     } catch (error) {
       console.log(error);
       setIsLoading(false);
     }
   };
 
-  // Scroll to top on component mount
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
-  // Fetch user data and toggle menu visibility on location change
   useEffect(() => {
     setMenuVisible(false);
     getUser();
   }, [location]);
 
-  // Function to handle form submission
   const form = () => {
     window.open("https://forms.gle/3sA2YV6zXUcdZFuk7");
   };
-
-  // Toggle menu visibility
   const toggleMenu = () => {
     setMenuVisible(!menuVisible);
   };
-
-  // Render loading spinner while data is loading
-  if (isLoading) {
-    return (
-      <div
-        style={{
-          width: "100%",
-          height: "100vh",
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-        }}>
-        <CircularProgress
-          style={{ position: "absolute", top: "50%", left: "50%" }}
-        />
-      </div>
-    );
-  }
+  // if (isLoading) {
+  //   return (
+  //     <div
+  //       style={{
+  //         width: "100%",
+  //         height: "100vh",
+  //         display: "flex",
+  //         justifyContent: "center",
+  //         alignItems: "center",
+  //       }}>
+  //       <CircularProgress
+  //         style={{ position: "absolute", top: "50%", left: "50%" }}
+  //       />
+  //     </div>
+  //   );
+  // }
 
   // Render header with content once loading is complete
   return (
