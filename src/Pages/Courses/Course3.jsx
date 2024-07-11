@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Header } from "../../components/Header";
-import courseImage from "../../Images/Students.png";
-import ArrowSVG from "../../Images/arrow";
+import courseImage from "../../Images/Computer.jpg";
 import { Link } from "react-router-dom";
 import { Footer } from "../../components/Footer";
 
@@ -18,12 +17,14 @@ export const Course3 = () => {
         backgroundImage={courseImage}
         title="Ерөнхий англи хэл"
         isMounted={isMounted}
+        repeat="no-repeat"
+        bgSize="cover"
       />
       <div
         style={{
           padding: "20px",
           background: "linear-gradient(300deg, #0061BD, #40B1FF)",
-          paddingBottom : "100px"
+          paddingBottom: "100px",
         }}>
         <div style={{ marginBottom: "20px", width: "90vw" }}>
           <p
@@ -119,7 +120,7 @@ export const Course3 = () => {
                 marginLeft: "20px",
               }}>
               {" "}
-              <p >4. Цахимаар хичээлд суух </p>
+              <p>4. Цахимаар хичээлд суух </p>
               <p>5. Давтлагад суух</p> <p>6. Спорт зааланд тоглох </p>
               <p>
                 7. 11-р ангиасаа Study Abroad хөтөлбөрт шууд хамрагдах гэсэн

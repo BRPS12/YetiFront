@@ -1,6 +1,6 @@
 import { Footer } from "../components/Footer";
 import { Header } from "../components/Header";
-import PersonImage from "../Images/Studying.jpg";
+import PersonImage from "../Images/ContactUs.jpg";
 import { useState, useEffect } from "react";
 import { SocialIcon } from "react-social-icons";
 
@@ -17,6 +17,8 @@ export const ContactUs = () => {
         backgroundImage={PersonImage}
         title="Contact Us"
         isMounted={isMounted}
+        repeat="no-repeat"
+        bgSize="cover"
       />
       <div
         style={{
@@ -64,7 +66,7 @@ export const ContactUs = () => {
           <p style={{fontSize : "35px" , textAlign : "center" , fontFamily : "Georgia"}}>Youth Educational Training Academy</p>
           <img
             src={require("../Images/YetiGazar.jpg")}
-            style={{ width: "350px", height: "350px" , borderRadius : "20px" }}
+            style={{ width: "26vw", height: "auto" , borderRadius : "20px" , marginTop : "2vh" }}
           />
         </div>
       </div>

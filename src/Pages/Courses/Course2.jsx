@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Header } from "../../components/Header";
 import courseImage from "../../Images/Students.png";
-import ArrowSVG from "../../Images/arrow";
-import { Link } from "react-router-dom";
 import { Footer } from "../../components/Footer";
 
 export const Course2 = () => {
@@ -18,14 +16,15 @@ export const Course2 = () => {
         backgroundImage={courseImage}
         title="Study Abroad Program"
         isMounted={isMounted}
+        repeat="no-repeat"
+        bgSize="cover"
       />
       <div
         style={{
           padding: "20px",
           background: "linear-gradient(135deg, #FFFF01, #feb47b)",
-          paddingBottom : "100px"
-        }}
-      >
+          paddingBottom: "100px",
+        }}>
         <div style={{ marginBottom: "20px", width: "90vw" }}>
           <p
             style={{
@@ -33,8 +32,7 @@ export const Course2 = () => {
               color: "#000",
               fontFamily: "Georgia",
               marginLeft: "40px",
-            }}
-          >
+            }}>
             IELTS, TOEFL IBT & ITP, SAT, Duolingo бэлдэх+тэтгэлгийн зөвлөгөө,
             чиглүүлэг
           </p>
@@ -53,8 +51,7 @@ export const Course2 = () => {
               background: "linear-gradient(#FFE1F2 , #fff)",
               boxShadow: "1px 4px 6px #555",
               marginRight: "30px",
-            }}
-          >
+            }}>
             <p
               style={{
                 fontSize: "24px",
@@ -62,8 +59,7 @@ export const Course2 = () => {
                 padding: "30px",
                 marginLeft: "20px",
                 marginTop: "50px",
-              }}
-            >
+              }}>
               <p style={{ marginTop: "-30px" }}>
                 Хөтөлбөр нийт 2 жил үргэлжилнэ.
               </p>
@@ -87,10 +83,7 @@ export const Course2 = () => {
               <p>
                 Хөтөлбөрийн төлбөрт TOEFL ITP эсвэл Duolingo шалгалтын төлбөр
                 багтсан болно.
-                <p>
-                  {" "}
-                  /TOEFL ITP болон Duolingo шалгалтаас аль нэгийг сонгоно/
-                </p>
+                <p> /TOEFL ITP болон Duolingo шалгалтаас аль нэгийг сонгоно/</p>
               </p>
             </p>
           </div>
@@ -100,8 +93,7 @@ export const Course2 = () => {
             flexDirection: "row",
             display: "flex",
             alignItems: "center",
-          }}
-        >
+          }}>
           <div
             style={{
               marginBottom: "20px",
@@ -114,8 +106,7 @@ export const Course2 = () => {
               boxShadow: "1px 4px 6px #333",
               background: "linear-gradient(#FFE1F2 , #fff)",
               marginTop: "20px",
-            }}
-          >
+            }}>
             <p
               style={{
                 fontSize: "22px",
@@ -123,8 +114,7 @@ export const Course2 = () => {
                 color: "#000",
                 padding: "20px",
                 marginLeft: "20px",
-              }}
-            >
+              }}>
               <p>📈 Визний болон тэтгэлгийн ярилцлагын зөвлөгөө </p>
               <p>📈 Стандартад нийцсэн тодорхойлох захиа бичих зөвлөгөө</p>
               <p>📈 CV бичих зөвлөгөө</p>
@@ -144,8 +134,7 @@ export const Course2 = () => {
               boxShadow: "1px 4px 6px #333",
               background: "linear-gradient(#FFE1F2 , #fff)",
               marginTop: "20px",
-            }}
-          >
+            }}>
             <p
               style={{
                 fontSize: "22px",
@@ -153,10 +142,15 @@ export const Course2 = () => {
                 color: "#000",
                 padding: "20px",
                 marginLeft: "20px",
-              }}
-            >
-              <p>💡 7 хоногт 3 удаа Англи хэлний олон улсын шалгалтанд бэлдэх сургалт /IELTS,TOEFL ITP, TOEFL IBT, SAT, DUOLINGO/ </p>
-              <p>💡 Хөтөлбөрийн хүрээнд  7 хоног бүр IELTS&TOEFL жишиг шалгалт авна</p>
+              }}>
+              <p>
+                💡 7 хоногт 3 удаа Англи хэлний олон улсын шалгалтанд бэлдэх
+                сургалт /IELTS,TOEFL ITP, TOEFL IBT, SAT, DUOLINGO/{" "}
+              </p>
+              <p>
+                💡 Хөтөлбөрийн хүрээнд 7 хоног бүр IELTS&TOEFL жишиг шалгалт
+                авна
+              </p>
               <p>💡 Сайн дурын үйл ажиллагаанд оролцох боломж</p>
               <p>💡 Их сургууль, тэтгэлгийн эсээнүүд бичих зөвлөгөө</p>
               <p>💡 Баталгаат орчуулга</p>

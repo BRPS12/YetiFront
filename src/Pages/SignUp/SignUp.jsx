@@ -10,6 +10,7 @@ export const SignUp = () => {
   const [password, setPassword] = useState("");
   const [email, setEmail] = useState("");
   const [age, setAge] = useState("");
+  const [code , setCode] = useState(0)
   const images = [
     "https://i.pinimg.com/736x/dc/6c/b0/dc6cb0521d182f959da46aaee82e742f.jpg",
     "https://i.pinimg.com/236x/3f/94/70/3f9470b34a8e3f526dbdb022f9f19cf7.jpg",
@@ -30,7 +31,7 @@ export const SignUp = () => {
         images[Math.floor(Math.random() * images.length)]
       );
       formData.append("role", "normal");
-
+      
       const res = await instance.post("/users/signup", formData);
 
       console.log(res);
@@ -79,7 +80,7 @@ export const SignUp = () => {
               alt=""
               style={{ width: "200px", height: "auto", borderRadius: "30px" }}
             />
-            <p className="boginooP" style={{ marginTop: "30px" }}>
+            <p className="boginooP" style={{ marginTop: "20px"}}>
               Бүртгүүлэх
             </p>
             <Link
@@ -153,6 +154,7 @@ export const SignUp = () => {
                 onChange={(e) => setAge(e.target.value)}
               />
             </div>
+            
             {/* <div className="boxThree" style={{ marginTop: "20px" }}>
               <Input
                 type="file"

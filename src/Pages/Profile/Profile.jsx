@@ -166,6 +166,15 @@ const Profile = () => {
               }}>
               Age : {user.age}
             </p>
+            <p
+              style={{
+                fontSize: "20px",
+                marginLeft: "25%",
+                marginTop: "15px",
+                fontFamily: "Georgia",
+              }}>
+              Role : {user.role}
+            </p>
             <hr style={{ width: "50%", marginLeft: "15%", marginTop: "2%" }} />
           </div>
         </div>

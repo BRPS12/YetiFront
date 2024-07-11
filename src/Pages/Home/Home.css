@@ -1,0 +1,306 @@
+.main{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.mainSon{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.sectionOne {
+  display: flex;
+  width: 100%;
+  /* height: max-content; */
+  padding-bottom: 100px;
+  padding-top: 100px;
+  background-color: #000;
+  align-items: center;
+}
+.sectionOneImage {
+  border-radius: 20px;
+  width: 50%;
+  height: auto;
+}
+.sectionOneImageDiv {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sectionOneText {
+  width: 65%;
+  height: 100%;
+  font-size: 1.5vw;
+  font-family: Georgia;
+  color: #fff;
+}
+.sectionTwo {
+  width: 100%;
+  height: 650px;
+  background: linear-gradient(45deg, #fff, #ffcece);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.sectionTwoTitle {
+  font-family: Georgia, serif;
+  font-size: 50px;
+  margin-top: 50px;
+}
+.sectionTwoFirstContainer {
+  flex-direction: row;
+  width: 100%;
+  display: flex;
+  font-size: 30px;
+  margin-bottom: auto;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.sectionTwoItem {
+  display: flex;
+  flex-direction: row;
+  margin-top: 60px;
+}
+.sectionTwoItem2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 50px;
+}
+.seciontTwoLittleTitle {
+  font-weight: 500;
+  font-family: Georgia, serif;
+}
+.sectionTwoFirstSection {
+  width: 60px;
+  height: 30px;
+  border-width: 1px;
+  border-radius: 20px;
+  border-color: black;
+  border-style: solid;
+  text-align: center;
+  font-size: 30px;
+  margin-left: 20px;
+}
+.outer-container {
+  width: 300px;
+  font-family: Georgia, serif;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.bold-text {
+  font-weight: bold;
+}
+
+.sectionTwoLittleContainer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-left: 50px;
+}
+
+.sectionTwoinner-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.sectionTwotitle {
+  font-weight: 500;
+  font-family: Georgia, serif;
+}
+
+.sectonTwobadge {
+  width: 60px;
+  height: auto;
+  border-width: 1px;
+  border-radius: 20px;
+  border-color: black;
+  border-style: solid;
+  text-align: center;
+  font-size: 30px;
+  margin-left: 20px;
+  
+}
+.sarBolgon {
+  width: 400px;
+  font-family: Georgia, serif;
+  text-align: center;
+  margin-top: 10px;
+}
+.sarBolgon p.bold-text {
+  font-weight: bold;
+}
+.tsogtsBaidalCont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 50px;
+}
+.tsogtsBaidalInnerCont {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.tsogtsBaidalInnerConth2 {
+  font-weight: 500;
+  font-family: Georgia, serif;
+}
+
+.mentorShip {
+  width: 400px;
+  font-family: Georgia, serif;
+  text-align: center;
+  margin-top: 10px;
+}
+.mentorShipText {
+  font-size: 30px;
+}
+.shalgaltinTovHuvaahCont {
+  display: flex;
+  flex-direction: row;
+  margin-top: 70px;
+}
+.shalgaltinTovInnerCont {
+  display: flex;
+  flex-direction: column;
+  margin-left: 50px;
+}
+.shalgaltinTovInnerInnerCont {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.shalgaltinTovTitle {
+  font-weight: 500;
+  font-family: Georgia, serif;
+  text-align: center;
+}
+
+.dassanGazraa{
+  text-align: center;
+  margin-top: 10px;
+}
+.TOEFL {
+  font-weight: bold;
+}
+.pocketCont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 100px;
+}
+.pocketContRow {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.huvaajTuluh {
+  font-weight: 500;
+  font-family: Georgia, serif;
+  right: 10%;
+  text-align: center;
+}
+
+.huvaajTuluhTextAlign {
+  text-align: center;
+  margin-top: 10px;
+}
+.uusgenBaigulagchCont {
+  display: flex;
+  width: 100%;
+  height: auto;
+  padding-bottom: 100px;
+  padding-top: 20px;
+  flex-direction: column;
+  align-items: center;
+}
+.uusgenBaigulagchInnerCont {
+  font-size: 40px;
+  font-family: Georgia, serif;
+  text-align: center;
+  margin-bottom: 20px;
+  max-width: 600px;
+}
+.hrUusgen {
+  margin-top: 12px;
+}
+.uusgenBaigulagchRow {
+  display: flex;
+  flex-direction: row;
+  padding-top: 10px;
+}
+.uusgenBaigulagchCol {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.uusgenBaigulagchColImage {
+  width: 65%;
+  border-radius: 20px;
+}
+.uusgenBaigulagchColParagraph {
+  font-size: 23px;
+  width: 37vw;
+  text-align: center;
+  height: 30vh;
+  margin-top: 40px;
+  font-family: "Times new roman", Times, serif;
+}
+.sectionThreeCont {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding-top: 70px;
+}
+.sectionThreeInnerCont {
+  width: 23vw;
+  height: 80vh;
+  background-color: #000;
+  border-radius: 40px;
+  margin-left: 40px;
+}
+.sectionThreeInnerContText {
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  font-size: 20px;
+}
+.sectionFourCont {
+  display: flex;
+  width: 100%;
+  height: 400px;
+  flex-direction: row;
+  padding-bottom: 50px;
+  margin-top: 2vw;
+}
+.sectionFourContText {
+  text-align: center;
+  width: 80%;
+  margin-left: 10vw;
+  display: flex;
+  flex-direction: row;
+}
+.sectionFourContParagraph {
+  font-weight: 500;
+  font-family: Georgia, serif;
+  margin-top: 10%;
+}
+.sectionFourContImage {
+  margin-left: 50px;
+}
