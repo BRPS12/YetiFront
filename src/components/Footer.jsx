@@ -7,13 +7,13 @@ export const Footer = () => {
     <footer className="footer-container">
       <div className="footer-content">
         <div style={{ fontFamily: "Georgia , sans-serif" }}>
-          <p style={{ fontSize: "25px" , marginTop : "10px" }}>Youth Educational Training Academy</p>
-          <p style={{ marginTop : "10px"}}>Багшийн дээд UBH төв, 15 давхар 1513 тоот </p>
-          <p style={{ marginTop : "10px"}}>Mongolia, Ulaanbaatar</p>
-          <p style={{ marginTop : "10px"}} className="contact-info">
+          <p style={{ fontSize: "25px" , marginTop : "2vh" }}>Youth Educational Training Academy</p>
+          <p style={{ marginTop : "2vh"}}>Багшийн дээд UBH төв, 15 давхар 1513 тоот </p>
+          <p style={{ marginTop : "2vh"}}>Mongolia, Ulaanbaatar</p>
+          <p style={{ marginTop : "2vh"}} className="contact-info">
             Phone: <span>+976 9191 3719</span>
           </p>
-          <p style={{ marginTop : "10px"}} className="contact-info">
+          <p style={{ marginTop : "2vh" , marginBottom : "2vh"}} className="contact-info">
             Email: <span>yetischool.e@gmail.com</span>
           </p>
         </div>

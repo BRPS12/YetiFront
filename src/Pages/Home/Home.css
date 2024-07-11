@@ -306,7 +306,8 @@
   font-size: 2.5vw;
 }
 .sectionFourContImage {
-  margin-left: 50px;
+  margin-left: 3vw;
   width: 23vw;
-  height: auto;
+  height: 50vh;
+  margin-right: 3vw;
 }
