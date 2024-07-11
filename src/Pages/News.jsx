@@ -111,9 +111,6 @@ export const News = () => {
 
   const images = [Image1, Image2, Image3, Image4, Image5, Image6, Image7];
   const images2 = [Image8, Image9, Image10, Image11, Image12, Image13, Image14];
-  if(isLoading) {
-    return <div style={{width : "100%" , height : "100%" ,backgroundColor : "#fff"}}>s</div>
-  }
   return (
     <div>
       <Header

@@ -123,10 +123,10 @@ export const Home = () => {
                 tempor felis. Phasellus ut accumsan augue, eu posuere leo.
               </p>
             </div>
-            <div className="uusgenBaigulagchCol">
+            <div className="uusgenBaigulagchCol2">
               <img
                 className="uusgenBaigulagchColImage"
-                src={require("../../Images/Shureebagsh2.jpg")}
+                src={require("../../Images/sanukaegc.jpg")}
               />
               <p className="uusgenBaigulagchColParagraph">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
@@ -142,7 +142,7 @@ export const Home = () => {
           </div>
         </div>
         <div className="sectionThreeCont">
-          <div className="sectionThreeInnerCont">
+          <div className="sectionThreeInnerCont1">
             <p className="sectionThreeInnerContText">
               Zuger engiiin bagsh shaviin hariiltsaatai bsihbid nar
             </p>
