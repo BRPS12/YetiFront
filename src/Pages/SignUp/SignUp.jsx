@@ -98,7 +98,7 @@ export const SignUp = () => {
               display: "flex",
               flexDirection: "column",
               alignItems: "flex-start",
-              marginBottom : "3vh",
+              marginBottom : "1.6vh",
             }}>
             <div
               className="boxThree">
