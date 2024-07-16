@@ -30,15 +30,11 @@ export const SignUp = () => {
         "profile",
         images[Math.floor(Math.random() * images.length)]
       );
-      formData.append("role", "normal");
-      
+      formData.append("role", "normal"); 
       const res = await instance.post("/users/signup", formData);
-
-      console.log(res);
       toast.success("Амжилттай бүртгэгдлээ");
     } catch (error) {
-      console.error("Error signing up: ", error);
-      toast.error("Бүртгэлтэй имэйл байна");
+      toast.error("Амжилтгүй");
     }
   };
 
