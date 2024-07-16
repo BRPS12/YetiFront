@@ -46,22 +46,22 @@ export const Header = ({
   const toggleMenu = () => {
     setMenuVisible(!menuVisible);
   };
-  if (isLoading) {
-    return (
-      <div
-        style={{
-          width: "100%",
-          height: "100vh",
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-        }}>
-        <CircularProgress
-          style={{ position: "absolute", top: "50%", left: "50%" }}
-        />
-      </div>
-    );
-  }
+  // if (isLoading) {
+  //   return (
+  //     <div
+  //       style={{
+  //         width: "100%",
+  //         height: "100vh",
+  //         display: "flex",
+  //         justifyContent: "center",
+  //         alignItems: "center",
+  //       }}>
+  //       <CircularProgress
+  //         style={{ position: "absolute", top: "50%", left: "50%" }}
+  //       />
+  //     </div>
+  //   );
+  // }
 
   // Render header with content once loading is complete
   return (
