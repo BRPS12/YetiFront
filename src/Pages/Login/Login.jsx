@@ -20,7 +20,7 @@ export const Login = () => {
         window.location.replace("/");
       }
     } catch (error) {
-      toast.error("Failed");
+      toast.error("Амжилтгүй");
     }
   };
   return (
