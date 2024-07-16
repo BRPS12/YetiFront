@@ -102,7 +102,6 @@ export const SignUp = () => {
             }}>
             <div
               className="boxThree"
-              style={{ marginTop: "20px", paddingTop: "30px" }}>
               <label htmlFor="username" className="labels">
                 <p style={{ color: "white" }}>Username</p>
               </label>
