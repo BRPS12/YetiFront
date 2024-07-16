@@ -26,7 +26,7 @@ export const Login = () => {
   return (
       <div className="loginContainer">
           <ToastContainer />
-          <div className="loginBox" style={{marginTop : "20vh"}}>
+          <div className="loginBox" style={{marginTop : "10vh"}}>
             <img src={require("../../Images/YetiLogo.jpg")} alt="" className="logo"/>
             <p className="boginooP">Нэвтрэх</p>
             <div className="boxThree">
@@ -56,7 +56,7 @@ export const Login = () => {
             <div className="boxTwo">
               <div>
                 <input type="checkbox" name="check" className="checkBox" />
-                <label htmlFor="check" className="checkLabel">
+                <label htmlFor="check" className="checkLabel" style={{marginLeft : "2vw"}}>
                   Намайг санаx
                 </label>
               </div>
