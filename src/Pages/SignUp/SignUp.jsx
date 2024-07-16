@@ -69,7 +69,6 @@ export const SignUp = () => {
               alignItems: "center",
               flexDirection: "column",
               marginLeft: "0%",
-              marginBottom: "50px",
             }}>
             <img
               src={require("../../Images/YetiLogo.jpg")}
