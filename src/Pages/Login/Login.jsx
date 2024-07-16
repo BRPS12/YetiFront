@@ -27,7 +27,9 @@ export const Login = () => {
       <div className="loginContainer">
           <ToastContainer />
           <div className="loginBox" style={{marginTop : "10vh"}}>
+            <Link to="/" style={{textDecoration : "none"}}>
             <img src={require("../../Images/YetiLogo.jpg")} alt="" className="logo"/>
+            </Link>
             <p className="boginooP">Нэвтрэх</p>
             <div className="boxThree">
               <label htmlFor="email" className="labels">
