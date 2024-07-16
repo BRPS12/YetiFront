@@ -101,7 +101,7 @@ export const SignUp = () => {
               marginBottom : "7vh",
             }}>
             <div
-              className="boxThree"
+              className="boxThree">
               <label htmlFor="username" className="labels">
                 <p style={{ color: "white" }}>Username</p>
               </label>
