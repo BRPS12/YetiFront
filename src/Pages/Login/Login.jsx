@@ -26,7 +26,7 @@ export const Login = () => {
   return (
       <div className="loginContainer">
           <ToastContainer />
-          <div className="loginBox">
+          <div className="loginBox" style={{marginTop : "20vh"}}>
             <img src={require("../../Images/YetiLogo.jpg")} alt="" className="logo"/>
             <p className="boginooP">Нэвтрэх</p>
             <div className="boxThree">
