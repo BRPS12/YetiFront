@@ -181,7 +181,7 @@ export const Header = ({
               </div>
             </div>
           </div>
-          <div style={{ position: "absolute", right: "0", top: "2vh" }}>
+          <div style={{ position: "absolute", right: "0", top: "1vh" }}>
             {userId ? (
               <div
                 style={{
