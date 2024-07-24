@@ -30,15 +30,11 @@ export const SignUp = () => {
         "profile",
         images[Math.floor(Math.random() * images.length)]
       );
-      formData.append("role", "normal");
-      
+      formData.append("role", "normal"); 
       const res = await instance.post("/users/signup", formData);
-
-      console.log(res);
       toast.success("Амжилттай бүртгэгдлээ");
     } catch (error) {
-      console.error("Error signing up: ", error);
-      toast.error("Бүртгэлтэй имэйл байна");
+      toast.error("Амжилтгүй");
     }
   };
 
@@ -73,7 +69,6 @@ export const SignUp = () => {
               alignItems: "center",
               flexDirection: "column",
               marginLeft: "0%",
-              marginBottom: "50px",
             }}>
             <img
               src={require("../../Images/YetiLogo.jpg")}
@@ -103,10 +98,10 @@ export const SignUp = () => {
               display: "flex",
               flexDirection: "column",
               alignItems: "flex-start",
+              marginBottom : "1.6vh",
             }}>
             <div
-              className="boxThree"
-              style={{ marginTop: "20px", paddingTop: "30px" }}>
+              className="boxThree">
               <label htmlFor="username" className="labels">
                 <p style={{ color: "white" }}>Username</p>
               </label>

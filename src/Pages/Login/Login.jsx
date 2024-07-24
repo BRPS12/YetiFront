@@ -20,14 +20,16 @@ export const Login = () => {
         window.location.replace("/");
       }
     } catch (error) {
-      toast.error("Failed");
+      toast.error("Амжилтгүй");
     }
   };
   return (
       <div className="loginContainer">
           <ToastContainer />
-          <div className="loginBox">
+          <div className="loginBox" style={{marginTop : "10vh"}}>
+            <Link to="/" style={{textDecoration : "none"}}>
             <img src={require("../../Images/YetiLogo.jpg")} alt="" className="logo"/>
+            </Link>
             <p className="boginooP">Нэвтрэх</p>
             <div className="boxThree">
               <label htmlFor="email" className="labels">
@@ -56,7 +58,7 @@ export const Login = () => {
             <div className="boxTwo">
               <div>
                 <input type="checkbox" name="check" className="checkBox" />
-                <label htmlFor="check" className="checkLabel">
+                <label htmlFor="check" className="checkLabel" style={{marginLeft : "0.4vw"}}>
                   Намайг санаx
                 </label>
               </div>
