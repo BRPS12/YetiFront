@@ -23,7 +23,7 @@ export const Course3 = () => {
       <div
         style={{
           padding: "20px",
-          background: "linear-gradient(300deg, #0061BD, #40B1FF)",
+          backgroundColor : "#1FD0FC",
           paddingBottom: "100px",
         }}>
         <div style={{ marginBottom: "20px", width: "90vw" }}>

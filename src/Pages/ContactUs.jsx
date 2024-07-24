@@ -41,7 +41,7 @@ export const ContactUs = () => {
             Бидэнтэй холбоо барих
           </p>
           <p style={{ fontSize: "25px", fontWeight: "lighter" , paddingTop : "30px" }}>
-            Утасны дугаар : <span>7202 3719 , 8605 2719 , 9191 3719</span>
+            Утасны дугаар : <span>7202 3719 , 8605 3719 , 9191 3719</span>
           </p>
           <p style={{ fontSize: "25px", paddingTop: "30px" }}>
             Хаяг : <span>Багшийн дээд UBH төв, 15 давхар 1513 тоот</span>
@@ -63,7 +63,7 @@ export const ContactUs = () => {
           </div>
         </div>
         <div style={{ marginLeft: "10vw", justifyContent : "center" ,alignItems : "center", display : "flex" , flexDirection : "column" , marginTop : "5vh" , marginRight : "50px" }}>
-          <p style={{fontSize : "35px" , textAlign : "center" , fontFamily : "Georgia"}}>Youth Educational Training Academy</p>
+          <p style={{fontSize : "35px" , textAlign : "center" , fontFamily : "Georgia"}}>Youth Educational Training Institute</p>
           <img
             src={require("../Images/YetiGazar.jpg")}
             style={{ width: "26vw", height: "auto" , borderRadius : "20px" , marginTop : "2vh" }}

@@ -277,7 +277,7 @@ export const News = () => {
               <p style={{ fontSize: "27px", color: "#3996FF" }}>{item.title}</p>
               <p style={{ fontSize: "23px" }}>{item.paragraph}</p>
             </div>
-            {item.image && (
+   
               <div>
                 {
                   user.role === "admin" ? (<Button
@@ -312,7 +312,7 @@ export const News = () => {
                   }}
                 />
               </div>
-            )}
+            
           </div>
         ))}
       </div>

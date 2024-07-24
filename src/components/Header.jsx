@@ -153,6 +153,9 @@ export const Header = ({
               About
             </Link>
             <Link className="custom-menu-button" to="/contactus">
+              Benefits
+            </Link>
+            <Link className="custom-menu-button" to="/contactus">
               Contact Us
             </Link>
           </div>
