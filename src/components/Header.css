@@ -177,7 +177,7 @@
   .custom-menu-button {
     margin-right: 0;
     margin-bottom: 10px;
-    font-size: 3vh;
+    font-size: 3vh !important;
   }
   .dropdown-content {
     position: absolute;
@@ -196,18 +196,11 @@
     font-size: 5vh;
     color : #fff
   }
+  .inner-div {
+    margin-bottom: 10vh !important;
+  }
 }
 
-@media only screen and (max-width: 480px) {
-  .custom-menu-button {
-    display: flex;
-    flex-direction: column;
-    font-size: 1.5vh;
-  }
-  .custom-second-menu-button {
-    font-size: 12px;
-  }
-}
 @keyframes scrollAnimation {
   from {
     opacity: 0;
