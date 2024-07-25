@@ -95,7 +95,7 @@ export const Header = ({
             flexDirection: "column",
             alignItems: "center",
             height: "100%",
-            padding: "20px",
+            padding: "3vh",
             boxSizing: "border-box",
           }}>
             <div style={{display : "flex" , flexDirection : "row" , marginRight : "auto"}}>
@@ -109,15 +109,15 @@ export const Header = ({
               <img
                 src={YetiLogo}
                 style={{
-                  width: "5.5vw",
-                  borderRadius: "20px",
+                  width: "10vh",
+                  borderRadius: "2vh",
                   marginRight: "1vw",
                 }}
                 alt="Yeti Logo"
               />
-              <div style={{ color: "#fff", fontFamily: "Georgia, serif" }}>
-                <div style={{ fontSize: "1.5vw" }}>Yeti Educational</div>
-                <div style={{ fontSize: "1.5vw" }}>Academy</div>
+              <div style={{ color: "#fff", fontFamily: "Georgia, serif" , marginLeft : "1vh" }}>
+                <div style={{ fontSize: "3vh" }}>Yeti Educational</div>
+                <div style={{ fontSize: "3vh" }}>Academy</div>
               </div>
             </div>
           </Link>
@@ -165,7 +165,9 @@ export const Header = ({
               className={`header imported-blur-background ${
                 isMounted ? "scroll-animation" : ""
               }`}>
-              <h1 style={{ fontSize: "5vw", color: "#fff" }}>{title}</h1>
+                <div style={{display : "flex" , alignItems : "center" , justifyContent : "center" , textAlign : "center"}}>
+              <h1 className="bigTitle">{title}</h1>
+              </div>
               <div
                 style={{
                   display: "flex",
@@ -184,7 +186,7 @@ export const Header = ({
               </div>
             </div>
           </div>
-          <div style={{ position: "absolute", right: "0", top: "1vh" }}>
+          <div style={{ position: "absolute", right: "1vh", top: "1vh" }}>
             {userId ? (
               <div
                 style={{
@@ -209,14 +211,15 @@ export const Header = ({
                     alt="Profile Picture"
                     className="profile-picture"
                     style={{
-                      width: "5vw",
-                      height: "5vw",
+                      width: "10vh",
+                      height: "10vh",
                       borderRadius: "50%",
+                      marginTop : "2vh"
                     }}
                   />
                   <p
                     style={{
-                      fontSize: "1.5vw",
+                      fontSize: "2vh",
                       fontFamily: "Georgia",
                       marginTop: "3px",
                       color: "#fff",

@@ -11,13 +11,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  width: 90vw;
   font-size: 50px;
   color: #fff;
   font-family: Georgia, serif;
   text-align: center;
   height: 100%;
-  margin-bottom: 7%;
   flex-direction: column;
 }
 @media only screen and (max-width: 960px) {
@@ -137,7 +136,7 @@
   border-radius: 5px;
   transition: background-color 0.3s ease;
   font-family: Georgia, 'Times New Roman', Times, serif;
-  font-size: 19px;
+  font-size: 2.5vh;
   margin-bottom: 10px;
   text-decoration: underline;
   justify-content: center;
@@ -168,22 +167,34 @@
 @media only screen and (max-width: 600px) {
   .custom-menu {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     margin-left: 0;
+    position: absolute;
+    top : 18vh;
+    align-items: center;
+    justify-content: center;
   }
   .custom-menu-button {
     margin-right: 0;
     margin-bottom: 10px;
+    font-size: 2.5vh;
   }
   .dropdown-content {
-    position: relative;
+    position: absolute;
     width: 100%;
+    left: 10vh;
   }
   .menu {
-    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   .custom-second-menu-button {
     padding: 10px 20px;
+  }
+  .bigTitle {
+    font-size: 5vh;
+    color : #fff
   }
 }
 
@@ -191,7 +202,7 @@
   .custom-menu-button {
     display: flex;
     flex-direction: column;
-    font-size: 14px;
+    font-size: 1.5vh;
   }
   .custom-second-menu-button {
     font-size: 12px;
@@ -209,12 +220,12 @@
 }
 .dropdown-content {
   position: absolute;
-  min-width: 10px;
+  min-width: 100px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
   opacity: 0;
   transform: translateY(-10px);
-  width: 14.5vw;
+  width: 14.5vh;
   top : 7.5vw;
   left: 24%;
 }
@@ -248,8 +259,8 @@
   }
 }
 .buttonText {
-  width: 500px;
-  height: 45px;
+  width: 50vh;
+  height: 6vh;
   border-radius: 20px;
   background-color: #FF3737;
   color: #FFFFFF;
@@ -259,7 +270,7 @@
   border: 0;
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
   transition: background-color 0.3s ease-in-out;
-  font-size: 25px;  
+  font-size: 3.5vh;  
   margin-top: 5vh;
   flex-direction: row;
   display: flex;
@@ -270,3 +281,11 @@
 .buttonText:hover {
   background-color: #FF2323;
 }
+
+.bigTitle {
+  width: 80vw;
+  font-size: 5vw;
+  color : #fff;
+  text-align: center;
+}
+
