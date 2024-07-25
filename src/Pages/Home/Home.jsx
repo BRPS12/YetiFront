@@ -66,7 +66,6 @@ export const Home = () => {
               <div className="tsogtsBaidalCont">
                 <div className="tsogtsBaidalInnerCont">
                   <h2 className="tsogtsBaidalInnerConth2">Цогц байдал</h2>
-                  <div className="threbadge">03</div>
                 </div>
 
                 <p className="mentorShip">
@@ -101,7 +100,7 @@ export const Home = () => {
             </div>
           </div>
         </div> 
-       {/* <div className="uusgenBaigulagchCont">
+       <div className="uusgenBaigulagchCont">
           <p className="uusgenBaigulagchInnerCont">
             Манай үүсгэн байгуулагч нар
             <hr className="hrUusgen" />
@@ -140,8 +139,8 @@ export const Home = () => {
               </p>
             </div>
           </div>
-        </div> */}
-        <div className="sectionThreeCont">
+        </div>
+        {/* <div className="sectionThreeCont">
           <div className="sectionThreeInnerCont1">
             <p className="sectionThreeInnerContText">
               Zuger engiiin bagsh shaviin hariiltsaatai bsihbid nar
@@ -157,8 +156,8 @@ export const Home = () => {
               Zuger engiiin bagsh shaviin hariiltsaatai bsihbid nar
             </p>
           </div>
-        </div>
-        <div className="sectionFourCont">
+        </div> */}
+        {/* <div className="sectionFourCont">
           <div className="sectionFourContText">
             <h1 className="sectionFourContParagraph">
               Бидний философи <br />
@@ -172,7 +171,7 @@ export const Home = () => {
               className="sectionFourContImage"
             />
           </div>
-        </div>
+        </div> */}
         <Footer /> 
     </div>
   );
