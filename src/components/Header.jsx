@@ -72,6 +72,8 @@ export const Header = ({
           height: "100vh",
           position: "relative",
           overflow: "hidden",
+          padding : 0,
+          margin : 0
         }}>
         <div
           className="header-background"
@@ -188,7 +190,7 @@ export const Header = ({
               </div>
             </div>
           </div>
-          <div style={{ position: "absolute", right: "1vh", top: "1vh" }}>
+          <div style={{ position: "absolute", right: "0.5vh", top: "0.5vh" }}>
             {userId ? (
               <div
                 style={{
@@ -206,7 +208,6 @@ export const Header = ({
                     flexDirection: "column",
                     justifyContent: "center",
                     alignItems: "center",
-                    marginTop: "5px",
                   }}>
                   <img
                     src={user.profile}
@@ -216,7 +217,7 @@ export const Header = ({
                       width: "9vh",
                       height: "9vh",
                       borderRadius: "50%",
-                      marginTop : "2vh"
+                      marginTop : "1vh"
                     }}
                   />
                   <p

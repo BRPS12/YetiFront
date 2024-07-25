@@ -63,7 +63,7 @@ export const Home = () => {
                   <p>мэйлээр илгээгдэнэ</p>
                 </p>
               </div>
-              {/* <div className="tsogtsBaidalCont">
+              <div className="tsogtsBaidalCont">
                 <div className="tsogtsBaidalInnerCont">
                   <h2 className="tsogtsBaidalInnerConth2">Цогц байдал</h2>
                   <div className="threbadge">03</div>
@@ -73,7 +73,7 @@ export const Home = () => {
                   Англи хэл+ Mentorship=
                   <h2 className="mentorShipText">Нэг дор</h2>
                 </p>
-              </div> */}
+              </div>
             </div>
             <div className="shalgaltinTovHuvaahCont">
               <div className="shalgaltinTovInnerCont">
