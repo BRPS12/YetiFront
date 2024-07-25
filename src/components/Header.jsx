@@ -116,8 +116,8 @@ export const Header = ({
                 alt="Yeti Logo"
               />
               <div style={{ color: "#fff", fontFamily: "Georgia, serif" , marginLeft : "1vh" }}>
-                <div style={{ fontSize: "2.7vh" }}>Yeti Educational</div>
-                <div style={{ fontSize: "2.7vh" }}>Academy</div>
+                <div style={{ fontSize: "3vh" }}>Yeti Educational</div>
+                <div style={{ fontSize: "3vh" }}>Academy</div>
               </div>
             </div>
           </Link>
@@ -221,7 +221,7 @@ export const Header = ({
                   />
                   <p
                     style={{
-                      fontSize: "2vh",
+                      fontSize: "3vh",
                       fontFamily: "Georgia",
                       marginTop: "3px",
                       color: "#fff",

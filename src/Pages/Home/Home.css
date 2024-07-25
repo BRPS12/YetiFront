@@ -63,6 +63,17 @@
   .tsogtsBaidalInnerConth2 {
     font-size: 2.8vh;
   }
+  .threbadge {
+    width: 3.5vw;
+    height: auto;
+    border-width: 1px;
+    border-radius: 20px;
+    border-color: black;
+    border-style: solid;
+    text-align: center;
+    font-size: 1vw;
+    margin-left: 1vh !important;
+  }
 }
 .sectionOne {
   display: flex;
@@ -172,6 +183,7 @@
   font-size: 2vw;
   margin-left: 20px;
 }
+
 .sarBolgon {
   width: 29vw;
   font-family: Georgia, serif;
@@ -194,6 +206,7 @@
 .tsogtsBaidalInnerConth2 {
   font-weight: 500;
   font-family: Georgia, serif;
+ text-align: center;
 }
 
 .mentorShip {
@@ -361,4 +374,15 @@
   width: 23vw;
   height: 50vh;
   margin-right: 3vw;
+}
+.threbadge {
+  width: 3.5vw;
+  height: auto;
+  border-width: 1px;
+  border-radius: 20px;
+  border-color: black;
+  border-style: solid;
+  text-align: center;
+  font-size: 2vw;
+  margin-left: 20px;
 }

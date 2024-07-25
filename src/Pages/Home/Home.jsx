@@ -42,7 +42,7 @@ export const Home = () => {
           </h1>
           <div className="sectionTwoFirstContainer">
             <div className="sectionTwoItem">
-              <div>
+              <div style={{display : "flex" , alignItems : "center" , justifyContent : "center" , flexDirection : "column"}}>
                 <div className="sectionTwoItem2">
                   <h2 className="seciontTwoLittleTitle">Туршлага</h2>
                   <div className="sectonTwobadge">01</div>
@@ -66,7 +66,7 @@ export const Home = () => {
               <div className="tsogtsBaidalCont">
                 <div className="tsogtsBaidalInnerCont">
                   <h2 className="tsogtsBaidalInnerConth2">Цогц байдал</h2>
-                  <div className="sectonTwobadge">03</div>
+                  <div className="threbadge">03</div>
                 </div>
 
                 <p className="mentorShip">
