@@ -46,7 +46,6 @@
   }
   .sectonTwobadge {
     margin-left: 0.5vh !important;
-    margin-top: 1vh !important;
   }
   .sectionTwoLittleContainer {
     margin-left: 4vh !important;
@@ -72,7 +71,7 @@
     border-style: solid;
     text-align: center;
     font-size: 1vw;
-    margin-left: 1vh !important;
+    margin-left: -0.1vh !important;
   }
 }
 .sectionOne {
@@ -202,6 +201,7 @@
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: center;
 }
 .tsogtsBaidalInnerConth2 {
   font-weight: 500;
