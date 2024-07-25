@@ -1,12 +1,9 @@
-/* .mainHeader {
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+header {
   width: 100%;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-} */
+  height: 100vh; /* Ensure header takes full viewport height */
+  position: relative;
+  overflow: hidden; /* Hide overflow content */
+}
 .inner-div {
   display: flex;
   justify-content: center;
