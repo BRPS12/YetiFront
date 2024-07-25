@@ -51,14 +51,6 @@ export const Footer = () => {
           </div>
         </div>
       </div>
-
-      <div className="copyright">
-        <p>&copy; {new Date().getFullYear()} Yeti. All rights reserved.</p>
-      </div>
-
-      <div className="designer-info">
-        <p>Designed by Boock</p>
-      </div>
     </footer>
   );
 };

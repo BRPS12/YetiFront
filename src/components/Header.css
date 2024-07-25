@@ -171,8 +171,11 @@
     grid-template-rows: repeat(2, auto);
     position: absolute;
     top: 18vh;
-    left: 5vh;
-    text-align: center;
+    left: 50%; /* Adjusted to center horizontally */
+    transform: translateX(-50%); /* Center horizontally */
+    text-align: center; /* Align text center within grid items */
+    justify-content: center; /* Center items horizontally within the grid */
+    align-items: center
   }
   .custom-menu-button {
     margin-right: 0;

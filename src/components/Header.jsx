@@ -121,6 +121,7 @@ export const Header = ({
               </div>
             </div>
           </Link>
+          <div style={{display : "flex" , alignItems : "center" , justifyContent : "center" , width : "100%" , height : "auto"}}>
           <div className="custom-menu">
             <Link className="custom-menu-button" to="/">
               Home
@@ -158,6 +159,7 @@ export const Header = ({
             <Link className="custom-menu-button" to="/contactus">
               Contact Us
             </Link>
+          </div>
           </div>
           </div>
           <div className="inner-div">
