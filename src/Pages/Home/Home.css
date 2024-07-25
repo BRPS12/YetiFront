@@ -73,6 +73,9 @@
     font-size: 1vw;
     margin-left: -0.1vh !important;
   }
+  .tsogtsBaidalCont{
+    padding-right: 10px;
+  }
 }
 .sectionOne {
   display: flex;
