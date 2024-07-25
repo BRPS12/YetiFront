@@ -34,7 +34,7 @@
   .sectionOneText {
     width: 80%;
     font-size: 2.8vw !important; 
-    margin-left: 2vw;/* Ensure font-size is applied */
+    margin-left: 2vw !important;
   }
   .sectionTwoItem {
     display: flex;
@@ -52,11 +52,16 @@
     margin-left: 4vh !important;
     margin-right: 3vh !important;
   }
-  .tsogtsBaidalCont {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 33% !important;
+  .seciontTwoLittleTitle {
+    font-weight: 500;
+    font-family: Georgia, serif;
+    font-size: 2.8vh;
+  }
+  .sectionTwotitle {
+    font-size: 2.8vh;
+  }
+  .tsogtsBaidalInnerConth2 {
+    font-size: 2.8vh;
   }
 }
 .sectionOne {
