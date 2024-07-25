@@ -13,7 +13,7 @@ export const Header = ({
   isMounted,
   buttonText,
   repeat,
-  bgSize
+  bgSize,
 }) => {
   const userId = window.localStorage.getItem("user_id");
   const [menuVisible, setMenuVisible] = useState(false);
@@ -46,35 +46,17 @@ export const Header = ({
   const toggleMenu = () => {
     setMenuVisible(!menuVisible);
   };
-  // if (isLoading) {
-  //   return (
-  //     <div
-  //       style={{
-  //         width: "100%",
-  //         height: "100vh",
-  //         display: "flex",
-  //         justifyContent: "center",
-  //         alignItems: "center",
-  //       }}>
-  //       <CircularProgress
-  //         style={{ position: "absolute", top: "50%", left: "50%" }}
-  //       />
-  //     </div>
-  //   );
-  // }
-
-  // Render header with content once loading is complete
   return (
-    <div style={{
-      padding : 0,
-      margin : 0}}>
-      <header
-        style={{
-          width: "100%",
-          height: "100vh",
-          position: "relative",
-          overflow: "hidden",
-        }}>
+    <div
+      style={{
+        padding: 0,
+        margin: 0,
+        width: "100%",
+        height: "100vh",
+        position: "relative",
+        overflow: "hidden",
+      }}>
+      <header>
         <div
           className="header-background"
           style={{
@@ -88,7 +70,7 @@ export const Header = ({
             height: "100%",
             zIndex: -1,
             filter: "blur(0.5px) grayscale(10%) brightness(50%)",
-            backgroundColor: "rgba(0, 0, 0, 0.5)", 
+            backgroundColor: "rgba(0, 0, 0, 0.5)",
           }}
         />
         <div
@@ -100,77 +82,109 @@ export const Header = ({
             padding: "3vh",
             boxSizing: "border-box",
           }}>
-            <div style={{display : "flex" , flexDirection : "row" , marginRight : "auto"}}>
-          <Link to="/" style={{ textDecoration: "none" }}>
+          <div
+            style={{
+              display: "flex",
+              flexDirection: "row",
+              marginRight: "auto",
+            }}>
+            <Link to="/" style={{ textDecoration: "none" }}>
+              <div
+                style={{
+                  display: "flex",
+                  alignItems: "center",
+                  marginBottom: "auto",
+                }}>
+                <img
+                  src={YetiLogo}
+                  className="yetiLogo"
+                  alt="Yeti Logo"
+                />
+                <div
+                  style={{
+                    color: "#fff",
+                    fontFamily: "Georgia, serif",
+                    marginLeft: "1vh",
+                  }}>
+                  <div className="yetiTitle">Yeti Educational</div>
+                  <div className="yetiTitle">Academy</div>
+                </div>
+              </div>
+            </Link>
             <div
               style={{
                 display: "flex",
                 alignItems: "center",
-                marginBottom: "auto",
+                justifyContent: "center",
+                width: "100%",
+                height: "auto",
               }}>
-              <img
-                src={YetiLogo}
-                style={{
-                  width: "9vh",
-                  borderRadius: "2vh",
-                  marginRight: "1vw",
-                }}
-                alt="Yeti Logo"
-              />
-              <div style={{ color: "#fff", fontFamily: "Georgia, serif" , marginLeft : "1vh" }}>
-                <div style={{ fontSize: "3vh" }}>Yeti Educational</div>
-                <div style={{ fontSize: "3vh" }}>Academy</div>
-              </div>
-            </div>
-          </Link>
-          <div style={{display : "flex" , alignItems : "center" , justifyContent : "center" , width : "100%" , height : "auto"}}>
-          <div className="custom-menu">
-            <Link className="custom-menu-button" to="/">
-              Home
-            </Link>
-            <div
-              className="custom-menu-button"
-              style={{ cursor: "pointer" }}
-              onClick={toggleMenu}>
-              Courses
-            </div>
-            {menuVisible && (
-              <div className={`dropdown-content ${menuVisible ? "show" : ""}`}>
-                <div className="menu">
-                  <Link className="custom-second-menu-button" to="/course/1">
-                    <p style={{ marginBottom: "15px" }}>Mentorship program</p>
-                  </Link>
-                  <Link className="custom-second-menu-button" to="/course/2">
-                    <p style={{ marginBottom: "15px" }}>Study Abroad Program</p>
-                  </Link>
-                  <Link className="custom-second-menu-button" to="/course/3">
-                    <p style={{ marginBottom: "15px" }}>Ерөнхий англи хэл</p>
-                  </Link>
+              <div className="custom-menu">
+                <Link className="custom-menu-button" to="/">
+                  Home
+                </Link>
+                <div
+                  className="custom-menu-button"
+                  style={{ cursor: "pointer" }}
+                  onClick={toggleMenu}>
+                  Courses
                 </div>
+                {menuVisible && (
+                  <div
+                    className={`dropdown-content ${menuVisible ? "show" : ""}`}>
+                    <div className="menu">
+                      <Link
+                        className="custom-second-menu-button"
+                        to="/course/1">
+                        <p style={{ marginBottom: "15px" }}>
+                          Mentorship program
+                        </p>
+                      </Link>
+                      <Link
+                        className="custom-second-menu-button"
+                        to="/course/2">
+                        <p style={{ marginBottom: "15px" }}>
+                          Study Abroad Program
+                        </p>
+                      </Link>
+                      <Link
+                        className="custom-second-menu-button"
+                        to="/course/3">
+                        <p style={{ marginBottom: "15px" }}>
+                          Ерөнхий англи хэл
+                        </p>
+                      </Link>
+                    </div>
+                  </div>
+                )}
+                <Link className="custom-menu-button" to="/news">
+                  News
+                </Link>
+                <Link className="custom-menu-button" to="/about">
+                  About
+                </Link>
+                <Link className="custom-menu-button" to="/contactus">
+                  Benefits
+                </Link>
+                <Link className="custom-menu-button" to="/contactus">
+                  Contact Us
+                </Link>
               </div>
-            )}
-            <Link className="custom-menu-button" to="/news">
-              News
-            </Link>
-            <Link className="custom-menu-button" to="/about">
-              About
-            </Link>
-            <Link className="custom-menu-button" to="/contactus">
-              Benefits
-            </Link>
-            <Link className="custom-menu-button" to="/contactus">
-              Contact Us
-            </Link>
-          </div>
-          </div>
+            </div>
           </div>
           <div className="inner-div">
             <div
               className={`header imported-blur-background ${
                 isMounted ? "scroll-animation" : ""
               }`}>
-                <div style={{display : "flex" , alignItems : "center" , justifyContent : "center" , textAlign : "center"}}>
-              <h1 className="bigTitle">{title}</h1>
+              <div
+                style={{
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  textAlign: "center",
+                }}>
+                <h1 className="bigTitle">{title}</h1>
               </div>
               <div
                 style={{
@@ -212,21 +226,11 @@ export const Header = ({
                   <img
                     src={user.profile}
                     alt="Profile Picture"
-                    className="profile-picture"
-                    style={{
-                      width: "9vh",
-                      height: "9vh",
-                      borderRadius: "50%",
-                      marginTop : "1vh"
-                    }}
+                    className="profileImage"
+                  
                   />
                   <p
-                    style={{
-                      fontSize: "3vh",
-                      fontFamily: "Georgia",
-                      marginTop: "3px",
-                      color: "#fff",
-                    }}>
+                    className="profileName">
                     {user.name}
                   </p>
                 </Link>

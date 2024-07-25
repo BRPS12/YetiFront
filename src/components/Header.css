@@ -1,8 +1,29 @@
 header {
   width: 100%;
-  height: 100vh; /* Ensure header takes full viewport height */
+  height: 100vh; 
   position: relative;
-  overflow: hidden; /* Hide overflow content */
+  overflow: hidden; 
+}
+.yetiTitle {
+  font-size: 1.5vw;
+}
+
+.yetiLogo {
+  width: 5.5vw;
+                    border-radius: 2vh;
+                    margin-right: 1vw;
+}
+.profileImage {
+  width: 10vh;
+                      height: 10vh;
+                      border-radius: 50%;
+                      margin-top: 2.5vh;
+}
+.profileName {
+  font-size: 1.5vw;
+  font-family: Georgia;
+  margin-top: 3px;
+  color: #fff;
 }
 .inner-div {
   display: flex;
@@ -16,18 +37,6 @@ header {
   height: 100%;
   flex-direction: column;
 }
-@media only screen and (max-width: 960px) {
-  .inner-div {
-    font-size: 30px;
-  }
-}
-
-@media only screen and (max-width: 600px) {
-  .inner-div {
-    font-size: 20px;
-  }
-}
-
 .overlay {
   margin-bottom: auto;
   width: 12vw;
@@ -163,21 +172,22 @@ header {
 
 @media only screen and (max-width: 600px) {
   .custom-menu {
+    width: 10vw;
     display: grid;
-    grid-template-columns: repeat(3, 1fr); 
+    grid-template-columns: repeat(3 , 1fr); 
     grid-template-rows: repeat(2, auto);
     position: absolute;
     top: 18vh;
-    left: 44%; /* Adjusted to center horizontally */
-    transform: translateX(-50%); /* Center horizontally */
-    text-align: center; /* Align text center within grid items */
-    justify-content: center; /* Center items horizontally within the grid */
+    left: 44%;
+    transform: translateX(-50%); 
+    text-align: center; 
+    justify-content: center; 
     align-items: center
   }
   .custom-menu-button {
     margin-right: 0;
     margin-bottom: 10px;
-    font-size: 3vh !important;
+    font-size: 2.8vh !important;
   }
   .dropdown-content {
     position: absolute;
@@ -198,6 +208,19 @@ header {
   }
   .inner-div {
     margin-bottom: 10vh !important;
+  }
+  .yetiLogo {
+    width : 8.5vh;
+  }
+  .yetiTitle {
+    font-size: 2.3vh;
+  }
+  .profileImage {
+    width: 8.5vh;
+    height: 8.5vh;
+  }
+  .profileName {
+    font-size: 2vh;
   }
 }
 

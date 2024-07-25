@@ -30,12 +30,7 @@ export const App = () => {
   }, []);
 
   return (
-    <div>
-      {isLoading ? (
-        <div className="sweet-loading">
-          {/* <RingLoader css={override} size={200} color={"#123abc"} loading={isLoading} /> */}
-        </div>
-      ) : (
+    <div style={{width : "100%" , height : "100vh" , padding : 0 , margin : 0}}>
         <BrowserRouter>
           <Routes>
             <Route path="/" element={<Home />} />
@@ -50,7 +45,6 @@ export const App = () => {
             <Route path="/profile" element={<Profile/>}/>
           </Routes>
         </BrowserRouter>
-      )}
     </div>
   );
 };

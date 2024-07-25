@@ -44,8 +44,7 @@ export const Home = () => {
             <div className="sectionTwoItem">
               <div style={{display : "flex" , alignItems : "center" , justifyContent : "center" , flexDirection : "column"}}>
                 <div className="sectionTwoItem2">
-                  <h2 className="seciontTwoLittleTitle">Туршлага</h2>
-                  <div className="sectonTwobadge">01</div>
+                  <h2 className="sectionTwotitle">Туршлага</h2>
                 </div>
                 <p className="outer-container">
                   <p className="bold-text">16 жилийн</p>
@@ -55,7 +54,6 @@ export const Home = () => {
               <div className="sectionTwoLittleContainer">
                 <div className="sectionTwoinner-container">
                   <h2 className="sectionTwotitle">Тайлан</h2>
-                  <div className="sectonTwobadge">02</div>
                 </div>
                 <p className="sarBolgon">
                   Сар болгон
@@ -65,7 +63,7 @@ export const Home = () => {
               </div>
               <div className="tsogtsBaidalCont">
                 <div className="tsogtsBaidalInnerCont">
-                  <h2 className="tsogtsBaidalInnerConth2">Цогц байдал</h2>
+                  <h2 className="sectionTwotitle">Цогц байдал</h2>
                 </div>
 
                 <p className="mentorShip">
@@ -77,8 +75,7 @@ export const Home = () => {
             <div className="shalgaltinTovHuvaahCont">
               <div className="shalgaltinTovInnerCont">
                 <div className="shalgaltinTovInnerInnerCont">
-                  <h2 className="shalgaltinTovTitle">Шалгалтын төв</h2>
-                  <div className="sectonTwobadge">04</div>
+                  <h2 className="sectionTwotitle">Шалгалтын төв</h2>
                 </div>
                 <p className="dassanGazraa">
                   Дассан газраа
@@ -89,8 +86,7 @@ export const Home = () => {
 
               <div className="pocketCont">
                 <div className="pocketContRow">
-                  <h2 className="huvaajTuluh">Хувааж төлөх</h2>
-                  <div className="sectonTwobadge">05</div>
+                  <h2 className="sectionTwotitle">Хувааж төлөх</h2>
                 </div>
                 <p className="huvaajTuluhTextAlign">
                   Pocket app-г ашиглан 2-6 хуваан

@@ -43,6 +43,9 @@
   }
   .sectionTwoFirstContainer{
     font-size: 2vh !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   .sectonTwobadge {
     margin-left: 0.5vh !important;
@@ -176,6 +179,7 @@
 .sectionTwotitle {
   font-weight: 500;
   font-family: Georgia, serif;
+  text-decoration:underline;
 }
 
 .sectonTwobadge {
