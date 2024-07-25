@@ -66,7 +66,6 @@ export const Home = () => {
               <div className="tsogtsBaidalCont">
                 <div className="tsogtsBaidalInnerCont">
                   <h2 className="tsogtsBaidalInnerConth2">Цогц байдал</h2>
-                  <div className="threbadge">03</div>
                 </div>
 
                 <p className="mentorShip">
