@@ -11,7 +11,7 @@ export const Home = () => {
     setIsMounted(true);
   }, []);
   return (
-    <div>
+    <div style={{padding : 0 , margin: 0}}>
       <Header
           backgroundImage={PeopleImage}
           title="Welcome to Yeti Educational Academy"
