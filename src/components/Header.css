@@ -177,7 +177,7 @@ header {
     grid-template-columns: repeat(3 , 1fr); 
     grid-template-rows: repeat(2, auto);
     position: absolute;
-    top: 18vh;
+    top: 16vh;
     left: 44%;
     transform: translateX(-50%); 
     text-align: center; 
@@ -204,7 +204,8 @@ header {
   }
   .bigTitle {
     font-size: 5vh;
-    color : #fff
+    color : #fff;
+    margin-top: 2vh;
   }
   .inner-div {
     margin-bottom: 10vh !important;

@@ -95,11 +95,7 @@ export const Header = ({
                   alignItems: "center",
                   marginBottom: "auto",
                 }}>
-                <img
-                  src={YetiLogo}
-                  className="yetiLogo"
-                  alt="Yeti Logo"
-                />
+                <img src={YetiLogo} className="yetiLogo" alt="Yeti Logo" />
                 <div
                   style={{
                     color: "#fff",
@@ -204,7 +200,7 @@ export const Header = ({
               </div>
             </div>
           </div>
-          <div style={{ position: "absolute", right: "0.5vh", top: "0.5vh" }}>
+          <div style={{ position: "absolute", right: "1vh", top: "0.5vh" }}>
             {userId ? (
               <div
                 style={{
@@ -227,12 +223,8 @@ export const Header = ({
                     src={user.profile}
                     alt="Profile Picture"
                     className="profileImage"
-                  
                   />
-                  <p
-                    className="profileName">
-                    {user.name}
-                  </p>
+                  <p className="profileName">{user.name}</p>
                 </Link>
               </div>
             ) : (

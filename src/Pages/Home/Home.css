@@ -81,6 +81,32 @@
   .tsogtsBaidalCont{
     padding-right: 10px;
   }
+  .uusgenBaigulagchCont {
+    margin-bottom: 0;
+  }
+  .uusgenBaigulagchInnerCont {
+    margin-bottom: 1px !important;
+    font-size: 3vh !important;
+  }
+  .uusgenBaigulagchColImage {
+    width: 30vh !important;
+  }
+  .uusgenBaigulagchColParagraph {
+    font-size: 2vh !important;
+    margin-top: 3vh !important;
+  }
+  .sectionFourCont {
+    padding-top: 15vh !important;
+    padding-bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+  }
+  .sectionFourContImage {
+    width: 20vh !important;
+    height: 30vh !important;
+  }
 }
 .sectionOne {
   display: flex;
@@ -124,7 +150,6 @@
 .sectionTwoTitle {
   font-family: Georgia, serif;
   font-size: 4vw;
-  margin-top: 7vh;
 }
 .sectionTwoFirstContainer {
   flex-direction: row;
@@ -283,6 +308,8 @@
   text-align: center;
   margin-top: 10px;
 }
+
+
 .uusgenBaigulagchCont {
   display: flex;
   width: 100%;
@@ -297,7 +324,6 @@
   font-family: Georgia, serif;
   text-align: center;
   margin-bottom: 20px;
-  max-width: 600px;
 }
 .hrUusgen {
   margin-top: 12px;
@@ -365,22 +391,25 @@
 .sectionFourCont {
   display: flex;
   width: 100%;
-  height: 400px;
+  height: auto;
   flex-direction: row;
-  padding-bottom: 2vw;
+  padding-bottom: 10vh;
   margin-top: 2vw;
+  padding-top: 10vh;
+  align-items: center;
+  justify-content: center;
 }
 .sectionFourContText {
   text-align: center;
   width: 80%;
-  margin-left: 10vw;
   display: flex;
   flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 .sectionFourContParagraph {
   font-weight: 500;
   font-family: Georgia, serif;
-  margin-top: 10%;
   font-size: 2.5vw;
 }
 .sectionFourContImage {

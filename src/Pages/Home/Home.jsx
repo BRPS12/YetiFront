@@ -37,7 +37,7 @@ export const Home = () => {
         </div>
       </div>
       <div className="sectionTwo">
-          <h1 className="sectionTwoTitle">
+          <h1 className="sectionTwoTitle" style={{marginTop : "7vh"}}>
             Еэти-д нэгдэх час хийсэн 5 шалтгаан
           </h1>
           <div className="sectionTwoFirstContainer">
@@ -57,7 +57,7 @@ export const Home = () => {
                 </div>
                 <p className="sarBolgon">
                   Сар болгон
-                  <p className="sarBolgon p.bold-text">ирц, явцын тайлан</p>
+                  <p className="sarBolgon" style={{marginTop : "0px"}}>ирц, явцын тайлан</p>
                   <p>мэйлээр илгээгдэнэ</p>
                 </p>
               </div>
@@ -136,7 +136,7 @@ export const Home = () => {
             </div>
           </div>
         </div>
-        <div className="sectionThreeCont">
+        {/* <div className="sectionThreeCont">
           <div className="sectionThreeInnerCont1">
             <p className="sectionThreeInnerContText">
               Zuger engiiin bagsh shaviin hariiltsaatai bsihbid nar
@@ -152,7 +152,8 @@ export const Home = () => {
               Zuger engiiin bagsh shaviin hariiltsaatai bsihbid nar
             </p>
           </div>
-        </div>
+        </div> */}
+        
         <div className="sectionFourCont">
           <div className="sectionFourContText">
             <h1 className="sectionFourContParagraph">
