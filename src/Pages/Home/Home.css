@@ -45,12 +45,18 @@
     font-size: 2vh !important;
   }
   .sectonTwobadge {
-    margin-left: 1vh !important;
+    margin-left: 0.5vh !important;
     margin-top: 1vh !important;
   }
   .sectionTwoLittleContainer {
     margin-left: 4vh !important;
     margin-right: 3vh !important;
+  }
+  .tsogtsBaidalCont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 33% !important;
   }
 }
 .sectionOne {

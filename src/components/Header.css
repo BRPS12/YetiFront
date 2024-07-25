@@ -171,7 +171,7 @@
     grid-template-rows: repeat(2, auto);
     position: absolute;
     top: 18vh;
-    left: 45%; /* Adjusted to center horizontally */
+    left: 44%; /* Adjusted to center horizontally */
     transform: translateX(-50%); /* Center horizontally */
     text-align: center; /* Align text center within grid items */
     justify-content: center; /* Center items horizontally within the grid */
