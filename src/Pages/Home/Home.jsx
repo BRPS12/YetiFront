@@ -36,7 +36,7 @@ export const Home = () => {
           үнэ төлбөргүй өгдөг анхны сургалтын төв юм.
         </div>
       </div>
-      <div className="sectionTwo">
+      {/* <div className="sectionTwo">
           <h1 className="sectionTwoTitle">
             Еэти-д нэгдэх час хийсэн 5 шалтгаан
           </h1>
@@ -100,7 +100,7 @@ export const Home = () => {
               </div>
             </div>
           </div>
-        </div> 
+        </div>  */}
        <div className="uusgenBaigulagchCont">
           <p className="uusgenBaigulagchInnerCont">
             Манай үүсгэн байгуулагч нар
