@@ -1,4 +1,4 @@
-import "../LoginAndSignUp.css";
+import "./SignUp.css";
 import { useState } from "react";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -10,7 +10,7 @@ export const SignUp = () => {
   const [password, setPassword] = useState("");
   const [email, setEmail] = useState("");
   const [age, setAge] = useState("");
-  const [code , setCode] = useState(0)
+  const [code, setCode] = useState(0);
   const images = [
     "https://i.pinimg.com/736x/dc/6c/b0/dc6cb0521d182f959da46aaee82e742f.jpg",
     "https://i.pinimg.com/236x/3f/94/70/3f9470b34a8e3f526dbdb022f9f19cf7.jpg",
@@ -30,7 +30,7 @@ export const SignUp = () => {
         "profile",
         images[Math.floor(Math.random() * images.length)]
       );
-      formData.append("role", "normal"); 
+      formData.append("role", "normal");
       const res = await instance.post("/users/signup", formData);
       toast.success("Амжилттай бүртгэгдлээ");
     } catch (error) {
@@ -45,163 +45,86 @@ export const SignUp = () => {
   // };
 
   return (
-    <div
-      className="loginContainer"
-      style={{
-        backgroundColor: "black",
-        width: "100%",
-        height: "100vh",
-        overflow: "auto",
-      }}>
+    <div className="signUpCont">
       <ToastContainer />
       <main>
-        <div
-          className="loginBox"
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-            flexDirection: "row",
-          }}>
-          <div
-            style={{
-              display: "flex",
-              alignItems: "center",
-              flexDirection: "column",
-              marginLeft: "0%",
-            }}>
+        <div className="signUpBox">
+          <div className="logotitle">
             <img
               src={require("../../Images/YetiLogo.jpg")}
               alt=""
-              style={{ width: "200px", height: "auto", borderRadius: "30px" }}
+              className="signYetiLogo"
             />
-            <p className="boginooP" style={{ marginTop: "20px"}}>
+            <p className="burtguuleh">
               Бүртгүүлэх
             </p>
-            <Link
-              className="clickGreen"
-              style={{
-                marginTop: "20px",
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-                textDecoration: "none",
-              }}
-              to="/">
+            <Link className="login-link" to="/">
               <p>Нүүр хуудас</p>
             </Link>
           </div>
 
-          <div
-            style={{
-              marginLeft: "60%",
-              display: "flex",
-              flexDirection: "column",
-              alignItems: "flex-start",
-              marginBottom : "1.6vh",
-            }}>
-            <div
-              className="boxThree">
-              <label htmlFor="username" className="labels">
+          <div className="seperatedDiv">
+            <div className="signup-form-group">
+              <label htmlFor="username" className="signup-label">
                 <p style={{ color: "white" }}>Username</p>
               </label>
               <input
                 type="text"
                 name="username"
-                className="inps"
+                className="signup-input"
                 placeholder="Username"
                 onChange={(e) => setName(e.target.value)}
               />
             </div>
-            <div className="boxThree" style={{ marginTop: "20px" }}>
-              <label htmlFor="email" className="labels">
+            <div className="signup-form-group" style={{ marginTop: "20px" }}>
+              <label htmlFor="email" className="signup-label">
                 <p style={{ color: "white" }}>Email</p>
               </label>
               <input
                 type="text"
                 name="email"
-                className="inps"
+                className="signup-input"
                 placeholder="Email"
                 onChange={(e) => setEmail(e.target.value)}
               />
             </div>
-            <div className="boxThree" style={{ marginTop: "20px" }}>
-              <label htmlFor="password" className="labels">
+
+            <div className="signup-form-group" style={{ marginTop: "20px" }}>
+              <label htmlFor="password" className="signup-label">
                 <p style={{ color: "white" }}>Password</p>
               </label>
               <input
                 type="password"
                 name="password"
-                className="inps"
+                className="signup-input"
                 placeholder="••••••••••"
                 onChange={(e) => setPassword(e.target.value)}
               />
             </div>
-            <div className="boxThree" style={{ marginTop: "20px" }}>
-              <label htmlFor="age" className="labels">
+
+            <div className="signup-form-group" style={{ marginTop: "20px" }}>
+              <label htmlFor="age" className="signup-label">
                 <p style={{ color: "white" }}>Age</p>
               </label>
               <input
                 type="number"
                 name="age"
-                className="inps"
+                className="signup-input"
                 placeholder="Age"
                 onChange={(e) => setAge(e.target.value)}
               />
             </div>
-            
-            {/* <div className="boxThree" style={{ marginTop: "20px" }}>
-              <Input
-                type="file"
-                accept="image/*"
-                onChange={handleFileChange}
-                sx={{
-                  width: "400px",
-                  height: "70px",
-                  padding: "10px",
-                  fontSize: "18px",
-                  borderRadius: "5px",
-                  border: "1px solid #ccc",
-                  "&:hover": {
-                    border: "1px solid #aaa",
-                  },
-                }}
-              />
-              {selectedFile && (
-                <div style={{ marginLeft: "25px" }}>
-                  <p
-                    style={{
-                      color: "white",
-                      textAlign: "center",
-                      marginRight: "21px",
-                    }}>
-                    Selected file: <br />
-                    {selectedFile.name}
-                  </p>
-                  <img
-                    src={URL.createObjectURL(selectedFile)}
-                    alt="Selected"
-                    style={{ maxWidth: "100%", maxHeight: "150px" }}
-                  />
-                </div>
-              )}
-            </div> */}
+
             <button
               type="submit"
-              className="clickGreen"
+              className="signup-btn"
               onClick={signUp}
-              style={{ marginTop: "20px", cursor: "pointer" }}>
+              style={{ marginTop: "30px", cursor: "pointer" }}>
               Бүртгүүлэх
             </button>
             <Link
-              className="clickGreen"
-              to="/login"
-              style={{
-                textAlign: "center",
-                marginTop: "20px",
-                cursor: "pointer",
-                textDecoration: "none",
-              }}>
+              className="login-link"
+              to="/login">
               <p style={{ marginTop: "7px", paddingBottom: "30px" }}>Нэвтрэх</p>
             </Link>
           </div>

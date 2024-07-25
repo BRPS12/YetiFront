@@ -1,4 +1,4 @@
-import "../LoginAndSignUp.css"
+import "./Login.css"
 import { Link } from "react-router-dom";
 import { useState , useRef } from "react";
 import { ToastContainer, toast } from "react-toastify";
@@ -26,14 +26,14 @@ export const Login = () => {
   return (
       <div className="loginContainer">
           <ToastContainer />
-          <div className="loginBox" style={{marginTop : "10vh"}}>
+          <div className="loginBox">
             <Link to="/" style={{textDecoration : "none"}}>
             <img src={require("../../Images/YetiLogo.jpg")} alt="" className="logo"/>
             </Link>
             <p className="boginooP">Нэвтрэх</p>
             <div className="boxThree">
               <label htmlFor="email" className="labels">
-                <p style={{ color: "white" }}>Цахим хаяг </p>
+                <p style={{ color: "white" , marginBottom : "1vh" }}>Цахим хаяг </p>
               </label>
               <input
                 type="text"
@@ -43,9 +43,10 @@ export const Login = () => {
                 ref={emailRef}
               />
             </div>
+
             <div className="boxThree">
               <label htmlFor="pass" className="labels">
-                <p style={{ color: "white" }}> Нууц үг</p>
+                <p style={{ color: "white" , marginBottom : "1vh"}}> Нууц үг</p>
               </label>
               <input
                 type="password"
@@ -55,10 +56,11 @@ export const Login = () => {
                 ref={passwordRef}
               />
             </div>
+            
             <div className="boxTwo">
               <div>
                 <input type="checkbox" name="check" className="checkBox" />
-                <label htmlFor="check" className="checkLabel" style={{marginLeft : "0.4vw"}}>
+                <label htmlFor="check" className="checkLabel" style={{marginLeft : "1vh"}}>
                   Намайг санаx
                 </label>
               </div>
