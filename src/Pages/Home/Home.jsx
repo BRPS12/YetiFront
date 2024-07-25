@@ -140,7 +140,7 @@ export const Home = () => {
             </div>
           </div>
         </div>
-        {/* <div className="sectionThreeCont">
+        <div className="sectionThreeCont">
           <div className="sectionThreeInnerCont1">
             <p className="sectionThreeInnerContText">
               Zuger engiiin bagsh shaviin hariiltsaatai bsihbid nar
@@ -156,8 +156,8 @@ export const Home = () => {
               Zuger engiiin bagsh shaviin hariiltsaatai bsihbid nar
             </p>
           </div>
-        </div> */}
-        {/* <div className="sectionFourCont">
+        </div>
+        <div className="sectionFourCont">
           <div className="sectionFourContText">
             <h1 className="sectionFourContParagraph">
               Бидний философи <br />
@@ -171,7 +171,7 @@ export const Home = () => {
               className="sectionFourContImage"
             />
           </div>
-        </div> */}
+        </div>
         <Footer /> 
     </div>
   );

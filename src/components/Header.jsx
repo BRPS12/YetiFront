@@ -65,15 +65,14 @@ export const Header = ({
 
   // Render header with content once loading is complete
   return (
-    <div>
+    <div style={{          padding : 0,
+      margin : 0}}>
       <header
         style={{
           width: "100%",
           height: "100vh",
           position: "relative",
           overflow: "hidden",
-          padding : 0,
-          margin : 0
         }}>
         <div
           className="header-background"
