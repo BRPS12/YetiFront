@@ -196,6 +196,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: auto;
 }
 .tsogtsBaidalInnerCont {
   display: flex;
@@ -228,6 +229,8 @@
   display: flex;
   flex-direction: column;
   margin-left: 4vw;
+  align-items: center;
+  justify-content: center;
 }
 .shalgaltinTovInnerInnerCont {
   display: flex;
