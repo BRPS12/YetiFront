@@ -65,7 +65,8 @@ export const Header = ({
 
   // Render header with content once loading is complete
   return (
-    <div style={{          padding : 0,
+    <div style={{
+      padding : 0,
       margin : 0}}>
       <header
         style={{
