@@ -72,6 +72,8 @@
     text-align: center;
     font-size: 1vw;
     margin-left: -0.1vh !important;
+    box-sizing: border-box; /* Ensures width and height include padding and border */
+    display: inline-block; /* Ensures element behaves like an inline-level block element */
   }
   .tsogtsBaidalCont{
     padding-right: 10px;
