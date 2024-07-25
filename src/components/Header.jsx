@@ -109,15 +109,15 @@ export const Header = ({
               <img
                 src={YetiLogo}
                 style={{
-                  width: "10vh",
+                  width: "9vh",
                   borderRadius: "2vh",
                   marginRight: "1vw",
                 }}
                 alt="Yeti Logo"
               />
               <div style={{ color: "#fff", fontFamily: "Georgia, serif" , marginLeft : "1vh" }}>
-                <div style={{ fontSize: "3vh" }}>Yeti Educational</div>
-                <div style={{ fontSize: "3vh" }}>Academy</div>
+                <div style={{ fontSize: "2.7vh" }}>Yeti Educational</div>
+                <div style={{ fontSize: "2.7vh" }}>Academy</div>
               </div>
             </div>
           </Link>
@@ -211,8 +211,8 @@ export const Header = ({
                     alt="Profile Picture"
                     className="profile-picture"
                     style={{
-                      width: "10vh",
-                      height: "10vh",
+                      width: "9vh",
+                      height: "9vh",
                       borderRadius: "50%",
                       marginTop : "2vh"
                     }}

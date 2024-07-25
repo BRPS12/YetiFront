@@ -166,18 +166,18 @@
 
 @media only screen and (max-width: 600px) {
   .custom-menu {
-    display: flex;
-    flex-direction: row;
-    margin-left: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    grid-template-rows: repeat(2, auto);
     position: absolute;
-    top : 18vh;
-    align-items: center;
-    justify-content: center;
+    top: 18vh;
+    left: 5vh;
+    text-align: center;
   }
   .custom-menu-button {
     margin-right: 0;
     margin-bottom: 10px;
-    font-size: 2.5vh;
+    font-size: 3vh;
   }
   .dropdown-content {
     position: absolute;
