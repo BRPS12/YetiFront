@@ -72,6 +72,8 @@ h3 {
     width: 100%;
     flex-direction: column;
     text-align: center;
+    margin: 0;
+    padding: 0;
   }
 
  .social-icons {
