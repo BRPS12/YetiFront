@@ -84,6 +84,11 @@
               border-radius: 40px;
               margin-left: 130px;
 }
+.secondRow {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
 
 @media only screen and (max-width: 600px) {
     .firstText {
@@ -93,10 +98,14 @@
         margin-left: 40px;
         text-align: center;
     }
+    .background {
+        display: flex;
+        flex-direction: column;
+    }
     .contForText {
        margin: 0 !important;
        height: auto;
-       width: 45vw;
+       width: auto;
     }
     .firstParagraph {
         font-size: 2.5vh !important;
@@ -111,7 +120,9 @@
     }
     .secondCont {
        height: auto;
-       width: 45vw;
+       width: auto;
+       margin: 0;
+       margin-top: 3vh;
     }
     .secondContParagraph {
         font-size: 2.5vh;
@@ -119,7 +130,7 @@
       color: #000;
     }
     .thirdCont{
-        width: 45vw !important;
+        width: auto ;
         height: auto;
         margin-left: 0;
     }
@@ -131,6 +142,13 @@
     .image {
         width: 34vw;
         height: auto;
-        margin-left: 7vh !important;
+        margin: 0;
+    }
+    .firstRow {
+        flex-direction: column;
+    }
+    .secondRow {
+       display: flex;
+       flex-direction: column;
     }
 }

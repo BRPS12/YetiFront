@@ -50,11 +50,7 @@ export const Course1 = () => {
           </div>
         </div>
         <div
-          style={{
-            flexDirection: "row",
-            display: "flex",
-            alignItems: "center",
-          }}>
+          className="secondRow">
           <div className="thirdCont">
             <p className="thridContParagraph">
               <p>⭐ Визний болон тэтгэлгийн ярилцлагын зөвлөгөө </p>
