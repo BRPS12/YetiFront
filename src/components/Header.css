@@ -184,6 +184,11 @@ header {
     justify-content: center; 
     align-items: center
   }
+  .header{
+    padding: 0 !important;
+    margin : 0 !important
+
+  }
   .custom-menu-button {
     margin-right: 0;
     margin-bottom: 10px;
