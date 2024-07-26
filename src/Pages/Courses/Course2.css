@@ -98,7 +98,7 @@ body {
       margin : 0
     }
     .card-content {
-      font-size: 2vh;
+      font-size: 2.5vh;
     }
     .container {
       display: flex;
@@ -115,6 +115,6 @@ body {
       margin-top : 5vh
     }
     .small-card-content {
-      font-size: 2vh;
+      font-size: 2.5vh;
     }
   }

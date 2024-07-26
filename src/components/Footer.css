@@ -5,6 +5,7 @@
   width: 100%; /* Set a maximum width for the footer container */
   margin: 0 auto; /* Center the footer container horizontally */
   padding: 20px; /* Add some padding to the footer container */
+  box-sizing: border-box; /* Add this to ensure padding is included in width */
 }
 
 .footer-content {
@@ -14,6 +15,7 @@
   align-items: center;
   max-width: 1000px; /* Set a maximum width for the footer content */
   margin: 0 auto; /* Center the footer content horizontally */
+  padding: 0 20px; /* Add padding to the footer content */
 }
 
 .school-info,
@@ -68,19 +70,26 @@ h3 {
 }
 
 @media screen and (max-width: 600px) {
- .footer-content {
-    width: 100%;
+  .footer-container {
+    padding: 10px; /* Reduce padding on mobile devices */
+    width: 100vw; /* Set width to 100% of viewport width */
+    margin: 0; /* Remove margin */
+  }
+
+  .footer-content {
+    width: 100%; /* Set width to 100% */
     flex-direction: column;
     text-align: center;
     margin: 0;
     padding: 0;
   }
 
- .social-icons {
+  .social-icons {
     margin-top: 20px; /* Adjust spacing for social icons in mobile view */
+    justify-content: center; /* Center social icons */
   }
 
- .footer-container {
-    padding: 10px; /* Reduce padding on mobile devices */
+  .social-icons > * {
+    margin: 0 5px; /* Reduce spacing between social icons on mobile */
   }
 }
