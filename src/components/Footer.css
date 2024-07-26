@@ -4,16 +4,19 @@
   text-align: center;
   width: 100%; /* Set a maximum width for the footer container */
   margin: 0 auto; /* Center the footer container horizontally */
-  padding: 20px; /* Add some padding to the footer container */
-  box-sizing: border-box; /* Add this to ensure padding is included in width */
+  padding-top: 20px; /* Add some padding to the footer container */
+  box-sizing: border-box;
+  padding-bottom: 20px; 
+  display: flex;
+  justify-content: center;
+  align-items: center;/* Add this to ensure padding is included in width */
 }
 
 .footer-content {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-items: center;
-  max-width: 1000px; /* Set a maximum width for the footer content */
+  align-items: center; /* Set a maximum width for the footer content */
   margin: 0 auto; /* Center the footer content horizontally */
   padding: 0 20px; /* Add padding to the footer content */
 }
@@ -68,7 +71,14 @@ h3 {
   font-weight: bold;
   color: blueviolet; /* Adjust the active link color as needed */
 }
-
+.firstRoww{
+  font-family: Georgia , sans-serif ;
+  margin-right: 10vw;
+}
+.secondRoww {
+  width: 40vw;
+  margin-top: 2 0px 
+}
 @media screen and (max-width: 600px) {
   .footer-container {
     padding: 0; /* Reduce padding on mobile devices */
@@ -92,5 +102,11 @@ h3 {
 
   .social-icons > * {
     margin: 0 5px; /* Reduce spacing between social icons on mobile */
+  }
+  .firstRoww {
+    margin : 0
+  }
+  .secondRoww {
+    margin :0
   }
 }
