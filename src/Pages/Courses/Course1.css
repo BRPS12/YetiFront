@@ -33,6 +33,7 @@
     background: linear-gradient(#FFE1F2, #fff);
     box-shadow: 1px 4px 6px #555;
     margin-right: 30px;
+    height: auto;
 }
 .firstParagraph {
     font-size: 24px;
@@ -82,4 +83,29 @@
               height: 300px;
               border-radius: 40px;
               margin-left: 130px;
+}
+
+@media only screen and (max-width: 600px) {
+    .firstText {
+        font-size: 3vh !important;
+        color: #fff;
+        font-family: Georgia;
+        margin-left: 40px;
+        text-align: center;
+    }
+    .contForText {
+       margin: 0 !important;
+       height: 57vh;
+    }
+    .firstParagraph {
+        font-size: 2.5vh !important;
+        padding: 2vh !important;
+        margin: 0;
+        display: flex;
+        text-align: center;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        width: auto
+    }
 }

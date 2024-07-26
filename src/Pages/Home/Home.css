@@ -84,15 +84,17 @@
   }
   .uusgenBaigulagchCont {
     margin-bottom: 0;
+    padding-bottom: 0 !important;
   }
   .uusgenBaigulagchInnerCont {
     margin-bottom: 1px !important;
     font-size: 3vh !important;
   }
   .uusgenBaigulagchColImage {
-    width: 25vh !important;
+    width: 35vw !important;
   }
   .uusgenBaigulagchColParagraph {
+    width: 40vw;
     font-size: 2vh !important;
     margin-top: 3vh !important;
   }
@@ -102,6 +104,7 @@
     justify-content: center;
     align-items: center;
     height: auto;
+    padding-top: 5vh;
   }
   .sectionFourContImage {
     width: 20vh !important;
