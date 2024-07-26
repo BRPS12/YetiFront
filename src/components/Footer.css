@@ -91,6 +91,10 @@ h3 {
   margin-top: 2vh;
 }
 @media screen and (max-width: 600px) {
+  footer {
+    padding : 0 !important;
+    margin : 0 !important
+  }
   .footer-container {
     padding: 0; /* Reduce padding on mobile devices */
     margin: 0; /* Remove margin */
