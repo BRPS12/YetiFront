@@ -206,6 +206,7 @@ header {
     font-size: 5vh;
     color : #fff;
     margin-top: 2vh;
+    text-align: center;
   }
   .inner-div {
     margin-bottom: 10vh !important;

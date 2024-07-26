@@ -2,7 +2,9 @@
   background-color: #000;
   color: #fff;
   text-align: center;
-  width: 100%;
+  width: 100%; /* Set a maximum width for the footer container */
+  margin: 0 auto; /* Center the footer container horizontally */
+  padding: 20px; /* Add some padding to the footer container */
 }
 
 .footer-content {
@@ -10,6 +12,8 @@
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+  max-width: 1000px; /* Set a maximum width for the footer content */
+  margin: 0 auto; /* Center the footer content horizontally */
 }
 
 .school-info,
@@ -64,13 +68,17 @@ h3 {
 }
 
 @media screen and (max-width: 600px) {
-  .footer-content {
+ .footer-content {
     width: 100%;
     flex-direction: column;
     text-align: center;
   }
 
-  .social-icons {
+ .social-icons {
     margin-top: 20px; /* Adjust spacing for social icons in mobile view */
+  }
+
+ .footer-container {
+    padding: 10px; /* Reduce padding on mobile devices */
   }
 }

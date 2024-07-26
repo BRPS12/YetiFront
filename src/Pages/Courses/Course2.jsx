@@ -12,7 +12,7 @@ export const Course2 = () => {
   }, []);
 
   return (
-    <div className="container">
+    <div>
       <Header
         backgroundImage={courseImage}
         title="Study Abroad Program"
@@ -20,6 +20,7 @@ export const Course2 = () => {
         repeat="no-repeat"
         bgSize="cover"
       />
+      <div className="container">
       <div className="margin-bottom">
         <p className="header">IELTS, TOEFL IBT & ITP, SAT, Duolingo бэлдэх+тэтгэлгийн зөвлөгөө, чиглүүлэг</p>
       </div>
@@ -57,6 +58,7 @@ export const Course2 = () => {
             <p>💡 Баталгаат орчуулга</p>
           </div>
         </div>
+      </div>
       </div>
       <Footer />
     </div>
