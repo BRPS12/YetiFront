@@ -61,6 +61,7 @@
   }
   .sectionTwotitle {
     font-size: 2.8vh;
+    text-align: center;
   }
   .tsogtsBaidalInnerConth2 {
     font-size: 2.8vh;
@@ -89,14 +90,13 @@
     font-size: 3vh !important;
   }
   .uusgenBaigulagchColImage {
-    width: 30vh !important;
+    width: 25vh !important;
   }
   .uusgenBaigulagchColParagraph {
     font-size: 2vh !important;
     margin-top: 3vh !important;
   }
   .sectionFourCont {
-    padding-top: 15vh !important;
     padding-bottom: 0;
     display: flex;
     justify-content: center;
@@ -366,7 +366,7 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  padding-top: 70px;
+  padding-bottom: 10vh;
   padding-top: 17vh;
 }
 .sectionThreeInnerCont {
@@ -395,7 +395,6 @@
   flex-direction: row;
   padding-bottom: 10vh;
   margin-top: 2vw;
-  padding-top: 10vh;
   align-items: center;
   justify-content: center;
 }

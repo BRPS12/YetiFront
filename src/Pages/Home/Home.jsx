@@ -110,12 +110,7 @@ export const Home = () => {
               <p className="uusgenBaigulagchColParagraph">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
                 in sem ut tortor consequat ultricies id vel felis. Duis posuere
-                tellus non finibus aliquam. Donec volutpat metus sed mi
-                faucibus, ut ornare ligula tempor. Donec dictum sem vel ex
-                dignissim, placerat euismod massa fringilla. Pellentesque
-                condimentum accumsan odio, vitae dictum quam ullamcorper nec.
-                Maecenas eu interdum dui. Praesent nec imperdiet enim. Nunc a
-                tempor felis. Phasellus ut accumsan augue, eu posuere leo.
+                tellus non finibus aliquam. Donec tempor felis. Phasellus ut accumsan augue, eu posuere leo.
               </p>
             </div>
             <div className="uusgenBaigulagchCol2">
@@ -126,12 +121,7 @@ export const Home = () => {
               <p className="uusgenBaigulagchColParagraph">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
                 in sem ut tortor consequat ultricies id vel felis. Duis posuere
-                tellus non finibus aliquam. Donec volutpat metus sed mi
-                faucibus, ut ornare ligula tempor. Donec dictum sem vel ex
-                dignissim, placerat euismod massa fringilla. Pellentesque
-                condimentum accumsan odio, vitae dictum quam ullamcorper nec.
-                Maecenas eu interdum dui. Praesent nec imperdiet enim. Nunc a
-                tempor felis. Phasellus ut accumsan augue, eu posuere leo.
+                tellus non finibus aliquam. Donec volutpat metus sed mi tempor felis. Phasellus ut accumsan augue, eu posuere leo.
               </p>
             </div>
           </div>
