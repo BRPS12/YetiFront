@@ -7,14 +7,14 @@ export const Footer = () => {
     <footer className="footer-container">
       <div className="footer-content">
         <div className="firstRoww">
-          <p style={{ fontSize: "25px", marginTop: "2vh" }}>
+          <p className="FooterTitle">
             Youth Educational Training Institute
           </p>
-          <p style={{ marginTop: "2vh" }}>
+          <p className="infotexts">
             Багшийн дээд UBH төв, 15 давхар 1513 тоот{" "}
           </p>
-          <p style={{ marginTop: "2vh" }}>Mongolia, Ulaanbaatar</p>
-          <p style={{ marginTop: "2vh" }} className="contact-info">
+          <p className="infotexts">Mongolia, Ulaanbaatar</p>
+          <p className="contact-info">
             Phone:
             <div>
               <span style={{ textDecoration: "none" }}>+976 7202 3719</span>
@@ -25,7 +25,6 @@ export const Footer = () => {
             </div>
           </p>
           <p
-            style={{ marginTop: "2vh", marginBottom: "2vh" }}
             className="contact-info">
             Email: <span>yetischool.e@gmail.com</span>
           </p>

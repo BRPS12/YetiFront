@@ -21,13 +21,16 @@
   padding: 0 20px; /* Add padding to the footer content */
 }
 
-.school-info,
+.school-info ,
 h3 {
   color: #FE01FE; /* Set a gold color for the heading */
 }
-
+.contact-info {
+  margin-top: 2vh;
+}
 .contact-info span {
   text-decoration: underline;
+  font-size: 1.2vw;
 }
 
 .social-media p {
@@ -37,11 +40,12 @@ h3 {
 .social-icons {
   display: flex;
   justify-content: center;
+  align-items: center;
   margin-top: 10px;
 }
 
 .social-icons > * {
-  margin: 0 10px; /* Adjust spacing between social icons */
+  margin: 0 10px; 
 }
 
 .copyright,
@@ -59,9 +63,12 @@ h3 {
 .additional-links a:hover {
   text-decoration: underline;
 }
-
+.FooterTitle {
+  font-size: 2vw;
+  margin-top: 20px;
+}
 .pagesText {
-  font-size: 20px;
+  font-size: 1.7vw;
   text-decoration: none;
   color: #fff;
   font-family: 'Courier New', Courier, monospace;
@@ -78,6 +85,10 @@ h3 {
 .secondRoww {
   width: 40vw;
   margin-top: 2 0px 
+}
+.infotexts {
+  font-size: 1.5vw;
+  margin-top: 2vh;
 }
 @media screen and (max-width: 600px) {
   .footer-container {
@@ -108,5 +119,24 @@ h3 {
   }
   .secondRoww {
     margin :0
+  }
+  .FooterTitle {
+    font-size: 4vh;
+    text-align: center;
+  }
+  .infotexts {
+    font-size: 2.8vh;
+  }
+  .contact-info {
+    margin-bottom: 3vh;
+  }
+  .contact-info span{
+    font-size: 2.5vh;
+  }
+  .social-icons {
+    padding-bottom: 5vh;
+  }
+  .pagesText {
+    font-size: 3.2vh;
   }
 }
