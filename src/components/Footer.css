@@ -71,14 +71,15 @@ h3 {
 
 @media screen and (max-width: 600px) {
   .footer-container {
-    padding: 10px; /* Reduce padding on mobile devices */
-    width: 100vw; /* Set width to 100% of viewport width */
+    padding: 0; /* Reduce padding on mobile devices */
     margin: 0; /* Remove margin */
   }
 
   .footer-content {
-    width: 100%; /* Set width to 100% */
+    width: 100%; 
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
     margin: 0;
     padding: 0;
