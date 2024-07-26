@@ -398,10 +398,10 @@
   width: 100%;
   height: auto;
   flex-direction: row;
-  padding-bottom: 10vh;
   margin-top: 2vw;
   align-items: center;
   justify-content: center;
+  margin-bottom: 2vh;
 }
 .sectionFourContText {
   text-align: center;
