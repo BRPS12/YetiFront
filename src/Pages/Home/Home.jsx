@@ -158,8 +158,7 @@ export const Home = () => {
               className="sectionFourContImage"
             />
           </div>
-        </div>
-        <Footer /> 
+        </div>s
     </div>
   );
 };

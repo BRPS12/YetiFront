@@ -95,7 +95,8 @@
     }
     .contForText {
        margin: 0 !important;
-       height: 57vh;
+       height: auto;
+       width: 45vw;
     }
     .firstParagraph {
         font-size: 2.5vh !important;
@@ -107,5 +108,29 @@
         flex-direction: column;
         justify-content: center;
         width: auto
+    }
+    .secondCont {
+       height: auto;
+       width: 45vw;
+    }
+    .secondContParagraph {
+        font-size: 2.5vh;
+      line-height: 1.6;
+      color: #000;
+    }
+    .thirdCont{
+        width: 45vw !important;
+        height: auto;
+        margin-left: 0;
+    }
+    .thridContParagraph {
+    font-size: 2.5vh;
+      line-height: 1.6;
+      color: #000;
+    }
+    .image {
+        width: 34vw;
+        height: auto;
+        margin-left: 7vh !important;
     }
 }

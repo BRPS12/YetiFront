@@ -107,8 +107,11 @@
     padding-top: 5vh;
   }
   .sectionFourContImage {
-    width: 20vh !important;
-    height: 30vh !important;
+    width: 20vw !important;
+    height: auto !important;
+  }
+  .sectionFourContParagraph {
+    font-size: 2vh;
   }
 }
 .sectionOne {
@@ -139,7 +142,7 @@
   color: #fff;
 }
 .sectionTwo {
-  width: 100%;
+  width: auto;
   height: auto;
   background: linear-gradient(45deg, #fff, #ffcece);
   border-radius: 10px;
