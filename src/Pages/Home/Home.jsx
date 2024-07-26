@@ -12,14 +12,14 @@ export const Home = () => {
   }, []);
   return (
     <div style={{padding : 0 , margin: 0}}>
-      <Header
+      {/* <Header
           backgroundImage={PeopleImage}
           title="Welcome to Yeti Educational Academy"
           isMounted={isMounted}
           buttonText="Register Now" 
           repeat="no-repeat"
           bgSize="cover"
-        /> 
+        />  */}
       <div className="sectionOne">
         <div className="sectionOneImageDiv">
           <img
@@ -36,6 +36,7 @@ export const Home = () => {
           үнэ төлбөргүй өгдөг анхны сургалтын төв юм.
         </div>
       </div>
+
       <div className="sectionTwo">
           <h1 className="sectionTwoTitle" style={{marginTop : "7vh"}}>
             Еэти-д нэгдэх час хийсэн 5 шалтгаан
@@ -158,7 +159,8 @@ export const Home = () => {
               className="sectionFourContImage"
             />
           </div>
-        </div>s
+        </div>
+        {/* <Footer /> */}
     </div>
   );
 };
