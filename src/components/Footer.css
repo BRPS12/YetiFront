@@ -101,7 +101,7 @@ h3 {
   }
 
   .footer-content {
-    width: 100%; 
+    width: auto; 
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -125,22 +125,27 @@ h3 {
     margin :0
   }
   .FooterTitle {
-    font-size: 4vh;
+    width: 90vw;
+    font-size: 3.5vh;
     text-align: center;
   }
   .infotexts {
-    font-size: 2.8vh;
+    width: 90vw;
+    font-size: 2.5vh;
   }
   .contact-info {
     margin-bottom: 3vh;
   }
   .contact-info span{
+    width: 40vw;
     font-size: 2.5vh;
   }
   .social-icons {
-    padding-bottom: 5vh;
+    margin: 0;
+    padding: 0;
   }
   .pagesText {
+    width: auto;
     font-size: 3.2vh;
   }
 }
