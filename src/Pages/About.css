@@ -540,6 +540,7 @@
     text-align: center;
     width: 100vw;
     margin-right: 16vw;
+    padding-top: 5vh;
   }
   .songofabout-description {
     position: absolute;
@@ -555,7 +556,7 @@
   .songofabout-image2 {
       width: 100vw;
       margin: 0 !important;
-      height: 45vh;
+      height: auto;
   }
   .songofabout-row2 {
     display: flex;
