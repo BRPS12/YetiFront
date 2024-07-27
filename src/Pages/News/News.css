@@ -1,187 +1,137 @@
-
-  
-  .latest-news-title {
-    text-align: center;
-    font-size: 30px;
-    font-family: Georgia;
-    margin-top: 30px;
-    margin-bottom: 30px;
-  }
-  
-  .create-news-button {
-    position: absolute;
-    right: 40px;
-    top: 105%;
-    width: 10vw;
-    height: 7vh;
-    border-radius: 1vw;
-    border-color: #fff;
-    cursor: pointer;
-    background-color: #BA39FF;
-    color: #fff;
-    font-size: 18px;
-    font-family: Georgia;
-  }
-  
-  .news-container {
-    padding-left: 6vw;
-  }
-  
-  .news-item {
+.textContent {
+  font-family: Georgia;
+  width: 40%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin-left: 8vw;
+  font-size: 23px;
+}
+.carouselArrow {
+  right: 0%;
+  z-index: 2;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  border: none;
+  background: none;
+  outline: none;
+}
+.carouselArrow2 {
+  left: 0%;
+  z-index: 2;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  border: none;
+  background: none;
+  outline: none;
+}
+.firstCont {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-top: 7vh;
+}
+.carousel1 {
+  padding: 20px;
+  width: 50vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 6vw;
+}
+.secondContain {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+.carousel2 {
+  padding: 20px;
+  width: 40vw;
+  padding-right: 5vw;
+}
+.textContent2 {
+  font-family: Georgia;
+  width: 40%;
+  font-size: 23px;
+  margin-right: 20vh;
+}
+.thirdContain {
     display: flex;
     flex-direction: row;
-    width: 100%;
-    height: auto;
+    padding-bottom: 10vh;
+    align-items: center;
+}
+.thirdImage {
+    width: 500px;
+    height: 400px;
+    border-radius: 20px;
+    margin-left: 10vw;
+}
+.textContent3 {
+    padding-left: 70px;
     font-family: Georgia;
-    margin-top: 6vh;
-  }
-  
-  .news-text {
-    width: 50%;
-    display: flex;
-    justify-content: center;
+    font-size: 23px;
+    width: 40%;
+}
+@media only screen and (max-width: 600px) {
+  .firstCont {
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+  }
+  .textContent {
+    font-size: 2vh;
+    width: 70vw;
     text-align: center;
-    margin-bottom: 4vh;
-  }
-  
-  .news-title {
-    font-size: 27px;
-    color: #3996FF;
-  }
-  
-  .news-paragraph {
-    font-size: 23px;
-  }
-  
-  .news-image {
-    width: 35vw;
-    height: auto;
-    border-radius: 1vw;
     margin-left: 7vw;
   }
-  
-  .delete-button {
-    position: absolute;
-    left: 6vw;
-    width: 5vw;
-    height: 5vh;
-    border-radius: 0.7vw;
-    border-color: #fff;
-    cursor: pointer;
-    background-color: #BA39FF;
-    color: #fff;
-    font-size: 18px;
-    font-family: Georgia;
+  .carousel1 {
+    width: 80vw;
+    margin-left: 7vw;
   }
-  
-  .carousel-container {
-    width: 100%;
-    height: auto;
-    margin-top: 6vh;
-    margin-bottom: 6vh;
+  .firstCont {
+    padding-top: 2vh !important;
   }
-  
-  .carousel {
-    width: 100%;
-    height: auto;
-  }
-  
-  .carousel-image {
-    width: 100%;
-    height: auto;
-    border-radius: 1vw;
-  }
-  
-  .text-container {
-    width: 100%;
-    height: auto;
-    margin-top: 6vh;
-    margin-bottom: 6vh;
-    font-family: Georgia;
-    text-align: center;
-  }
-  
-  .text {
-    font-size: 23px;
-  }
-  
-  .image-container {
-    width: 100%;
-    height: auto;
-    margin-top: 6vh;
-    margin-bottom: 6vh;
-  }
-  
-  .image {
-    width: 100%;
-    height: auto;
-    border-radius: 1vw;
-  }
-  
-  .modal-box {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 1vw;
-    padding: 2vw;
-    width: 50vw;
-    height: auto;
-  }
-  
-  .modal-header {
+  .secondContain {
+    flex-direction: column;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding-bottom: 1vw;
-    border-bottom: 1px solid #ddd;
+    justify-content: center;
   }
-  
-  .modal-title {
-    font-size: 24px;
-    font-family: Georgia;
+  .carousel2 {
+    width: 65vw;
   }
-  
-  .modal-close-button {
-    cursor: pointer;
+  .textContent2 {
+    font-size: 2vh !important;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    width: 80vw;
   }
-  
-  .modal-description {
-    padding-top: 2vw;
+  .thirdContain {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0; 
+    margin: 0;
+    margin-top: 5vh;
+    margin-right: 3vh;
   }
-  
-  .modal-text-field {
-    width: 100%;
-    height: 5vh;
-    border-radius: 0.7vw;
-    border-color: #ddd;
-    padding: 1vw;
-    font-size: 18px;
-    font-family: Georgia;
+  .thirdImage {
+    width: 70vw;
+    height: auto;
   }
-  
-  .modal-create-button {
-    width: 100%;
-    height: 5vh;
-    border-radius: 0.7vw;
-    border-color: #fff;
-    cursor: pointer;
-    background-color: #BA39FF;
-    color: #fff;
-    font-size: 18px;
-    font-family: Georgia;
+  .textContent3 {
+    font-size: 2vh;
+    width: 80vw;
+    text-align: center;
+    margin-top: 2vh;
+    padding-bottom: 2vh;
+    margin-right: 3vh;
   }
-  
-  .modal-file-input {
-    width: 100%;
-    height: 5vh;
-    border-radius: 0.7vw;
-    border-color: #ddd;
-    padding: 1vw;
-    font-size: 18px;
-    font-family: Georgia;
-  }
+}

@@ -30,7 +30,7 @@ import {
   IconButton,
 } from "@mui/material";
 import ClearIcon from "@mui/icons-material/Clear";
-
+import "./News.css"
 export const News = () => {
   const user_id = window.localStorage.getItem("user_id");
   const [isMounted, setIsMounted] = useState(false);
@@ -317,21 +317,9 @@ export const News = () => {
         ))}
       </div>
       <div
-        style={{
-          display: "flex",
-          flexDirection: "row",
-          alignItems: "center",
-          paddingTop: "7vh",
-        }}>
+        className="firstCont">
         <div
-          style={{
-            padding: "20px",
-            width: "45vw",
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-            paddingLeft: "6vw",
-          }}>
+          className="carousel1">
           <Carousel
             showArrows={true}
             infiniteLoop={true}
@@ -344,17 +332,7 @@ export const News = () => {
                   type="button"
                   onClick={onClickHandler}
                   title={label}
-                  style={{
-                    left: "0%",
-                    zIndex: 2,
-                    position: "absolute",
-                    top: "50%",
-                    transform: "translateY(-50%)",
-                    cursor: "pointer",
-                    border: "none",
-                    background: "none",
-                    outline: "none",
-                  }}>
+                  className="carouselArrow2">
                   <FaArrowLeft fill="#fff" />
                 </button>
               )
@@ -365,17 +343,7 @@ export const News = () => {
                   type="button"
                   onClick={onClickHandler}
                   title={label}
-                  style={{
-                    right: "0%",
-                    zIndex: 2,
-                    position: "absolute",
-                    top: "50%",
-                    transform: "translateY(-50%)",
-                    cursor: "pointer",
-                    border: "none",
-                    background: "none",
-                    outline: "none",
-                  }}>
+                  className="carouselArrow">
                   <FaArrowRight fill="#fff" />
                 </button>
               )
@@ -396,31 +364,15 @@ export const News = () => {
           </Carousel>
         </div>
         <p
-          style={{
-            fontFamily: "Georgia",
-            width: "40%",
-            justifyContent: "center",
-            alignItems: "center",
-            display: "flex",
-            marginLeft: "50px",
-            fontSize: "23px",
-          }}>
+         className="textContent">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi in sem
           ut tortor consequat ultricies id vel felis. Duis posuere tellus non
-          finibus aliquam. Donec volutpat metus sed mi faucibus, ut ornare
-          ligula tempor. Donec dictum sem vel ex dignissim, placerat euismod
-          massa fringilla. Pellentesque condimentum accumsan odio, vitae dictum
-          quam ullamcorper nec. Maecenas eu interdum dui. Praesent nec imperdiet
-          enim. Nunc a tempor felis. Phasellus ut accumsan augue, eu posuere leo
+          finibus aliquam. enim. Nunc a tempor felis. Phasellus ut accumsan augue, eu posuere leo
         </p>
       </div>
       <div
-        style={{
-          display: "flex",
-          flexDirection: "row-reverse",
-          alignItems: "center",
-        }}>
-        <div style={{ padding: "20px", width: "40vw", paddingRight: "5vw" }}>
+        className="secondContain">
+        <div className="carousel2">
           <Carousel
             showArrows={true}
             infiniteLoop={true}
@@ -433,17 +385,7 @@ export const News = () => {
                   type="button"
                   onClick={onClickHandler}
                   title={label}
-                  style={{
-                    left: "0%",
-                    zIndex: 2,
-                    position: "absolute",
-                    top: "50%",
-                    transform: "translateY(-50%)",
-                    cursor: "pointer",
-                    border: "none",
-                    background: "none",
-                    outline: "none",
-                  }}>
+                  className="carouselArrow2">
                   <FaArrowLeft fill="#000" />
                 </button>
               )
@@ -454,17 +396,7 @@ export const News = () => {
                   type="button"
                   onClick={onClickHandler}
                   title={label}
-                  style={{
-                    right: "0%", // Adjusted position
-                    zIndex: 2,
-                    position: "absolute",
-                    top: "50%",
-                    transform: "translateY(-50%)",
-                    cursor: "pointer",
-                    border: "none",
-                    background: "none",
-                    outline: "none",
-                  }}>
+                  className="carouselArrow">
                   <FaArrowRight fill="#000" />
                 </button>
               )
@@ -485,45 +417,22 @@ export const News = () => {
           </Carousel>
         </div>
         <p
-          style={{
-            fontFamily: "Georgia",
-            width: "40%",
-            fontSize: "23px",
-            marginRight: "70px",
-          }}>
+          className="textContent2">
           Lorem2 ipsum dolor sit amet, consectetur adipiscing elit. Morbi in sem
           ut tortor consequat ultricies id vel felis. Duis posuere tellus non
-          finibus aliquam. Donec volutpat metus sed mi faucibus, ut ornare
-          ligula tempor. Donec dictum sem vel ex dignissim, placerat euismod
-          massa fringilla. Pellentesque condimentum accumsan odio, vitae dictum
-          quam ullamcorper nec. Maecenas eu interdum dui. Praesent nec imperdiet
-          enim. Nunc a tempor felis. Phasellus ut accumsan augue, eu posuere leo
+          finibus aliquam. Donec volutpat metus  enim. Nunc a tempor felis. Phasellus ut accumsan augue, eu posuere leo
         </p>
       </div>
+
       <div
-        style={{
-          display: "flex",
-          flexDirection: "row",
-          paddingBottom: "10vh",
-          alignItems: "center",
-        }}>
+        className="thirdContain">
         <img
           src={require("../../Images/zaisan.jpg")}
           alt="zaisan"
-          style={{
-            width: "500px",
-            height: "400px",
-            borderRadius: "20px",
-            marginLeft: "10vw",
-          }}
+          className="thirdImage"
         />
         <p
-          style={{
-            paddingLeft: "70px",
-            fontFamily: "Georgia",
-            fontSize: "23px",
-            width: "40%",
-          }}>
+          className="textContent3">
           Lorem3 ipsum dolor sit amet, consectetur adipiscing elit. Morbi in sem
           ut tortor consequat ultricies id vel felis. Duis posuere tellus non
           finibus aliquam. Donec volutpat metus sed mi faucibus, ut ornare
