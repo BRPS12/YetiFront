@@ -108,22 +108,22 @@ export const Home = () => {
                 className="uusgenBaigulagchColImage"
                 src={require("../../Images/Shureebagsh2.jpg")}
               />
-              <p className="uusgenBaigulagchColParagraph">
+              {/* <p className="uusgenBaigulagchColParagraph">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
                 in sem ut tortor consequat ultricies id vel felis. Duis posuere
                 tellus non finibus aliquam. Donec tempor felis. Phasellus ut accumsan augue, eu posuere leo.
-              </p>
+              </p> */}
             </div>
             <div className="uusgenBaigulagchCol2">
               <img
                 className="uusgenBaigulagchColImage"
                 src={require("../../Images/sanukaegc.jpg")}
               />
-              <p className="uusgenBaigulagchColParagraph">
+              {/* <p className="uusgenBaigulagchColParagraph">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
                 in sem ut tortor consequat ultricies id vel felis. Duis posuere
                 tellus non finibus aliquam. Donec volutpat metus sed mi tempor felis. Phasellus ut accumsan augue, eu posuere leo.
-              </p>
+              </p> */}
             </div>
           </div>
         </div>
