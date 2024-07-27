@@ -7,8 +7,6 @@
   flex-direction: column;
 }
 .mainSon{
-  width: 100%;
-  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -51,8 +49,8 @@
     margin-left: 0.5vh !important;
   }
   .sectionTwoLittleContainer {
-    margin-left: 4vh !important;
-    margin-right: 3vh !important;
+    margin-left: 2vh !important;
+    margin-right: 1vh !important;
   }
   .seciontTwoLittleTitle {
     font-weight: 500;
@@ -78,9 +76,6 @@
     margin-left: -0.1vh !important;
     box-sizing: border-box; /* Ensures width and height include padding and border */
     display: inline-block; /* Ensures element behaves like an inline-level block element */
-  }
-  .tsogtsBaidalCont{
-    padding-right: 10px;
   }
   .uusgenBaigulagchCont {
     width: 100% !important;
@@ -170,7 +165,11 @@
 .sectionTwoItem {
   display: flex;
   flex-direction: row;
+  justify-content: center;
   margin-top: 60px;
+  width: 100%;
+  margin: 0;
+  padding: 0;
 }
 .sectionTwoItem2 {
   display: flex;
@@ -210,7 +209,9 @@
 .sectionTwotitle {
   font-weight: 500;
   font-family: Georgia, serif;
-  text-decoration:underline;
+  text-decoration: underline;
+  margin: 0;
+  padding: 0;
 }
 
 .sectonTwobadge {
@@ -238,18 +239,22 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: auto;
+  margin : 0;
+  padding: 0;
 }
 .tsogtsBaidalInnerCont {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  max-width: 90%; /* Adjust as needed */
+  margin: 0 auto; /* Center the container */
 }
+
 .tsogtsBaidalInnerConth2 {
   font-weight: 500;
   font-family: Georgia, serif;
- text-align: center;
+  text-align: center;
 }
 
 .mentorShip {

@@ -229,6 +229,9 @@ header {
   .profileName {
     font-size: 2vh;
   }
+  .buttonText {
+    width: 70vw !important;
+  }
 }
 
 @keyframes scrollAnimation {

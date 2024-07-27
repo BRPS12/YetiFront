@@ -58,7 +58,7 @@ export const Home = () => {
                 </div>
                 <p className="sarBolgon">
                   Сар болгон
-                  <p className="sarBolgon" style={{marginTop : "0px"}}>ирц, явцын тайлан</p>
+                  <p className="sarBolgon">ирц, явцын тайлан</p>
                   <p>мэйлээр илгээгдэнэ</p>
                 </p>
               </div>
@@ -66,7 +66,6 @@ export const Home = () => {
                 <div className="tsogtsBaidalInnerCont">
                   <h2 className="sectionTwotitle">Цогц байдал</h2>
                 </div>
-
                 <p className="mentorShip">
                   Англи хэл+ Mentorship=
                   <h2 className="mentorShipText">Нэг дор</h2>

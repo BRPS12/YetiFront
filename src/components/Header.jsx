@@ -187,6 +187,7 @@ export const Header = ({
                   display: "flex",
                   alignItems: "center",
                   justifyContent: "center",
+                  width : "100%",
                 }}>
                 {buttonText && (
                   <button
