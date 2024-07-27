@@ -383,7 +383,7 @@
     text-align: center;
     margin: 0 !important;
     right: 55%;
-    top: 35.6vh;
+    top: 36.5vh;
     position: relative; /* Make sure it is positioned absolutely */
     transform: translate(50%, -50%); /* Center the block */
     z-index: 10;
