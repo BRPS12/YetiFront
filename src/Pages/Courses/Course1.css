@@ -9,12 +9,13 @@
 .firstCont {
     margin-bottom: 20px; width: 90vw 
 }
-.firstText {
+.course1Title {
     font-size: 30px;
     color: #fff;
     font-family: Georgia;
     margin-left: 40px;
     text-align: center;
+    border-width:0
 }
 .firstRow {
     display: flex;
