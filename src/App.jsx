@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Home } from "./Pages/Home/Home";
-import { News } from "./Pages/News";
+import { News } from "./Pages/News/News";
 import { About } from "./Pages/About";
 import { useState, useEffect } from "react";
 import { Course1 } from "./Pages/Courses/Course1";

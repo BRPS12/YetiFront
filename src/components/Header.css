@@ -234,11 +234,11 @@ header {
   }
   .dropdown-content {
     width: 65vw !important;
+    left: -10vh !important;
     height: 10vh !important;
     padding: 0 !important;
     margin : 0 !important;
-    padding-top: 5vh;
-    left: -5vh;
+    margin-top: 3vh !important;
   }
   .menu {
     display: flex;
