@@ -12,14 +12,14 @@ export const Home = () => {
   }, []);
   return (
     <div style={{padding : 0 , margin: 0}}>
-      <Header
+      {/* <Header
           backgroundImage={PeopleImage}
           title="Welcome to Yeti Educational Academy"
           isMounted={isMounted}
           buttonText="Register Now" 
           repeat="no-repeat"
           bgSize="cover"
-        /> 
+        />  */}
       <div className="sectionOne">
         <div className="sectionOneImageDiv">
           <img
