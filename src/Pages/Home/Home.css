@@ -30,6 +30,7 @@
   .sectionOneImage {
     width: 13vh !important ;
     border-radius: 10px;
+    margin: 0;
   }
 
   .sectionOneText {
@@ -109,6 +110,10 @@
   }
   .sectionFourContParagraph {
     font-size: 2vh;
+  }
+  .pocketCont {
+    margin: 0;
+    padding: 0;
   }
 }
 .sectionOne {

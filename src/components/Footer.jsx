@@ -43,7 +43,7 @@ export const Footer = () => {
               activeClassName="active"
               exact
               to="/">
-              Our Home Page
+              Home Page
             </NavLink>
             <NavLink className="pagesText" exact to="/news">
               News

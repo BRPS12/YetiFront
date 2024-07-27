@@ -30,7 +30,7 @@ export const App = () => {
   }, []);
 
   return (
-    <div style={{padding : 0 , margin : 0}}>
+    <div style={{ overflow : "hidden"}}>
         <BrowserRouter>
           <Routes>
             <Route path="/" element={<Home />} />
