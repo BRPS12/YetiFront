@@ -91,6 +91,9 @@
     padding-bottom: 0 !important;
     height: 55vh !important;
   }
+  .mentorShipText {
+    font-size: 2vh;
+  }
   .uusgenBaigulagchInnerCont {
     margin-bottom: 1px !important;
     font-size: 3vh !important;
