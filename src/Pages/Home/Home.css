@@ -84,7 +84,7 @@
     width: 100% !important;
     margin-bottom: 0;
     padding-bottom: 0 !important;
-    height: 60vh !important;
+    height: 55vh !important;
   }
   .uusgenBaigulagchInnerCont {
     margin-bottom: 1px !important;
@@ -99,7 +99,7 @@
     margin-top: 3vh !important;
   }
   .sectionFourCont {
-    padding-bottom: 0;
+    padding-bottom: 5vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -169,6 +169,7 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  margin-top: 7vh;
 }
 .sectionTwoItem {
   display: flex;
@@ -384,7 +385,6 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  padding-bottom: 10vh;
   padding-top: 17vh;
 }
 .sectionThreeInnerCont {
