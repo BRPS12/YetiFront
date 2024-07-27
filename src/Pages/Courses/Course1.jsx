@@ -21,7 +21,7 @@ export const Course1 = () => {
       />
       <div className="background">
         <div className="firstCont">
-          <p className="firstText">
+          <p className="firstText" style={{borderWidth:0}}>
             Хэлний оноотой залууст тэтгэлгийн зөвлөгөө, чиглүүлэг өгнө.
           </p>
         </div>
