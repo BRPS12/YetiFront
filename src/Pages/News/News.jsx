@@ -112,13 +112,14 @@ export const News = () => {
   const images = [Image1, Image2, Image3, Image4, Image5, Image6, Image7];
   const images2 = [Image8, Image9, Image10, Image11, Image12, Image13, Image14];
   return (
-    <div>
+  <div>
       <Header
         backgroundImage={PersonImage}
         title="Our latest News"
         isMounted={isMounted}
         repeat="repeat"
       />
+        <div style={{display : "flex" , alignItems : "center" , justifyContent : "center" , flexDirection : "column"}}>
       <h2
         style={{
           textAlign: "center",
@@ -441,6 +442,7 @@ export const News = () => {
           quam ullamcorper nec. Maecenas eu interdum dui. Praesent nec imperdiet
           enim. Nunc a tempor felis. Phasellus ut accumsan augue, eu posuere leo
         </p>
+      </div>
       </div>
       <Footer />
     </div>

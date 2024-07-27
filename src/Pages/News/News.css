@@ -82,16 +82,20 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 10px;
+    width: 90vw;
   }
   .textContent {
     font-size: 2vh;
     width: 70vw;
     text-align: center;
-    margin-left: 7vw;
+    margin: 0;
+    margin-bottom: 2vh;
   }
   .carousel1 {
     width: 80vw;
-    margin-left: 7vw;
   }
   .firstCont {
     padding-top: 2vh !important;
@@ -101,6 +105,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 10px;
+    width: 90vw
   }
   .carousel2 {
     width: 65vw;
@@ -111,6 +119,7 @@
     padding: 0;
     margin: 0;
     width: 80vw;
+    margin-bottom: 2vh;
   }
   .thirdContain {
     flex-direction: column;
@@ -120,18 +129,24 @@
     padding: 0; 
     margin: 0;
     margin-top: 5vh;
-    margin-right: 3vh;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 10px;
+    width: 90vw;
+    margin-bottom: 3vh;
   }
   .thirdImage {
     width: 70vw;
     height: auto;
+    margin: 0;
+    margin-top: 2vh;
   }
   .textContent3 {
     font-size: 2vh;
     width: 80vw;
     text-align: center;
-    margin-top: 2vh;
-    padding-bottom: 2vh;
-    margin-right: 3vh;
+    margin-top: 3vh;
+    padding-bottom: 3vh;
+    padding-left :0;
   }
 }
