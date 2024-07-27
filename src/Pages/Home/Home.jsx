@@ -43,7 +43,7 @@ export const Home = () => {
           </h1>
           <div className="sectionTwoFirstContainer">
             <div className="sectionTwoItem">
-              <div style={{display : "flex" , alignItems : "center" , justifyContent : "center" , flexDirection : "column"}}>
+              <div style={{display : "flex" , alignItems : "center" , justifyContent : "center" , flexDirection : "column" , marginLeft : "-1.5vh"}}>
                 <div className="sectionTwoItem2">
                   <h2 className="sectionTwotitle">Туршлага</h2>
                 </div>
@@ -97,7 +97,7 @@ export const Home = () => {
             </div>
           </div>
         </div> 
-       <div className="uusgenBaigulagchCont" style={{marginTop : "3.5vh"}}>
+       <div className="uusgenBaigulagchCont">
           <p className="uusgenBaigulagchInnerCont">
             Манай үүсгэн байгуулагч нар
             <hr className="hrUusgen" />

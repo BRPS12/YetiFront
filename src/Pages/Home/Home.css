@@ -20,8 +20,8 @@
 @media only screen and (max-width: 600px) {
   .sectionOne {
     flex-direction: row;
-    padding-bottom: 2vh;
-    padding-top: 2vh;
+    padding-bottom: 4vh !important;
+    padding-top: 4vh !important;
     width: 100%;
     padding: 0;
     margin: 0;
@@ -33,13 +33,13 @@
   }
 
   .sectionOneImage {
-    width: 13vh !important ;
+    width: 17vh !important ;
     border-radius: 10px;
     margin: 0;
   }
 
   .sectionOneText {
-    font-size: 2.8vw !important; 
+    font-size: 3vw !important; 
     margin-left: 2vw !important;
   }
   .sectionTwoItem {
@@ -52,7 +52,7 @@
     align-items: center;
     justify-content: center;
     margin-top: 0 !important;
-    padding-top: 2vh;
+    padding-top: 3.5vh;
   }
   .sectonTwobadge {
     margin-left: 0.5vh !important;
@@ -96,6 +96,7 @@
     margin-bottom: 0;
     padding-bottom: 0 !important;
     height: 55vh !important;
+    margin-top: 2.5vh !important;
   }
   .mentorShipText {
     font-size: 2vh !important;
@@ -113,15 +114,20 @@
     margin-top: 3vh !important;
   }
   .sectionFourCont {
+    width: 100%;
     padding-bottom: 5vh;
     display: flex;
     justify-content: center;
     align-items: center;
     height: auto;
+    padding-top: 2%;
   }
   .sectionFourContImage {
     width: 20vw !important;
     height: auto !important;
+  }
+  .sectionFourContText {
+    width: 85vw !important;
   }
   .sectionFourContParagraph {
     font-size: 2vh !important;
@@ -135,6 +141,9 @@
     padding-top: 2vh;
     padding-bottom: 0 !important;
     margin-bottom: 4vh;
+  }
+  .outer-container {
+    width: 25vw !important;
   }
 }
 .sectionOne {
@@ -356,7 +365,7 @@
   flex-direction: column;
   align-items: center;
   padding: 0;
-  margin: 0;
+  margin-top: 3.5vh;
 }
 .uusgenBaigulagchInnerCont {
   font-size: 3vw;
