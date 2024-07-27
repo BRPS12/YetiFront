@@ -183,8 +183,8 @@
 .image-container {
   width: auto;
   height: auto;
-  margin-left: 5vw;
-  margin-right: 10vw;
+  margin-left: 12vw;
+  margin-right: 1vw;
 }
 
 .shureeBagshImage1 {
@@ -212,6 +212,120 @@
 .divider {
   margin-top: 20px;
 }
+
+.songofabout-container {
+    width: 100%;
+    height: auto;
+    font-family: Georgia, serif;
+    padding-bottom: 10vh;
+  }
+  
+  .songofabout-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .songofabout-row2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .songofabout-col-left {
+    margin-left: 70px;
+  }
+  
+  .songofabout-col-right {
+    margin-left: auto;
+    margin-right: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .songofabout-col-right2 {
+    margin-left: auto;
+    margin-right: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .songofabout-year {
+    font-size: 40px;
+  }
+  
+  .songofabout-description {
+    width: 90%;
+    font-size: 25px;
+    margin-top: 2vh;
+  }
+  
+  .songofabout-image {
+    border-radius: 20px;
+    width: 15vw;
+    margin-right: 2vw;
+  }
+  .songofabout-image2 {
+    border-radius: 20px;
+    width: 15vw;
+    margin-right: 2vw;
+    margin-left: 4vw;
+  }
+  .songofabout-description2 {
+    width: 90%;
+    font-size: 25px;
+    margin-top: 2vh;
+    margin-left: 5vw;
+  }
+  .songofabout-year2 {
+    font-size: 40px;
+     margin-left: 5vw;
+  }
+  .compitition-container {
+    width: 100%;
+    height: auto;
+    font-family: Georgia, serif;
+  }
+  
+  
+  .compitition-year {
+    font-size: 40px;
+    text-align: center;
+  }
+  
+  .compitition-description {
+    font-size: 25px;
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .compitition-images {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .compitition-image {
+    border-radius: 20px;
+    width: 300px;
+    margin-left: 50px;
+  }
+  
+  .compitition-image:first-child {
+    margin-left: 0;
+  }
+  
+  .compitition-footer {
+    padding-bottom: 70px;
+  }
+  
+  .compitition-footer .compitition-year {
+    margin-top: 20px;
+  }
+  
+  .compitition-footer .compitition-description {
+    margin-top: 15px;
+  }
 
 @media only screen and (max-width: 600px) {
   .about-container {
@@ -383,9 +497,9 @@
     text-align: center;
     margin: 0 !important;
     right: 55%;
-    top: 36.5vh;
-    position: relative; /* Make sure it is positioned absolutely */
-    transform: translate(50%, -50%); /* Center the block */
+    top: 50vh;
+    position: relative;
+    transform: translate(50%, -50%); 
     z-index: 10;
   }
   .year {
@@ -401,5 +515,84 @@
     z-index: 10;
     margin: 0 !important;
     text-align: center;
+  }
+  .songofabout-container {
+    height: auto;
+    margin-top: 70vh;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+  .songofabout-row {
+    position: relative; 
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .songofabout-image {
+    width: 100vw;
+    margin: 0;
+    position: relative;
+    z-index: 0; 
+    filter: blur(0.5px) grayscale(10%) brightness(45%);
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  .songofabout-year {
+    text-align: center;
+    width: 100vw;
+    margin-right: 16vw;
+  }
+  .songofabout-description {
+    position: absolute;
+    top: 10vh; 
+    left: 0;
+    width: 100%; 
+    text-align: center; 
+    color: #fff; 
+    font-size: 3vh;
+    padding: 10px;
+    z-index: 1; 
+  }
+  .songofabout-image2 {
+      width: 100vw;
+      margin: 0 !important;
+      height: 45vh;
+  }
+  .songofabout-row2 {
+    display: flex;
+    flex-direction: column;
+  }
+  .songofabout-description2 {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    align-items: center;
+    width: 100%;
+    font-size: 2.5vh;
+  }
+  .songofabout-year2 {
+    width: 100%;
+    text-align: center;
+    font-size: 4vh;
+  }
+  .compitition-container {
+    margin-top: 4vh;
+  }
+  .compitition-images {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .compitition-image {
+    margin-left: 0;
+    margin-top: 2vh;
+  }
+  .compitition-year {
+    font-size: 4vh;
+  }
+  .compitition-description {
+    font-size: 2.5vh;
+    padding-left: 1vh;
+    padding-right: 1vh;
   }
 }
