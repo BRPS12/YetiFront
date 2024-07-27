@@ -90,6 +90,7 @@ margin-left: 10vh;
   font-family: Georgia;
   font-size: 23px;
   width: 40%;
+  text-align: center;
 }
 .createdNewsCont {
   display: flex;
@@ -209,7 +210,7 @@ margin-left: 10vh;
     text-align: center;
     margin-top: 3vh;
     padding-bottom: 3vh;
-    padding-left: 0;
+    margin-left: 0;
   }
   .createdNewsCont {
     display: flex;

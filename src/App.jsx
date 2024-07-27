@@ -7,7 +7,7 @@ import { useState, useEffect } from "react";
 import { Course1 } from "./Pages/Courses/Course1";
 import { Course2 } from "./Pages/Courses/Course2";
 import { Course3 } from "./Pages/Courses/Course3";
-import { ContactUs } from "./Pages/ContactUs";
+import { ContactUs } from "./Pages/ContactUs/ContactUs";
 import { SignUp } from "./Pages/SignUp/SignUp";
 import { Login } from "./Pages/Login/Login";
 import axios from "axios"
