@@ -1,0 +1,361 @@
+.aboutBigCont {
+    display: flex;
+    flex-direction: column;
+}
+
+.about-container {
+    width: 100%;
+    height: 100vh;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 100px;
+  }
+  
+  .about-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .about-image {
+    border-radius: 25px;
+    margin-bottom: 15px;
+  }
+  
+  .about-timeline {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .about-timeline-item {
+    width: 250px;
+    font-weight: 500;
+    font-family: Georgia, serif;
+    text-align: center;
+    margin-top: 10px;
+    margin-left: 25px;
+  }
+  
+  .about-timeline-item hr {
+    margin-top: 10px;
+  }
+
+
+
+  .about-founder-container {
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .about-founder-text {
+    font-size: 25px;
+    font-family: Georgia, serif;
+    width: 60%;
+    margin-left: 10%;
+  }
+  
+  .about-founder-subtext {
+    margin-top: 1vh;
+  }
+  
+  .about-founder-image {
+    width: 20%;
+    height: 90%;
+    margin-left: 2%;
+  }
+
+
+
+  .about-activity-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .about-activity-image-container {
+    width: 40%;
+    height: 100%;
+    border-radius: 20px;
+  }
+  
+  .about-activity-image {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+  }
+  
+  .about-activity-text-container {
+    margin-left: 100px;
+  }
+  
+  .about-activity-title {
+    font-family: Georgia, serif;
+    font-weight: 500;
+    font-size: 40px;
+    width: 100px;
+  }
+  
+  .about-activity-year {
+    font-family: Georgia, serif;
+    font-size: 23px;
+    margin-top: 2vh;
+  }
+  
+  .about-activity-description {
+    width: 500px;
+    font-family: Georgia, serif;
+    font-size: 23px;
+    margin-top: 2vh;
+  }
+
+
+
+  .activity-section {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  
+  .image-block {
+    width: 350px;
+    height: 80%;
+    margin-left: 14vw;
+  }
+  
+  .circle {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-top: 20px;
+  }
+  
+  .yellow-circle {
+    background-color: greenyellow;
+    margin-left: 120px;
+  }
+  
+  .blue-circle {
+    background-color: blue;
+    margin-left: -60px;
+  }
+  
+  .red-circle {
+    background-color: red;
+    margin-left: 120px;
+  }
+  
+  .text-block {
+    margin-left: 8%;
+  }
+  
+  .title {
+    font-size: 40px;
+    font-family: Georgia, serif;
+  }
+  
+  .description {
+    width: 500px;
+    font-size: 22px;
+    font-family: Georgia, serif;
+    margin-top: 30px;
+  }
+  
+  .sub-description {
+    margin-top: 2vh;
+  }
+  
+  .divider {
+    margin-top: 15px;
+  }
+
+
+
+
+  .experience-section {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  
+  .image-container {
+    width: auto;
+    height: auto;
+    margin-left: 200px;
+  }
+  
+  .shureeBagshImage1 {
+    border-radius: 20px;
+  }
+  
+  .text-container {
+    margin-left: 10vw;
+  }
+  
+  .experience-block {
+    width: 80%;
+    font-size: 27px;
+    font-family: Georgia, serif;
+  }
+  
+  .year {
+    font-size: 40px;
+  }
+  
+  .description {
+    margin-top: 10px;
+  }
+  
+  .divider {
+    margin-top: 20px;
+  }
+ /* Add this to the existing CSS code */
+
+/* Media queries for responsiveness */
+
+/* For screens with a maximum width of 1200px */
+@media only screen and (max-width: 1200px) {
+    .about-container {
+      height: 80vh;
+    }
+    .about-founder-container {
+      height: 50vh;
+    }
+    .about-activity-container {
+      flex-direction: column;
+    }
+    .about-activity-image-container {
+      width: 60%;
+    }
+    .about-activity-text-container {
+      margin-left: 20px;
+    }
+    .activity-section {
+      height: 80vh;
+    }
+    .image-block {
+      width: 250px;
+      height: 60%;
+    }
+    .circle {
+      width: 100px;
+      height: 100px;
+    }
+    .experience-section {
+      height: 80vh;
+    }
+    .image-container {
+      margin-left: 100px;
+    }
+    .text-container {
+      margin-left: 5vw;
+    }
+  }
+  
+  /* For screens with a maximum width of 900px */
+  @media only screen and (max-width: 900px) {
+    .about-container {
+      height: 60vh;
+    }
+    .about-founder-container {
+      height: 40vh;
+    }
+    .about-activity-container {
+      flex-direction: column;
+    }
+    .about-activity-image-container {
+      width: 70%;
+    }
+    .about-activity-text-container {
+      margin-left: 10px;
+    }
+    .activity-section {
+      height: 60vh;
+    }
+    .image-block {
+      width: 200px;
+      height: 50%;
+    }
+    .circle {
+      width: 80px;
+      height: 80px;
+    }
+    .experience-section {
+      height: 60vh;
+    }
+    .image-container {
+      margin-left: 50px;
+    }
+    .text-container {
+      margin-left: 3vw;
+    }
+  }
+  
+  /* For screens with a maximum width of 600px */
+  @media only screen and (max-width: 600px) {
+    .about-container {
+      height: 40vh;
+    }
+    .about-founder-container {
+      padding: 0 !important;
+      margin-top: 4vh !important;
+      margin-bottom: 4vh;
+      width: 100%;
+      height: auto;
+      display: flex;
+      flex-direction: row;
+    }
+    .about-founder-text {
+      font-size: 2.3vh;
+      margin-top: 0 !important;
+      margin-right: 5vh;
+      flex-direction: row;
+      display: flex;
+    }
+    .about-founder-image {
+      width: 16vh;
+      margin-top: 0 !important;
+      height: auto;
+      margin-right: 5vh;
+    }
+    .about-activity-container {
+      flex-direction: column;
+    }
+    .about-activity-image-container {
+      width: 80%;
+    }
+    .about-activity-text-container {
+      margin-left: 10px;
+    }
+    .activity-section {
+      height: 40vh;
+    }
+    .image-block {
+      width: 150px;
+      height: 40%;
+    }
+    .circle {
+      width: 60px;
+      height: 60px;
+    }
+    .experience-section {
+      height: 40vh;
+    }
+    .image-container {
+      margin-left: 20px;
+    }
+    .text-container {
+      margin-left: 2vw;
+    }
+  }
