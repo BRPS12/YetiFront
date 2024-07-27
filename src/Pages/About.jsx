@@ -22,12 +22,10 @@ export const About = () => {
       <div class="about-founder-container">
         <p class="about-founder-text">
           -Боловсролын Тэргүүний Ажилтан Санжаагончигийн Гомбодорж,
-          <p class="about-founder-subtext">
             {" "}
             Боловсролын Тэргүүний Ажилтан, Чингис Хааны Дэлхийн Академийн
             жинхэнэ гишүүн, Залуу Үеийг Халамжлан Хүмүүжүүлэгч цол тэмдэгтэн
             Янживын Одонгэрэлийн санаачилгаар,
-          </p>{" "}
           <p class="about-founder-subtext">
             -Имэкс Корпорейшн ХХК-ийн захирал Гомбодоржийн Буяндэлгэрийн
             100%-ийн хөрөнгө оруулалттайгаар байгуулагдаж, одоог хүртэл
@@ -70,7 +68,7 @@ export const About = () => {
             <h2 class="about-timeline-item">
               <p>2009</p>
               <hr />
-              <p>
+              <p className="about-timeline-paragraph">
                 Анхны TOEFL ITP оноо амласан сургалтыг амжилттай зохион
                 байгуулсан.
               </p>
@@ -78,7 +76,7 @@ export const About = () => {
             <h2 class="about-timeline-item">
               2010
               <hr />
-              <p>
+              <p className="about-timeline-paragraph">
                 Нийт 100 хүний бүрэлдэхүүнтэй “Ардын хувьсгалын 89 жилийн ой”-г
                 угтсан сайн дурын ажил зохион байгуулсан.
               </p>
@@ -86,7 +84,7 @@ export const About = () => {
             <h2 class="about-timeline-item">
               2011
               <hr />
-              <p>
+              <p className="about-timeline-paragraph">
                 Оны шилдэг сайн үйлсийн аянд ЗАЙСАН ТОЛГОЙ-г цэвэрлэж нэр
                 дэвшссэн .
               </p>
@@ -94,7 +92,7 @@ export const About = () => {
             <h2 class="about-timeline-item">
               2011-2015
               <hr />
-              <p>
+              <p className="about-timeline-paragraph">
                 Сургалтанд хамрагдаж байсан бүх суралцагчиддаа тэтгэлэгт
                 зуучиллалын нэмэлт төлбөргүйгээр бэлдсэн. Анхны TOEFL ITP оноо
                 амласан сургалтыг амжилттай зохион байгуулсан.
@@ -111,8 +109,8 @@ export const About = () => {
     <div class="circle red-circle"></div>
   </div>
   <div class="text-block">
-    <h1 class="title">Үйл ажиллагааны тойм</h1>
-    <p class="description">
+    <h1 class="titleUil">Үйл ажиллагааны тойм</h1>
+    <p class="descriptionOfUil">
       2016- 2021 он
       <p class="sub-description">
         Туркийн элчин сайдын эхнэрийн зохиосон бүхий л сайн дурын үйл
@@ -120,7 +118,7 @@ export const About = () => {
       </p>
       <hr class="divider"></hr>
     </p>
-    <p class="description">
+    <p class="descriptionOfUil">
       2017 оноос өдийг хүртэл
       <p class="sub-description">
         Вэлүү сан , Бадамлянхуа асрамжийн газар, бусад нийгэмд үйлчилдэг
@@ -133,17 +131,10 @@ export const About = () => {
 </div>
 
 <div class="experience-section">
-  <div class="image-container">
-    <img
-      alt=""
-      src={require("../Images/ShureeBagsh.png")}
-      class="shureeBagshImage1"
-    />
-  </div>
   <div class="text-container">
     <div class="experience-block">
       <p class="year">2021 он</p>
-      <p class="description">
+      <p class="descriptionofExp">
         1 сарын 15 наас 2021 оны 5 сарын 15 хүртэл Монгол улсын хилийн
         заставт алба хааж байгаа албан хаагчдад анхан шатнаас ахисан шат
         хүртэл англи хэлний цахим хичээлийг ямар ч үнэ төлбөргүйгээр
@@ -154,13 +145,20 @@ export const About = () => {
 
     <div class="experience-block">
       <p class="year">2021 он</p>
-      <p class="description">
+      <p class="descriptionofExp">
         1 сарын 15 наас 2021 оны 5 сарын 15 хүртэл Монгол улсын хилийн
         заставт алба хааж байгаа албан хаагчдад анхан шатнаас ахисан шат
         хүртэл англи хэлний цахим хичээлийг ямар ч үнэ төлбөргүйгээр
         зохион байгуулсан.
       </p>
     </div>
+  </div>
+  <div class="image-container">
+    <img
+      alt=""
+      src={require("../Images/ShureeBagsh.png")}
+      class="shureeBagshImage1"
+    />
   </div>
 </div>
       <div
