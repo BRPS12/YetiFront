@@ -6,7 +6,7 @@
     background: linear-gradient(300deg, #FC90CF, #FE0F3E);
     padding-bottom: 100px;
 }
-.firstCont {
+.firstContainer {
     margin-bottom: 20px; width: 90vw 
 }
 .course1Title {
@@ -99,6 +99,8 @@
         font-family: Georgia;
         text-align: center;
         margin: 0;
+        border: none;
+        border-width: 0;
     }
     .background {
         display: flex;

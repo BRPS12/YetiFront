@@ -38,7 +38,7 @@ export const Home = () => {
       </div>
 
       <div className="sectionTwo">
-          <h1 className="sectionTwoTitle2" style={{marginTop : "7vh" , textAlign : "center"}}>
+          <h1 className="sectionTwoTitle2">
             Еэти-д нэгдэх час хийсэн 5 шалтгаан
           </h1>
           <div className="sectionTwoFirstContainer">
@@ -97,7 +97,7 @@ export const Home = () => {
             </div>
           </div>
         </div> 
-       <div className="uusgenBaigulagchCont">
+       <div className="uusgenBaigulagchCont" style={{marginTop : "3.5vh"}}>
           <p className="uusgenBaigulagchInnerCont">
             Манай үүсгэн байгуулагч нар
             <hr className="hrUusgen" />

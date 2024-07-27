@@ -20,8 +20,8 @@ export const Course1 = () => {
         bgSize="cover"
       />
       <div className="background">
-        <div className="firstCont">
-          <p className="course1Title" style={{borderWidth:0}}>
+        <div className="firstContainer">
+          <p className="course1Title">
             Хэлний оноотой залууст тэтгэлгийн зөвлөгөө, чиглүүлэг өгнө.
           </p>
         </div>

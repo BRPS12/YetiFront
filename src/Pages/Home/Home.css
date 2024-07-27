@@ -14,6 +14,8 @@
 }
 .sectionTwoTitle2 {
   font-size: 40px;
+  margin-top: 4vh;
+  text-align: center;
 }
 @media only screen and (max-width: 600px) {
   .sectionOne {
@@ -49,6 +51,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 0 !important;
+    padding-top: 2vh;
   }
   .sectonTwobadge {
     margin-left: 0.5vh !important;
@@ -68,6 +72,8 @@
   }
   .sectionTwoTitle2 {
     font-size: 4vh;
+    margin-top: 0 ;
+    padding-top: 2.7vh;
   }
   .tsogtsBaidalInnerConth2 {
     font-size: 2.8vh;
@@ -90,10 +96,9 @@
     margin-bottom: 0;
     padding-bottom: 0 !important;
     height: 55vh !important;
-    margin-top:3vh
   }
   .mentorShipText {
-    font-size: 2vh;
+    font-size: 2vh !important;
   }
   .uusgenBaigulagchInnerCont {
     margin-bottom: 1px !important;
@@ -119,11 +124,17 @@
     height: auto !important;
   }
   .sectionFourContParagraph {
-    font-size: 2vh;
+    font-size: 2vh !important;
   }
   .pocketCont {
     margin: 0;
     padding: 0;
+  }
+  .shalgaltinTovHuvaahCont {
+    margin-top: 0 !important;
+    padding-top: 2vh;
+    padding-bottom: 0 !important;
+    margin-bottom: 4vh;
   }
 }
 .sectionOne {
