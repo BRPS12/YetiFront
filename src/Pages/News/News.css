@@ -135,6 +135,9 @@ margin-left: 10vh;
     font-size: 1.2vw;
     font-family: Georgia;
 }
+.createSection {
+  width: 50%;
+}
 @media only screen and (max-width: 600px) {
   .firstCont {
     flex-direction: column;
@@ -149,6 +152,7 @@ margin-left: 10vh;
     width: 14vw;
     font-size: 2vh;
     border-radius: 10px;
+    top: 110vh;
   }
   .textContent {
     font-size: 2vh;
@@ -212,6 +216,9 @@ margin-left: 10vh;
     margin-top: 3vh;
     padding-bottom: 3vh;
     margin-left: 0;
+  }
+  .createSection {
+    width: 80vw;
   }
   .createdNewsCont {
     display: flex;

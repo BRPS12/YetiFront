@@ -126,7 +126,7 @@ export const News = () => {
           justifyContent: "center",
           flexDirection: "column",
         }}>
-        <h2
+          <div>        <h2
           style={{
             textAlign: "center",
             fontSize: "30px",
@@ -141,18 +141,20 @@ export const News = () => {
             Create News
           </button>
         )}
+        </div>
+
         <Modal
           open={editing}
           onClose={handleClose}
           aria-labelledby="modal-modal-title"
           aria-describedby="modal-modal-description">
           <Box
+          className="createSection"
             sx={{
               position: "absolute",
               top: "50%",
               left: "50%",
               transform: "translate(-50%, -50%)",
-              width: "50%",
               bgcolor: "background.paper",
               border: "2px solid #000",
               boxShadow: 24,
@@ -164,7 +166,7 @@ export const News = () => {
               style={{
                 display: "flex",
                 flexDirection: "row",
-                marginTop: "15px",
+                marginTop: "1vh",
               }}>
               <Typography
                 id="modal-modal-title"
@@ -238,7 +240,7 @@ export const News = () => {
               variant="contained"
               onClick={createNews}
               color="primary"
-              style={{ marginTop: "20px", marginLeft: "auto" }}
+              style={{ marginTop: "20px", marginLeft: "auto" , marginBottom : "2vh" }}
               disabled={loading}>
               {loading ? "Creating..." : "Create News"}
             </Button>
