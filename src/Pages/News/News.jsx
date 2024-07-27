@@ -132,20 +132,7 @@ export const News = () => {
       </h2>
       {user.role === "admin" && (
         <button
-          style={{
-            position: "absolute",
-            right: 40,
-            top: "105%",
-            width: "10vw",
-            height: "7vh",
-            borderRadius: "1vw",
-            borderColor: "#fff",
-            cursor: "pointer",
-            backgroundColor: "#BA39FF",
-            color: "#fff",
-            fontSize: "18px",
-            fontFamily: "Georgia",
-          }}
+          className="createButton"
           onClick={handleEdit}>
           Create News
         </button>
