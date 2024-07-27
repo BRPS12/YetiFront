@@ -84,6 +84,7 @@
     width: 100% !important;
     margin-bottom: 0;
     padding-bottom: 0 !important;
+    height: 60vh !important;
   }
   .uusgenBaigulagchInnerCont {
     margin-bottom: 1px !important;
@@ -94,7 +95,6 @@
   }
   .uusgenBaigulagchColParagraph {
     width: 40vw;
-    height: 17vh !important;
     font-size: 2vh !important;
     margin-top: 3vh !important;
   }
