@@ -238,6 +238,7 @@ header {
     padding: 0 !important;
     margin : 0 !important;
     padding-top: 5vh;
+    left: -5vh;
   }
   .menu {
     display: flex;
