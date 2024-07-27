@@ -20,8 +20,8 @@
 @media only screen and (max-width: 600px) {
   .sectionOne {
     flex-direction: row;
-    padding-bottom: 4vh !important;
-    padding-top: 4vh !important;
+    padding-bottom: 3vh !important;
+    padding-top: 3vh !important;
     width: 100%;
     padding: 0;
     margin: 0;
@@ -33,9 +33,10 @@
   }
 
   .sectionOneImage {
-    width: 17vh !important ;
+    width: 13vh !important ;
     border-radius: 10px;
-    margin: 0;
+    margin-left: 1vh;
+    margin-right: 1vh;
   }
 
   .sectionOneText {
