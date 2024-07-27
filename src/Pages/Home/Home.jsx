@@ -20,7 +20,7 @@ export const Home = () => {
           repeat="no-repeat"
           bgSize="cover"
         /> 
-      <div className="sectionOne">
+      {/* <div className="sectionOne">
         <div className="sectionOneImageDiv">
           <img
             className="sectionOneImage"
@@ -35,7 +35,7 @@ export const Home = () => {
           анкет бөглөх, ярилцлагад бэлдэхэд тусалж, орчуулгын зөвлөгөөг ямар ч
           үнэ төлбөргүй өгдөг анхны сургалтын төв юм.
         </div>
-      </div>
+      </div> */}
 
       <div className="sectionTwo">
           <h1 className="sectionTwoTitle" style={{marginTop : "7vh"}}>

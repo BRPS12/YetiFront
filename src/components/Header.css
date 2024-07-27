@@ -232,6 +232,7 @@ header {
   .buttonText {
     width: 70vw !important;
   }
+  
 }
 
 @keyframes scrollAnimation {

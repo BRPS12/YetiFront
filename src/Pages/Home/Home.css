@@ -17,6 +17,9 @@
     flex-direction: row;
     padding-bottom: 2vh;
     padding-top: 2vh;
+    width: 100%;
+    padding: 0;
+    margin: 0;
   }
 
   .sectionOneImageDiv {
@@ -30,7 +33,6 @@
   }
 
   .sectionOneText {
-    width: 80%;
     font-size: 2.8vw !important; 
     margin-left: 2vw !important;
   }
