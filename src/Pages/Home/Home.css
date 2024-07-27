@@ -12,6 +12,9 @@
   align-items: center;
   flex-direction: column;
 }
+.sectionTwoTitle2 {
+  font-size: 40px;
+}
 @media only screen and (max-width: 600px) {
   .sectionOne {
     flex-direction: row;
@@ -40,7 +43,6 @@
   .sectionTwoItem {
     display: flex;
     flex-direction: row;
-    margin-top: 4vh !important
   }
   .sectionTwoFirstContainer{
     font-size: 2vh !important;
@@ -61,8 +63,11 @@
     font-size: 2.8vh;
   }
   .sectionTwotitle {
-    font-size: 2.8vh;
+    font-size: 3vh;
     text-align: center;
+  }
+  .sectionTwoTitle2 {
+    font-size: 4vh;
   }
   .tsogtsBaidalInnerConth2 {
     font-size: 2.8vh;

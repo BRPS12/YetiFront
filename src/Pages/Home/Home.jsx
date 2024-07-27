@@ -38,7 +38,7 @@ export const Home = () => {
       </div>
 
       <div className="sectionTwo">
-          <h1 className="sectionTwoTitle" style={{marginTop : "7vh"}}>
+          <h1 className="sectionTwoTitle2" style={{marginTop : "7vh" , textAlign : "center"}}>
             Еэти-д нэгдэх час хийсэн 5 шалтгаан
           </h1>
           <div className="sectionTwoFirstContainer">
