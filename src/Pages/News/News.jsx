@@ -30,7 +30,7 @@ import {
   IconButton,
 } from "@mui/material";
 import ClearIcon from "@mui/icons-material/Clear";
-import "./News.css"
+import "./News.css";
 export const News = () => {
   const user_id = window.localStorage.getItem("user_id");
   const [isMounted, setIsMounted] = useState(false);
@@ -42,15 +42,15 @@ export const News = () => {
   const [image, setImage] = useState();
   const [picture, setPicture] = useState("");
   const [news, setNews] = useState([]);
-  const [isLoading , setIsLoading] = useState(true)
+  const [isLoading, setIsLoading] = useState(true);
   const getUser = async () => {
     try {
       const response = await instance.get(`/users/${user_id}`);
       setUser(response.data.data);
-      setIsLoading(false)
+      setIsLoading(false);
     } catch (error) {
       console.error("Error fetching user data:", error);
-      setIsLoading(false)
+      setIsLoading(false);
     }
   };
   const deleteNews = async (id) => {
@@ -65,7 +65,7 @@ export const News = () => {
   const getAllNews = async () => {
     const response = await instance.get("/news");
     setNews(response.data.data);
-    setIsLoading(false)
+    setIsLoading(false);
   };
   const createNews = async () => {
     try {
@@ -112,324 +112,286 @@ export const News = () => {
   const images = [Image1, Image2, Image3, Image4, Image5, Image6, Image7];
   const images2 = [Image8, Image9, Image10, Image11, Image12, Image13, Image14];
   return (
-  <div>
+    <div>
       <Header
         backgroundImage={PersonImage}
         title="Our latest News"
         isMounted={isMounted}
         repeat="repeat"
       />
-        <div style={{display : "flex" , alignItems : "center" , justifyContent : "center" , flexDirection : "column"}}>
-      <h2
+      <div
         style={{
-          textAlign: "center",
-          fontSize: "30px",
-          fontFamily: "Georgia",
-          marginTop: "30px",
-          marginBottom: "30px",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          flexDirection: "column",
         }}>
-        Latest News
-      </h2>
-      {user.role === "admin" && (
-        <button
-          className="createButton"
-          onClick={handleEdit}>
-          Create News
-        </button>
-      )}
-      <Modal
-        open={editing}
-        onClose={handleClose}
-        aria-labelledby="modal-modal-title"
-        aria-describedby="modal-modal-description">
-        <Box
-          sx={{
-            position: "absolute",
-            top: "50%",
-            left: "50%",
-            transform: "translate(-50%, -50%)",
-            width: "50%",
-            bgcolor: "background.paper",
-            border: "2px solid #000",
-            boxShadow: 24,
-            p: 4,
-            borderRadius: "20px",
-            height: 410,
+        <h2
+          style={{
+            textAlign: "center",
+            fontSize: "30px",
+            fontFamily: "Georgia",
+            marginTop: "30px",
+            marginBottom: "30px",
           }}>
-          <div
-            style={{
-              display: "flex",
-              flexDirection: "row",
-              marginTop: "15px",
-            }}>
-            <Typography
-              id="modal-modal-title"
-              variant="h6"
-              component="h2"
-              style={{ fontFamily: "Georgia" }}>
-              Create News
-            </Typography>
-            <IconButton onClick={handleClose} style={{ marginLeft: "auto" }}>
-              <ClearIcon />
-            </IconButton>
-          </div>
-          <Typography id="modal-modal-description" sx={{ mt: 2 }}>
-            <Grid container spacing={2}>
-              <Grid item xs={12}>
-                <TextField
-                  label="Title"
-                  variant="outlined"
-                  value={title}
-                  onChange={(e) => setTitle(e.target.value)}
-                  fullWidth
-                  InputProps={{
-                    style: {
-                      textAlign: "center",
-                      fontFamily: "Georgia, serif",
-                      fontSize: "16px",
-                    },
-                  }}
-                />
-              </Grid>
-              <Grid item xs={12}>
-                <TextField
-                  type="text"
-                  label="Paragraph"
-                  variant="outlined"
-                  value={paragraph}
-                  InputProps={{
-                    style: {
-                      textAlign: "center",
-                      fontFamily: "Georgia, serif",
-                      fontSize: "16px",
-                    },
-                  }}
-                  onChange={(e) => setParagraph(e.target.value)}
-                  fullWidth
-                />
-              </Grid>
-              <Grid item xs={12}>
-                <TextField
-                  type="text"
-                  label="Image Url"
-                  variant="outlined"
-                  value={picture}
-                  InputProps={{
-                    style: {
-                      textAlign: "center",
-                      fontFamily: "Georgia, serif",
-                      fontSize: "16px",
-                    },
-                  }}
-                  onChange={(e) => setPicture(e.target.value)}
-                  fullWidth
-                />
-              </Grid>
-              <Grid item xs={12}>
-                <input type="file" onChange={handleFileUpload} />
-              </Grid>
-            </Grid>
-          </Typography>
-          <Button
-            variant="contained"
-            onClick={createNews}
-            color="primary"
-            style={{ marginTop: "25px", marginLeft: "auto" }}
-            disabled={loading}>
-            {loading ? "Creating..." : "Create News"}
-          </Button>
-        </Box>
-      </Modal>
-      <div style={{ paddingLeft: "6vw" }}>
-        {news.map((item, index) => (
-          <div
-            key={index}
-            style={{
-              display: "flex",
-              flexDirection: "row",
-              width: "100%",
-              height: "auto",
-              fontFamily: "Georgia",
-              marginTop: "6vh",
+          Latest News
+        </h2>
+        {user.role === "admin" && (
+          <button className="createButton" onClick={handleEdit}>
+            Create News
+          </button>
+        )}
+        <Modal
+          open={editing}
+          onClose={handleClose}
+          aria-labelledby="modal-modal-title"
+          aria-describedby="modal-modal-description">
+          <Box
+            sx={{
+              position: "absolute",
+              top: "50%",
+              left: "50%",
+              transform: "translate(-50%, -50%)",
+              width: "50%",
+              bgcolor: "background.paper",
+              border: "2px solid #000",
+              boxShadow: 24,
+              p: 4,
+              borderRadius: "20px",
+              height: 450,
             }}>
             <div
               style={{
-                width: "50%",
                 display: "flex",
-                justifyContent: "center",
-                flexDirection: "column",
-                alignItems: "center",
-                marginBottom: "4vh",
-                textAlign: "center",
+                flexDirection: "row",
+                marginTop: "15px",
               }}>
-              <p style={{ fontSize: "27px", color: "#3996FF" }}>{item.title}</p>
-              <p style={{ fontSize: "23px" }}>{item.paragraph}</p>
+              <Typography
+                id="modal-modal-title"
+                variant="h6"
+                component="h2"
+                style={{ fontFamily: "Georgia" }}>
+                Create News
+              </Typography>
+              <IconButton onClick={handleClose} style={{ marginLeft: "auto" }}>
+                <ClearIcon />
+              </IconButton>
             </div>
-   
-              <div>
-                {
-                  user.role === "admin" ? (<Button
-                    style={{
-                      position: "absolute",
-                      left: "6vw",
-                      width: "5vw",
-                      height: "5vh",
-                      borderRadius: "0.7vw",
-                      borderColor: "#fff",
-                      cursor: "pointer",
-                      backgroundColor: "#FB1B1B",
-                      color: "#fff",
-                      fontSize: "12px",
-                      fontFamily: "Georgia",
+            <Typography id="modal-modal-description" sx={{ mt: 2 }}>
+              <Grid container spacing={2}>
+                <Grid item xs={12}>
+                  <TextField
+                    label="Title"
+                    variant="outlined"
+                    value={title}
+                    onChange={(e) => setTitle(e.target.value)}
+                    fullWidth
+                    InputProps={{
+                      style: {
+                        textAlign: "center",
+                        fontFamily: "Georgia, serif",
+                        fontSize: "16px",
+                      },
                     }}
+                  />
+                </Grid>
+                <Grid item xs={12}>
+                  <TextField
+                    type="text"
+                    label="Paragraph"
+                    variant="outlined"
+                    value={paragraph}
+                    InputProps={{
+                      style: {
+                        textAlign: "center",
+                        fontFamily: "Georgia, serif",
+                        fontSize: "16px",
+                      },
+                    }}
+                    onChange={(e) => setParagraph(e.target.value)}
+                    fullWidth
+                  />
+                </Grid>
+                <Grid item xs={12}>
+                  <TextField
+                    type="text"
+                    label="Image Url"
+                    variant="outlined"
+                    value={picture}
+                    InputProps={{
+                      style: {
+                        textAlign: "center",
+                        fontFamily: "Georgia, serif",
+                        fontSize: "16px",
+                      },
+                    }}
+                    onChange={(e) => setPicture(e.target.value)}
+                    fullWidth
+                  />
+                </Grid>
+                <Grid item xs={12}>
+                  <input type="file" onChange={handleFileUpload} />
+                </Grid>
+              </Grid>
+            </Typography>
+            <Button
+              variant="contained"
+              onClick={createNews}
+              color="primary"
+              style={{ marginTop: "20px", marginLeft: "auto" }}
+              disabled={loading}>
+              {loading ? "Creating..." : "Create News"}
+            </Button>
+          </Box>
+        </Modal>
+        <div>
+          {news.map((item, index) => (
+            <div
+              key={index}
+              className="createdNewsCont">
+                                {user.role === "admin" ? (
+                  <button
+                    className="deleteButton"
                     onClick={() => deleteNews(item._id)}>
                     Delete
-                  </Button>) : (
-                    <></>
-                  )
-                }
-                
+                  </button>
+                ) : (
+                  <></>
+                )}
+              <div className="createdNewsLittleCont">
+                <p className="createdTitle">{item.title}</p>
+                <p className="createdPara">{item.paragraph}</p>
+              </div>
                 <img
                   src={item.image}
                   alt={`News ${index + 1}`}
-                  style={{
-                    width: "35vw",
-                    height: "auto",
-                    borderRadius: "1vw",
-                    marginLeft: "7vw",
-                  }}
+                  className="createdNewsImage"
                 />
-              </div>
-            
+            </div>
+          ))}
+        </div>
+        <div className="firstCont">
+          <div className="carousel1">
+            <Carousel
+              showArrows={true}
+              infiniteLoop={true}
+              autoPlay={true}
+              interval={3000}
+              showThumbs={false}
+              renderArrowPrev={(onClickHandler, hasPrev, label) =>
+                hasPrev && (
+                  <button
+                    type="button"
+                    onClick={onClickHandler}
+                    title={label}
+                    className="carouselArrow2">
+                    <FaArrowLeft fill="#fff" />
+                  </button>
+                )
+              }
+              renderArrowNext={(onClickHandler, hasNext, label) =>
+                hasNext && (
+                  <button
+                    type="button"
+                    onClick={onClickHandler}
+                    title={label}
+                    className="carouselArrow">
+                    <FaArrowRight fill="#fff" />
+                  </button>
+                )
+              }>
+              {images.map((image, index) => (
+                <div key={index}>
+                  <img
+                    src={image}
+                    alt={`News ${index + 1}`}
+                    style={{
+                      maxWidth: "100%",
+                      height: "auto",
+                      borderRadius: "10px",
+                    }}
+                  />
+                </div>
+              ))}
+            </Carousel>
           </div>
-        ))}
-      </div>
-      <div
-        className="firstCont">
-        <div
-          className="carousel1">
-          <Carousel
-            showArrows={true}
-            infiniteLoop={true}
-            autoPlay={true}
-            interval={3000}
-            showThumbs={false}
-            renderArrowPrev={(onClickHandler, hasPrev, label) =>
-              hasPrev && (
-                <button
-                  type="button"
-                  onClick={onClickHandler}
-                  title={label}
-                  className="carouselArrow2">
-                  <FaArrowLeft fill="#fff" />
-                </button>
-              )
-            }
-            renderArrowNext={(onClickHandler, hasNext, label) =>
-              hasNext && (
-                <button
-                  type="button"
-                  onClick={onClickHandler}
-                  title={label}
-                  className="carouselArrow">
-                  <FaArrowRight fill="#fff" />
-                </button>
-              )
-            }>
-            {images.map((image, index) => (
-              <div key={index}>
-                <img
-                  src={image}
-                  alt={`News ${index + 1}`}
-                  style={{
-                    maxWidth: "100%",
-                    height: "auto",
-                    borderRadius: "10px",
-                  }}
-                />
-              </div>
-            ))}
-          </Carousel>
+          <p className="textContent">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi in
+            sem ut tortor consequat ultricies id vel felis. Duis posuere tellus
+            non finibus aliquam. enim. Nunc a tempor felis. Phasellus ut
+            accumsan augue, eu posuere leo
+          </p>
         </div>
-        <p
-         className="textContent">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi in sem
-          ut tortor consequat ultricies id vel felis. Duis posuere tellus non
-          finibus aliquam. enim. Nunc a tempor felis. Phasellus ut accumsan augue, eu posuere leo
-        </p>
-      </div>
-      <div
-        className="secondContain">
-        <div className="carousel2">
-          <Carousel
-            showArrows={true}
-            infiniteLoop={true}
-            autoPlay={true}
-            interval={3000}
-            showThumbs={false}
-            renderArrowPrev={(onClickHandler, hasPrev, label) =>
-              hasPrev && (
-                <button
-                  type="button"
-                  onClick={onClickHandler}
-                  title={label}
-                  className="carouselArrow2">
-                  <FaArrowLeft fill="#000" />
-                </button>
-              )
-            }
-            renderArrowNext={(onClickHandler, hasNext, label) =>
-              hasNext && (
-                <button
-                  type="button"
-                  onClick={onClickHandler}
-                  title={label}
-                  className="carouselArrow">
-                  <FaArrowRight fill="#000" />
-                </button>
-              )
-            }>
-            {images2.map((image, index) => (
-              <div key={index}>
-                <img
-                  src={image}
-                  alt={`News ${index + 1}`}
-                  style={{
-                    maxWidth: "100%",
-                    height: "auto",
-                    borderRadius: "10px",
-                  }}
-                />
-              </div>
-            ))}
-          </Carousel>
+        <div className="secondContain">
+          <div className="carousel2">
+            <Carousel
+              showArrows={true}
+              infiniteLoop={true}
+              autoPlay={true}
+              interval={3000}
+              showThumbs={false}
+              renderArrowPrev={(onClickHandler, hasPrev, label) =>
+                hasPrev && (
+                  <button
+                    type="button"
+                    onClick={onClickHandler}
+                    title={label}
+                    className="carouselArrow2">
+                    <FaArrowLeft fill="#000" />
+                  </button>
+                )
+              }
+              renderArrowNext={(onClickHandler, hasNext, label) =>
+                hasNext && (
+                  <button
+                    type="button"
+                    onClick={onClickHandler}
+                    title={label}
+                    className="carouselArrow">
+                    <FaArrowRight fill="#000" />
+                  </button>
+                )
+              }>
+              {images2.map((image, index) => (
+                <div key={index}>
+                  <img
+                    src={image}
+                    alt={`News ${index + 1}`}
+                    style={{
+                      maxWidth: "100%",
+                      height: "auto",
+                      borderRadius: "10px",
+                    }}
+                  />
+                </div>
+              ))}
+            </Carousel>
+          </div>
+          <p className="textContent2">
+            Lorem2 ipsum dolor sit amet, consectetur adipiscing elit. Morbi in
+            sem ut tortor consequat ultricies id vel felis. Duis posuere tellus
+            non finibus aliquam. Donec volutpat metus enim. Nunc a tempor felis.
+            Phasellus ut accumsan augue, eu posuere leo
+          </p>
         </div>
-        <p
-          className="textContent2">
-          Lorem2 ipsum dolor sit amet, consectetur adipiscing elit. Morbi in sem
-          ut tortor consequat ultricies id vel felis. Duis posuere tellus non
-          finibus aliquam. Donec volutpat metus  enim. Nunc a tempor felis. Phasellus ut accumsan augue, eu posuere leo
-        </p>
-      </div>
 
-      <div
-        className="thirdContain">
-        <img
-          src={require("../../Images/zaisan.jpg")}
-          alt="zaisan"
-          className="thirdImage"
-        />
-        <p
-          className="textContent3">
-          Lorem3 ipsum dolor sit amet, consectetur adipiscing elit. Morbi in sem
-          ut tortor consequat ultricies id vel felis. Duis posuere tellus non
-          finibus aliquam. Donec volutpat metus sed mi faucibus, ut ornare
-          ligula tempor. Donec dictum sem vel ex dignissim, placerat euismod
-          massa fringilla. Pellentesque condimentum accumsan odio, vitae dictum
-          quam ullamcorper nec. Maecenas eu interdum dui. Praesent nec imperdiet
-          enim. Nunc a tempor felis. Phasellus ut accumsan augue, eu posuere leo
-        </p>
-      </div>
+        <div className="thirdContain">
+          <img
+            src={require("../../Images/zaisan.jpg")}
+            alt="zaisan"
+            className="thirdImage"
+          />
+          <p className="textContent3">
+            Lorem3 ipsum dolor sit amet, consectetur adipiscing elit. Morbi in
+            sem ut tortor consequat ultricies id vel felis. Duis posuere tellus
+            non finibus aliquam. Donec volutpat metus sed mi faucibus, ut ornare
+            ligula tempor. Donec dictum sem vel ex dignissim, placerat euismod
+            massa fringilla. Pellentesque condimentum accumsan odio, vitae
+            dictum quam ullamcorper nec. Maecenas eu interdum dui. Praesent nec
+            imperdiet enim. Nunc a tempor felis. Phasellus ut accumsan augue, eu
+            posuere leo
+          </p>
+        </div>
       </div>
       <Footer />
     </div>
