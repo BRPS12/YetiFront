@@ -55,7 +55,7 @@
 }
 @media only screen and (max-width: 600px) {
   .xolboobarix {
-    font-size: 4.2vh;
+    font-size: 3.8vh;
     text-align: center;
     margin-top: 5vh;
   }
@@ -69,10 +69,11 @@
   }
   .contactUsCont {
     flex-direction: column;
+    padding-bottom: 4vh !important;
   }
   .contactUsInfo {
     text-align: center;
-    font-size: 3.5vh;
+    font-size: 3vh;
   }
   .contactUsInfo span {
     flex-direction: column;
@@ -83,13 +84,14 @@
   }
   .contactSecondCont {
     height: 50vh;
-    margin-top: 2vh;
-    margin-bottom: -5vh;
+    margin: 0 !important;
   }
   .yetiImage {
     width: 50vw;
   }
   .yetiName {
-    font-size: 4.2vh;
+    font-size: 3.8vh;
+    width: 60vw;
+    margin-top: 1vh;
   }
 }
