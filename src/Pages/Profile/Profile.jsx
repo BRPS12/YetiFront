@@ -81,30 +81,22 @@ const Profile = () => {
   return (
     <div>
       <header
-        style={{ display: "flex", flexDirection: "row", alignItems: "center" }}>
+        className = "profile-header">
         <div
-              style={{
-                display: "flex",
-                alignItems: "center",
-                marginLeft : "20px",
-                marginTop : "5px",
-                marginBottom : "5px"
-              }}>
+              className="header-logo-cont"
+>
               <img
-                style={{
-                  width: "70px",
-                  borderRadius: "20px",
-                  marginRight: "10px",
-                }}
+                className="header-yeti-logo"
+
                 src={require("../../Images/YetiLogo.jpg")}
                 alt="Yeti Logo"
               />
-              <div style={{ color: "#000", fontFamily: "Georgia, serif" }}>
-                <div style={{ fontSize: "20px" }}>Yeti Educational</div>
-                <div style={{ fontSize: "20px" }}>Academy</div>
+              <div className = "header-yeti-logo-text" >
+                <div>Yeti Educational</div>
+                <div>Academy</div>
               </div>
             </div>
-        <div style={{ marginLeft: "40px" }}>
+        <div className="buttoncontainer">
           <Link to="/" className="link-button">
             Home
           </Link>
@@ -119,125 +111,41 @@ const Profile = () => {
           </Link>
         </div>
         <div
-          style={{
-            display: "flex",
-            flexDirection: "column",
-            marginLeft: "auto",
-            marginRight: "40px",
-          }}>
+          className="user-profile-cont">
           <img
             src={user.profile}
-            style={{
-              width: "65px",
-              height: "65px",
-              borderRadius: "50%",
-            }}
+            className="user-profile"
           />
         </div>
       </header>
-      <hr style={{ marginTop: "2px" }} />
-      <body style={{ display: "flex", flexDirection: "row" }}>
-        <div style={{ width: "60%", height: "100%", display: "flex" }}>
-          <div style={{ width: "100%", height: "100%" }}>
-            <p
-              style={{
-                fontSize: "40px",
-                marginLeft: "30%",
-                marginTop: "17%",
-                fontFamily: "Georgia",
-              }}>
-              {user.name}
-            </p>
-            <p
-              style={{
-                fontSize: "20px",
-                marginLeft: "25%",
-                marginTop: "15px",
-                fontFamily: "Georgia",
-              }}>
-              Email : {user.email}
-            </p>
-            <p
-              style={{
-                fontSize: "20px",
-                marginLeft: "25%",
-                marginTop: "15px",
-                fontFamily: "Georgia",
-              }}>
-              Age : {user.age}
-            </p>
-            <p
-              style={{
-                fontSize: "20px",
-                marginLeft: "25%",
-                marginTop: "15px",
-                fontFamily: "Georgia",
-              }}>
-              Role : {user.role}
-            </p>
-            <hr style={{ width: "50%", marginLeft: "15%", marginTop: "2%" }} />
-          </div>
+      <hr/>
+      <div className="profile-body">
+      <div className="profile-info">
+        <div className="profile-info-container">
+          <p className="profile-name">{user.name}</p>
+          <p className="profile-email">Email: {user.email}</p>
+          <p className="profile-age">Age: {user.age}</p>
+          <p className="profile-role">Role: {user.role}</p>
+          <hr className="profile-hr" />
         </div>
-        <hr style={{ height: "83.5vh" }} />
-        <div
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            width: "40%",
-            marginTop: "7%",
-          }}>
-          <div
-            style={{
-              display: "flex",
-              flexDirection: "column",
-              alignItems: "center",
-            }}>
-            <img
-              src={user.profile}
-              style={{ width: "135px", height: "135px", borderRadius: "50%" }}
-            />
-            <p style={{ fontFamily: "Georgia", marginTop: "10px" , fontSize  : "20px"}}>
-              {user.name}
-            </p>
-            <button
-              onClick={handleEdit}
-              style={{
-                width: "150px",
-                height: "30px",
-                borderRadius: "10px",
-                borderColor: "#fff",
-                borderStyle: "solid",
-                borderWidth: "1px",
-                backgroundColor: "#2790FF",
-                color: "white",
-                fontSize: "17px",
-                fontFamily: "Georgia",
-                cursor: "pointer",
-                marginTop: "20px",
-              }}>
-              Edit Profile
-            </button>
-            <button
-              onClick={logOut}
-              style={{
-                width: "150px",
-                height: "30px",
-                borderRadius: "10px",
-                borderColor: "#fff",
-                borderStyle: "solid",
-                borderWidth: "1px",
-                backgroundColor: "#FF3939",
-                color: "white",
-                fontSize: "17px",
-                fontFamily: "Georgia",
-                cursor: "pointer",
-                marginTop: "20px",
-              }}>
-              Log Out
-            </button>
-          </div>
+      </div>
+      <hr className="profile-divider" />
+      <div className="profile-picture-container">
+        <div className="profile-picture">
+          <img src={user.profile} alt="Profile Picture" className="profile-picture-picture"/>
+          <p className="profile-picture-name">{user.name}</p>
+          <button className="edit-profile-button" onClick={handleEdit}>
+            Edit Profile
+          </button>
+          <button className="log-out-button" onClick={logOut}>
+            Log Out
+          </button>
         </div>
-      </body>
+      </div>
+    </div>
+
+
+
       <Modal
         open={editing}
         onClose={handleClose}
