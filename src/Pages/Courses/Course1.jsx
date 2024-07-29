@@ -3,11 +3,19 @@ import { Header } from "../../components/Header";
 import courseImage from "../../Images/mentornship.jpg";
 import { Footer } from "../../components/Footer";
 import "./Course1.css";
+import { instance } from "../../App";
 export const Course1 = () => {
+  const user_id = window.localStorage.getItem("user_id");
   const [isMounted, setIsMounted] = useState(false);
+  const [user, setUser] = useState([]);
 
+  const getUser = async () => {
+    const res = await instance.get(`/users/${user_id}`);
+    setUser(res.data.data);
+  };
   useEffect(() => {
     setIsMounted(true);
+    getUser();
   }, []);
 
   return (
@@ -19,6 +27,9 @@ export const Course1 = () => {
         repeat="no-repeat"
         bgSize="cover"
       />
+      <div className="addButtonCont">
+      {user.role === "admin" ? <button class="course1Add">Add</button> : <></>}
+      </div>
       <div className="background">
         <div className="firstContainer">
           <p className="course1Title">
@@ -49,8 +60,7 @@ export const Course1 = () => {
             </p>
           </div>
         </div>
-        <div
-          className="secondRow">
+        <div className="secondRow">
           <div className="thirdCont">
             <p className="thridContParagraph">
               <p>⭐ Визний болон тэтгэлгийн ярилцлагын зөвлөгөө </p>

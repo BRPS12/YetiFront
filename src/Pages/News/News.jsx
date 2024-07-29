@@ -36,13 +36,13 @@ export const News = () => {
   const [isMounted, setIsMounted] = useState(false);
   const [user, setUser] = useState({});
   const [editing, setEditing] = useState(false);
-  const [loading, setLoading] = useState(false);
-  const [title, setTitle] = useState("");
-  const [paragraph, setParagraph] = useState("");
-  const [image, setImage] = useState();
-  const [picture, setPicture] = useState("");
+  const [newsImage, setNewsImage] = useState([]);
   const [news, setNews] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
+  const [file, setFile] = useState(null);
+  const [newsTitle, setNewsTitle] = useState("");
+  const [newsContent, setNewsContent] = useState("");
+
   const getUser = async () => {
     try {
       const response = await instance.get(`/users/${user_id}`);
@@ -64,32 +64,32 @@ export const News = () => {
   };
   const getAllNews = async () => {
     const response = await instance.get("/news");
-    setNews(response.data.data);
-    setIsLoading(false);
+    const newsData = response.data.data;
+    setNews(newsData);
   };
-  const createNews = async () => {
-    try {
-      setLoading(true);
-      const formData = new FormData();
-      formData.append("title", title);
-      formData.append("paragraph", paragraph);
-      formData.append("image", picture);
+  // const createNews = async () => {
+  //   try {
+  //     setLoading(true);
+  //     const formData = new FormData();
+  //     formData.append("title", title);
+  //     formData.append("paragraph", paragraph);
+  //     formData.append("image", picture);
 
-      const response = await instance.post("/news/createNews", formData);
-      const newNewsItem = response.data.data;
+  //     const response = await instance.post("/news/createNews", formData);
+  //     const newNewsItem = response.data.data;
 
-      setNews([...news, newNewsItem]);
-      setTitle("");
-      setParagraph("");
-      setPicture("");
-      setImage(null);
-      setEditing(false);
-    } catch (error) {
-      console.error("Error creating news:", error);
-    } finally {
-      setLoading(false);
-    }
-  };
+  //     setNews([...news, newNewsItem]);
+  //     setTitle("");
+  //     setParagraph("");
+  //     setPicture("");
+  //     setImage(null);
+  //     setEditing(false);
+  //   } catch (error) {
+  //     console.error("Error creating news:", error);
+  //   } finally {
+  //     setLoading(false);
+  //   }
+  // };
   const handleEdit = () => {
     setEditing(true);
   };
@@ -98,9 +98,33 @@ export const News = () => {
     setEditing(false);
   };
 
-  const handleFileUpload = (e) => {
-    const file = e.target.files[0];
-    setImage(file);
+  const handleFileChange = (event) => {
+    setFile(event.target.files[0]); // Get the selected file
+  };
+
+  const handleSubmit = async (event) => {
+    event.preventDefault(); // Prevent default form submission
+
+    const formData = new FormData();
+    formData.append("image", file); // Append the file to the form data
+    formData.append("title", newsTitle); // Append the title to the form data
+    formData.append("content", newsContent); // Append the content to the form data
+
+    try {
+      // Send the image upload and news creation request
+      const res = await instance.post("/news/createNews", formData, {
+        headers: {
+          "Content-Type": "multipart/form-data", // Set the content type
+        },
+      });
+      console.log(res.data); // Log the response data
+      // Optionally reset the form
+      setFile(null);
+      setNewsTitle("");
+      setNewsContent("");
+    } catch (error) {
+      console.error("Error creating news:", error); // Handle any errors
+    }
   };
 
   useEffect(() => {
@@ -126,21 +150,23 @@ export const News = () => {
           justifyContent: "center",
           flexDirection: "column",
         }}>
-          <div>        <h2
-          style={{
-            textAlign: "center",
-            fontSize: "30px",
-            fontFamily: "Georgia",
-            marginTop: "30px",
-            marginBottom: "30px",
-          }}>
-          Latest News
-        </h2>
-        {user.role === "admin" && (
-          <button className="createButton" onClick={handleEdit}>
-            Create News
-          </button>
-        )}
+        <div>
+          {" "}
+          <h2
+            style={{
+              textAlign: "center",
+              fontSize: "30px",
+              fontFamily: "Georgia",
+              marginTop: "30px",
+              marginBottom: "30px",
+            }}>
+            Latest News
+          </h2>
+          {user.role === "admin" && (
+            <button className="createButton" onClick={handleEdit}>
+              Create News
+            </button>
+          )}
         </div>
 
         <Modal
@@ -149,7 +175,7 @@ export const News = () => {
           aria-labelledby="modal-modal-title"
           aria-describedby="modal-modal-description">
           <Box
-          className="createSection"
+            className="createSection"
             sx={{
               position: "absolute",
               top: "50%",
@@ -179,7 +205,29 @@ export const News = () => {
                 <ClearIcon />
               </IconButton>
             </div>
-            <Typography id="modal-modal-description" sx={{ mt: 2 }}>
+            <form onSubmit={handleSubmit} encType="multipart/form-data">
+              <input
+                type="text"
+                placeholder="News Title"
+                value={newsTitle}
+                onChange={(e) => setNewsTitle(e.target.value)}
+                required
+              />
+              <textarea
+                placeholder="News Content"
+                value={newsContent}
+                onChange={(e) => setNewsContent(e.target.value)}
+                required
+              />
+              <input
+                type="file"
+                name="image"
+                onChange={handleFileChange}
+                required
+              />
+              <input type="submit" value="Create News" />
+            </form>
+            {/* <Typography id="modal-modal-description" sx={{ mt: 2 }}>
               <Grid container spacing={2}>
                 <Grid item xs={12}>
                   <TextField
@@ -232,43 +280,46 @@ export const News = () => {
                   />
                 </Grid>
                 <Grid item xs={12}>
-                  <input type="file" onChange={handleFileUpload} />
+                <form onSubmit={handleFileUpload} encType="multipart/form-data">
+      <input type="file" name="image" onChange={handleFileChange} />
+      <input type="submit" value="Upload" />
+    </form>
                 </Grid>
               </Grid>
-            </Typography>
-            <Button
+            </Typography> */}
+            {/* <Button
               variant="contained"
               onClick={createNews}
               color="primary"
               style={{ marginTop: "20px", marginLeft: "auto" , marginBottom : "2vh" }}
               disabled={loading}>
               {loading ? "Creating..." : "Create News"}
-            </Button>
+            </Button> */}
           </Box>
         </Modal>
         <div>
           {news.map((item, index) => (
-            <div
-              key={index}
-              className="createdNewsCont">
-                                {user.role === "admin" ? (
-                  <button
-                    className="deleteButton"
-                    onClick={() => deleteNews(item._id)}>
-                    Delete
-                  </button>
-                ) : (
-                  <></>
-                )}
+            <div key={index} className="createdNewsCont">
+              {user.role === "admin" ? (
+                <button
+                  className="deleteButton"
+                  onClick={() => deleteNews(item._id)}>
+                  Delete
+                </button>
+              ) : (
+                <></>
+              )}
               <div className="createdNewsLittleCont">
                 <p className="createdTitle">{item.title}</p>
-                <p className="createdPara">{item.paragraph}</p>
+                <p className="createdPara">{item.content}</p>
               </div>
+              {item.image && ( // Check if item.image exists before rendering the image
                 <img
                   src={item.image}
                   alt={`News ${index + 1}`}
                   className="createdNewsImage"
                 />
+              )}
             </div>
           ))}
         </div>

@@ -1,158 +1,173 @@
 .fontFamily {
-    font-family: Georgia, sans-serif
+  font-family: Georgia, sans-serif;
 }
 .background {
-    padding: 20px;
-    background: linear-gradient(300deg, #FC90CF, #FE0F3E);
-    padding-bottom: 100px;
+  padding: 20px;
+  background: linear-gradient(300deg, #fc90cf, #fe0f3e);
+  padding-bottom: 100px;
 }
 .firstContainer {
-    margin-bottom: 20px; width: 90vw 
+  margin-bottom: 20px;
+  width: 90vw;
 }
 .course1Title {
-    font-size: 30px;
-    color: #fff;
-    font-family: Georgia;
-    margin-left: 40px;
-    text-align: center;
-    border-width:0
+  font-size: 30px;
+  color: #fff;
+  font-family: Georgia;
+  margin-left: 40px;
+  text-align: center;
+  border-width: 0;
 }
 .firstRow {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
 .contForText {
-    display: flex;
-    flex-direction: row;
-    margin-bottom: 20px;
-    border-width: 1px;
-    border-radius: 40px;
-    border-color: #000;
-    border-style: solid;
-    width: 46vw; /* Adjusted to match the inline style */
-    font-weight: lighter;
-    margin-left: 30px;
-    background: linear-gradient(#FFE1F2, #fff);
-    box-shadow: 1px 4px 6px #555;
-    margin-right: 30px;
-    height: auto;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
+  border-width: 1px;
+  border-radius: 40px;
+  border-color: #000;
+  border-style: solid;
+  width: 46vw; /* Adjusted to match the inline style */
+  font-weight: lighter;
+  margin-left: 30px;
+  background: linear-gradient(#ffe1f2, #fff);
+  box-shadow: 1px 4px 6px #555;
+  margin-right: 30px;
+  height: auto;
 }
 .firstParagraph {
-    font-size: 24px;
-    line-height: 1.6;
-    padding: 30px;
-    margin-left: 20px;
+  font-size: 24px;
+  line-height: 1.6;
+  padding: 30px;
+  margin-left: 20px;
 }
 .secondCont {
-    margin-bottom: 20px;
-    width: 37vw; /* Adjust as needed */
-    border-width: 1px;
-    border-color: #000;
-    border-style: solid;
-    border-radius: 30px;
-    margin-left: 30px;
-    box-shadow: 1px 4px 6px #333;
-    background: linear-gradient(#FFE1F2, #fff);
+  margin-bottom: 20px;
+  width: 37vw; /* Adjust as needed */
+  border-width: 1px;
+  border-color: #000;
+  border-style: solid;
+  border-radius: 30px;
+  margin-left: 30px;
+  box-shadow: 1px 4px 6px #333;
+  background: linear-gradient(#ffe1f2, #fff);
 }
 .secondContParagraph {
-    font-size: 22px;
+  font-size: 22px;
   line-height: 1.6;
   color: #000;
   padding: 20px;
   margin-left: 20px;
 }
 .thirdCont {
-    margin-bottom: 20px;
-    width: 55vw;
-    border-width: 1px;
-    border-color: #000;
-    border-style: solid;
-    border-radius: 30px;
-    margin-left: 30px;
-    box-shadow: 1px 4px 6px #333;
-    background: linear-gradient(#ffe1f2, #fff);
-    margin-top: 20px;
+  margin-bottom: 20px;
+  width: 55vw;
+  border-width: 1px;
+  border-color: #000;
+  border-style: solid;
+  border-radius: 30px;
+  margin-left: 30px;
+  box-shadow: 1px 4px 6px #333;
+  background: linear-gradient(#ffe1f2, #fff);
+  margin-top: 20px;
 }
 .thridContParagraph {
-    font-size: 22px;
+  font-size: 22px;
   line-height: 1.6;
   color: #000;
   padding: 20px;
   margin-left: 20px;
 }
 .image {
-    width: 300px;
-              height: 300px;
-              border-radius: 40px;
-              margin-left: 130px;
+  width: 300px;
+  height: 300px;
+  border-radius: 40px;
+  margin-left: 130px;
 }
 .secondRow {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
-
+.addButtonCont {
+    position: absolute;
+    top: 104vh;
+    width: auto;
+    height: auto;
+    left: 2vw;
+}
+.course1Add {
+   background-color: lightgreen;
+   width: 5.5vw;
+   height: 4vh;
+   border-radius: 10px;
+   border-color: #fff;
+   color : #fff
+}
 @media only screen and (max-width: 600px) {
-    .course1Title {
-        font-size: 3.5vh !important;
-        color: #fff;
-        font-family: Georgia;
-        text-align: center;
-        margin: 0;
-        border: none;
-        border-width: 0;
-    }
-    .background {
-        display: flex;
-        flex-direction: column;
-    }
-    .contForText {
-       margin: 0 !important;
-       height: auto;
-       width: auto;
-    }
-    .firstParagraph {
-        font-size: 2.5vh !important;
-        padding: 2vh !important;
-        margin: 0;
-        display: flex;
-        text-align: center;
-        align-items: center;
-        flex-direction: column;
-        justify-content: center;
-        width: auto
-    }
-    .secondCont {
-       height: auto;
-       width: auto;
-       margin: 0;
-       margin-top: 3vh;
-    }
-    .secondContParagraph {
-        font-size: 2.5vh;
-      line-height: 1.6;
-      color: #000;
-    }
-    .thirdCont{
-        width: auto ;
-        height: auto;
-        margin-left: 0;
-    }
-    .thridContParagraph {
+  .course1Title {
+    font-size: 3.5vh !important;
+    color: #fff;
+    font-family: Georgia;
+    text-align: center;
+    margin: 0;
+    border: none;
+    border-width: 0;
+  }
+  .background {
+    display: flex;
+    flex-direction: column;
+  }
+  .contForText {
+    margin: 0 !important;
+    height: auto;
+    width: auto;
+  }
+  .firstParagraph {
+    font-size: 2.5vh !important;
+    padding: 2vh !important;
+    margin: 0;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: auto;
+  }
+  .secondCont {
+    height: auto;
+    width: auto;
+    margin: 0;
+    margin-top: 3vh;
+  }
+  .secondContParagraph {
     font-size: 2.5vh;
-      line-height: 1.6;
-      color: #000;
-    }
-    .image {
-        width: 34vw;
-        height: auto;
-        margin: 0;
-    }
-    .firstRow {
-        flex-direction: column;
-    }
-    .secondRow {
-       display: flex;
-       flex-direction: column;
-    }
+    line-height: 1.6;
+    color: #000;
+  }
+  .thirdCont {
+    width: auto;
+    height: auto;
+    margin-left: 0;
+  }
+  .thridContParagraph {
+    font-size: 2.5vh;
+    line-height: 1.6;
+    color: #000;
+  }
+  .image {
+    width: 34vw;
+    height: auto;
+    margin: 0;
+  }
+  .firstRow {
+    flex-direction: column;
+  }
+  .secondRow {
+    display: flex;
+    flex-direction: column;
+  }
 }

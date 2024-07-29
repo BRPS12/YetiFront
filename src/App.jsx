@@ -8,13 +8,14 @@ import { Course1 } from "./Pages/Courses/Course1";
 import { Course2 } from "./Pages/Courses/Course2";
 import { Course3 } from "./Pages/Courses/Course3";
 import { ContactUs } from "./Pages/ContactUs/ContactUs";
+import { Benefits } from "./Pages/Benefits/Benefits";
 import { SignUp } from "./Pages/SignUp/SignUp";
 import { Login } from "./Pages/Login/Login";
 import axios from "axios"
 import  Profile  from "./Pages/Profile/Profile";
 export const instance = axios.create({
-  baseURL: "https://yetiback.onrender.com",
-  // baseURL: "http://localhost:9911/",
+  // baseURL: "https://yetiback.onrender.com",
+  baseURL: "http://localhost:9911/",
   headers: {
     "Content-type": "application/json; charset=UTF-8",
   },
@@ -43,6 +44,7 @@ export const App = () => {
             <Route path="/login" element={<Login />} />
             <Route path="/signup" element={<SignUp />}/>
             <Route path="/profile" element={<Profile/>}/>
+            <Route path="/benefits" element={<Benefits/>}/>
           </Routes>
         </BrowserRouter>
     </div>
