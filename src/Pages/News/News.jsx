@@ -56,7 +56,6 @@ export const News = () => {
   const deleteNews = async (id) => {
     try {
       const response = await instance.delete(`/news/${id}`);
-      console.log(response);
       getAllNews();
     } catch (error) {
       console.error("Error deleting news:", error);
@@ -66,6 +65,11 @@ export const News = () => {
     const response = await instance.get("/news");
     const newsData = response.data.data;
     setNews(newsData);
+    setIsLoading(false);
+    // const imageUrl = newsData[0].image;
+    // const formattedImageUrl = imageUrl.replace('Images/', ''); // remove "Images/"
+    // setNewsImage(formattedImageUrl);
+    // console.log(newsImage)
   };
   // const createNews = async () => {
   //   try {
@@ -111,19 +115,16 @@ export const News = () => {
     formData.append("content", newsContent); // Append the content to the form data
 
     try {
-      // Send the image upload and news creation request
       const res = await instance.post("/news/createNews", formData, {
         headers: {
-          "Content-Type": "multipart/form-data", // Set the content type
+          "Content-Type": "multipart/form-data",
         },
       });
-      console.log(res.data); // Log the response data
-      // Optionally reset the form
       setFile(null);
       setNewsTitle("");
       setNewsContent("");
     } catch (error) {
-      console.error("Error creating news:", error); // Handle any errors
+      console.error("Error creating news:", error)
     }
   };
 
@@ -223,6 +224,7 @@ export const News = () => {
                 type="file"
                 name="image"
                 onChange={handleFileChange}
+                accept="image/*"
                 required
               />
               <input type="submit" value="Create News" />
@@ -307,15 +309,17 @@ export const News = () => {
                   Delete
                 </button>
               ) : (
-                <></>
+                <div className="showButtonss">
+                  hahaha
+                </div>
               )}
               <div className="createdNewsLittleCont">
                 <p className="createdTitle">{item.title}</p>
                 <p className="createdPara">{item.content}</p>
               </div>
-              {item.image && ( // Check if item.image exists before rendering the image
+              {item.image && (
                 <img
-                  src={item.image}
+                  src={require(`../../Images/${item.image}`)}
                   alt={`News ${index + 1}`}
                   className="createdNewsImage"
                 />
