@@ -208,29 +208,42 @@ export const News = () => {
                 <ClearIcon />
               </IconButton>
             </div>
-            <form onSubmit={handleSubmit} encType="multipart/form-data">
-              <input
-                type="text"
-                placeholder="News Title"
-                value={newsTitle}
-                onChange={(e) => setNewsTitle(e.target.value)}
-                required
-              />
-              <textarea
-                placeholder="News Content"
-                value={newsContent}
-                onChange={(e) => setNewsContent(e.target.value)}
-                required
-              />
-              <input
-                type="file"
-                name="image"
-                onChange={handleFileChange}
-                accept="image/*"
-                required
-              />
-              <input type="submit" value="Create News" />
-            </form>
+            <form onSubmit={handleSubmit} encType="multipart/form-data" className="news-form">
+  <h2>Create News</h2>
+  <div className="form-group">
+    <label htmlFor="news-title">News Title:</label>
+    <input
+      type="text"
+      id="news-title"
+      placeholder="Enter news title"
+      value={newsTitle}
+      onChange={(e) => setNewsTitle(e.target.value)}
+      required
+    />
+  </div>
+  <div className="form-group">
+    <label htmlFor="news-content">News Content:</label>
+    <textarea
+      id="news-content"
+      placeholder="Enter news content"
+      value={newsContent}
+      onChange={(e) => setNewsContent(e.target.value)}
+      required
+    />
+  </div>
+  <div className="form-group">
+    <label htmlFor="image">Image:</label>
+    <input
+      type="file"
+      id="image"
+      name="image"
+      onChange={handleFileChange}
+      accept="image/*"
+      required
+    />
+  </div>
+  <button type="submit" className="submit-btn">Create News</button>
+</form>
             {/* <Typography id="modal-modal-description" sx={{ mt: 2 }}>
               <Grid container spacing={2}>
                 <Grid item xs={12}>
