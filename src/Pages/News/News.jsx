@@ -55,7 +55,7 @@ export const News = () => {
   };
   const deleteNews = async (id) => {
     try {
-      const response = await instance.delete(`/news/${id}`);
+      await instance.delete(`/news/${id}`);
       getAllNews();
     } catch (error) {
       console.error("Error deleting news:", error);
@@ -120,11 +120,11 @@ export const News = () => {
           "Content-Type": "multipart/form-data",
         },
       });
-  
-      setNews([...news, res.data.data]);
+      setNews((prevNews) => [...prevNews, res.data.data]);
       setFile(null);
       setNewsTitle("");
       setNewsContent("");
+      window.location.reload()
     } catch (error) {
       console.error("Error creating news:", error);
     }
@@ -303,6 +303,7 @@ export const News = () => {
         </Modal>
         <div>
           {news.map((item, index) => (
+              
             <div key={index} className="createdNewsCont">
               {user.role === "admin" ? (
                 <button
@@ -319,13 +320,13 @@ export const News = () => {
                 <p className="createdTitle">{item.title}</p>
                 <p className="createdPara">{item.content}</p>
               </div>
-              {item.image && (
+              {item.image ? (
                 <img
                   src={require(`../../Images/${item.image}`)}
                   alt={`News ${index + 1}`}
                   className="createdNewsImage"
                 />
-              )}
+              ) : (<></>)}
             </div>
           ))}
         </div>
