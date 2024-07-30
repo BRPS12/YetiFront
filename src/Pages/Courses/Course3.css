@@ -72,6 +72,25 @@
   color: Red;
   font-weight: bold;
 }
+.addButtonCont {
+  position: absolute;
+  top: 102.5vh;
+  width: auto;
+  height: auto;
+  left: 2vw;
+}
+.course3Add {
+width: 5vw;
+height: 6vh;
+border-radius: 1vw;
+border-color: #fff;
+border-width: 0;
+cursor: pointer;
+background-color: rgb(248, 13, 13);
+color: #fff;
+font-size: 18px;
+font-family: Georgia;
+}
 @media only screen and (max-width: 600px) {
   .course-title {
     font-size: 4vh;

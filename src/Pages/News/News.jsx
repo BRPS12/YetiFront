@@ -108,23 +108,25 @@ export const News = () => {
 
   const handleSubmit = async (event) => {
     event.preventDefault(); // Prevent default form submission
-
+  
     const formData = new FormData();
     formData.append("image", file); // Append the file to the form data
     formData.append("title", newsTitle); // Append the title to the form data
     formData.append("content", newsContent); // Append the content to the form data
-
+  
     try {
       const res = await instance.post("/news/createNews", formData, {
         headers: {
           "Content-Type": "multipart/form-data",
         },
       });
+  
+      setNews([...news, res.data.data]);
       setFile(null);
       setNewsTitle("");
       setNewsContent("");
     } catch (error) {
-      console.error("Error creating news:", error)
+      console.error("Error creating news:", error);
     }
   };
 

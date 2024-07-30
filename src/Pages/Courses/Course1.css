@@ -94,18 +94,22 @@
 }
 .addButtonCont {
     position: absolute;
-    top: 104vh;
+    top: 102.5vh;
     width: auto;
     height: auto;
     left: 2vw;
 }
 .course1Add {
-   background-color: lightgreen;
-   width: 5.5vw;
-   height: 4vh;
-   border-radius: 10px;
-   border-color: #fff;
-   color : #fff
+  width: 7vw;
+  height: 7vh;
+  border-radius: 1vw;
+  border-color: #fff;
+  border-width: 0;
+  cursor: pointer;
+  background-color: #ba39ff;
+  color: #fff;
+  font-size: 18px;
+  font-family: Georgia;
 }
 @media only screen and (max-width: 600px) {
   .course1Title {

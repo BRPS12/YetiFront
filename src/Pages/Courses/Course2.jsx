@@ -2,15 +2,22 @@ import React, { useState, useEffect } from "react";
 import { Header } from "../../components/Header";
 import courseImage from "../../Images/Students.png";
 import { Footer } from "../../components/Footer";
+import { instance } from "../../App";
 import './Course2.css';
 
 export const Course2 = () => {
+  const user_id = window.localStorage.getItem("user_id");
   const [isMounted, setIsMounted] = useState(false);
+  const [user, setUser] = useState([]);
 
+  const getUser = async () => {
+    const res = await instance.get(`/users/${user_id}`);
+    setUser(res.data.data);
+  };
   useEffect(() => {
     setIsMounted(true);
+    getUser();
   }, []);
-
   return (
     <div>
       <Header
@@ -20,6 +27,9 @@ export const Course2 = () => {
         repeat="no-repeat"
         bgSize="cover"
       />
+      <div className="addButtonCont">
+      {user.role === "admin" ? <button class="course2Add">Add</button> : <></>}
+      </div>
       <div className="container">
       <div className="margin-bottom">
         <p className="header">IELTS, TOEFL IBT & ITP, SAT, Duolingo бэлдэх+тэтгэлгийн зөвлөгөө, чиглүүлэг</p>

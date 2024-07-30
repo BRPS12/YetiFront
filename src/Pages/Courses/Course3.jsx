@@ -3,13 +3,21 @@ import { Header } from "../../components/Header";
 import courseImage from "../../Images/Computer.jpg";
 import { Link } from "react-router-dom";
 import { Footer } from "../../components/Footer";
+import { instance } from "../../App";
 import "./Course3.css";
 
 export const Course3 = () => {
+  const user_id = window.localStorage.getItem("user_id");
   const [isMounted, setIsMounted] = useState(false);
+  const [user, setUser] = useState([]);
 
+  const getUser = async () => {
+    const res = await instance.get(`/users/${user_id}`);
+    setUser(res.data.data);
+  };
   useEffect(() => {
     setIsMounted(true);
+    getUser();
   }, []);
 
   return (
@@ -21,6 +29,9 @@ export const Course3 = () => {
         repeat="no-repeat"
         bgSize="cover"
       />
+        <div className="addButtonCont">
+      {user.role === "admin" ? <button class="course3Add">Add</button> : <></>}
+      </div>
       <div className="course-content">
         <div className="course-title">
           <p>Америкийн ЕБС-н хичээлийн хөтөлбөр+ IELTS, TOEFL суурь</p>
